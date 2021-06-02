@@ -1,0 +1,15 @@
+{% if data.advantage_item %}
+  <div class="advantage-block">
+    <div class="container">
+      <h2 class="text-center"> {{data.title}} </h2>
+        <div class="advantage-list row">
+          {% for advantageItem in data.advantage_item %}
+            {% include "@views/components/advantage-card/advantage-card.twig" with {
+              advantageItem: advantageItem,
+              colClass: 'col-md-4'
+            } %}
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

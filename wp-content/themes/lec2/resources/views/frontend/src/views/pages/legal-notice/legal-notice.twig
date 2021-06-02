@@ -1,0 +1,31 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'legal-notice-page',
+    headerTheme: 'gray',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set legal_notice_banner = page_data.custom_data.banner %}
+  {% set bannerData = {
+    top_banner_title: legal_notice_banner.title,
+    top_banner_background: legal_notice_banner.image,
+    top_banner_description: legal_notice_banner.description,
+  } %}
+  {% include "@views/components/top-banner/top-banner.twig" with {
+    'topBannerData': bannerData,
+    classPage: 'legal-notice',
+    theme: 'gray'
+  }%}
+
+  {% include "@views/pages/legal-notice/includes/legal-notice-content/legal-notice-content.twig" %}
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

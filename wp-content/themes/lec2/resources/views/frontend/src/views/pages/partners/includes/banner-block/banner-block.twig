@@ -1,0 +1,13 @@
+<div class="banner-block banner-block--{{ theme|default('default') }}">
+  <div class="container">
+    <div class="banner-item {{position_image}} {{center_content}}">
+      <div class="banner-item-image">
+        <img class="rounded-8" src="{{ data.image }}" alt="{{ data.title }}"/>
+      </div>
+      <div class="banner-item-content">
+        <h2 class="banner-item-title">{{ data.title }}</h2>
+        <div class="banner-item-text">{{ data.description|content|raw }}</div>
+      </div>
+    </div>
+  </div>
+</div>

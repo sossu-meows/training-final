@@ -1,0 +1,83 @@
+@import "~@/scss/base";
+
+.service {
+  &-block {
+    position: relative;
+    z-index: 0;
+    margin-top: -65px;
+    text-align: center;
+    padding: 65px 0 108px;
+  }
+
+  &-title {
+    margin-bottom: 42px;
+  }
+
+  &-desc {
+    margin-bottom: 42px;
+    white-space: pre-line
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -53px;
+    margin-right: -53px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-item {
+    padding: 0 53px 20px;
+    text-align: center;
+    @extend %lead;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+  }
+}
+
+@include tablet-down() {
+  .service-block {
+    .service-list {
+      margin-left: -12px;
+      margin-right: -12px;
+
+      .service-item {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .service-block {
+    background: none;
+    margin-top: 0;
+    padding: 0 0 25px;
+  }
+
+  .service {
+    &-title {
+      margin-bottom: 25px;
+      font-size: 2.4rem;
+      line-height: 33px;
+    }
+
+    &-desc {
+      margin-bottom: 23px;
+      font-size: 1.8rem;
+      line-height: 24.51px;
+    }
+
+    &-list {
+      flex-wrap: nowrap;
+    }
+
+    &-item {
+      font-size: 1.2rem;
+      line-height: 16.34px;
+    }
+  }
+}

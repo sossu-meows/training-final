@@ -1,0 +1,12 @@
+
+@import "~@/scss/base";
+
+.socials a {
+  display: inline-block;
+  .icon {
+    color: $color-light-green;
+    font-size: 2.8rem;
+    width: 28px;
+    height: 28px;
+  }
+}

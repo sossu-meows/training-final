@@ -1,0 +1,19 @@
+stages:
+  - dev
+
+deploy_dev:
+  stage: dev
+  script:
+    - whoami
+    - echo "$CI_COMMIT_REF_NAME - $CI_COMMIT_SHA"
+    - docker exec lec2_php bash -c "cd /var/www/lec2/ && CI_COMMIT_REF_NAME="$CI_COMMIT_REF_NAME" CI_COMMIT_SHA="$CI_COMMIT_SHA" sh shells/deploy-be.sh"
+  only:
+    - dev
+    - /issue-.*$/
+    - /^.*dev.*$/
+  when: manual
+  environment:
+    name: DO Lec2
+    url: http://lec2.staging.elidev.info
+  tags:
+    - dev

@@ -1,0 +1,103 @@
+// ============
+// Application variables
+// NOTE: 2019.08.29 donlq: Please change according to designs
+// ============
+
+$color-blue: #21A9DC;
+$color-light-blue: #5EADA1;
+$color-blue2: #21A9DC;
+$color-dark-blue: #24407A;
+$color-light-green:#7BE1D1;
+$color-yellow: #F5C34B;
+$color-light-yellow: #FFE071;
+$color-yellow-green: #919F30;
+$color-gray: #EDEBEB;
+$color-white: #fff;
+$color-black: #000;
+$color-dark: #333;
+$color-error: #dc3545;
+$color-success: #4E8B59;
+
+$color-primary: $color-dark-blue;
+$color-main: $color-dark-blue;
+$color-text:  $color-dark-blue;
+$color-heading:  $color-dark-blue;
+$color-link: $color-light-green;
+
+$body-color: $color-dark !default;
+
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-base: $font-family-open-sans;
+
+$font-bold: 700;
+$font-semibold: 500;
+
+$z-index-header: 1020;
+$z-index-nav-sp: $z-index-header + 2;
+$z-index-loading: 1000;
+$z-index-modal: 1030;
+$z-index-overlay: $z-index-header + 1;
+$z-index-toast: 1040;
+// ============
+// Bootstrap 4 variables
+// ============
+$font-size-base: 1.4rem;
+$line-height-base: 1.362 !default;
+
+// overwrite button and input
+$border-radius: .4rem !default;
+$border-color: #BDBDBD !default;
+$input-bg: #fafafa;
+$input-placeholder-color: #999;
+$input-focus-box-shadow: none;
+$input-focus-bg: #fafafa;
+$input-background: #fff;
+$input-border-color: #bdbdbd;
+$input-placeholder-color: #999;
+$scroll-bar-bg-color: #E5E5E5;
+
+$grid-gutter-width: 24px;
+$grid-padding: $grid-gutter-width / 2;
+
+$grid-columns: 12;
+
+// custom gutter for mobile
+$grid-gutter-width-mb: 40px;
+$grid-padding-mb: $grid-gutter-width-mb / 2;
+// default breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1025px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  xl: 1164px
+) !default;
+
+// Bootstrap colors
+$primary: $color-dark-blue;
+$info: $color-light-green;
+$secondary:  $color-blue;
+
+$theme-colors: (
+  "brand": $info,
+);
+
+// ============
+// END Bootstrap 4 variables
+// ============
+$form-group-margin-bottom: 24px !default;
+$breakpoint-xs: 0;
+$breakpoint-sm: map-get($grid-breakpoints, "sm");
+$breakpoint-md: map-get($grid-breakpoints, "md");
+$breakpoint-lg: map-get($grid-breakpoints, "lg");
+$breakpoint-xl: map-get($grid-breakpoints, "xl");
+
+// modal
+$modal-header-padding: 42px;
+$modal-content-border-radius: 8px;
+$modal-inner-padding: 0 42px 42px;

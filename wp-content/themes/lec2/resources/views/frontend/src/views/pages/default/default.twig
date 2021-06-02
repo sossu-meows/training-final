@@ -1,0 +1,51 @@
+{% extends "@views/layouts/layout-default.twig" %}
+{# block declare #}
+{% set page_class = page_data.custom_data.page_class %}
+{%
+  set viewData = {
+    bodyClass: 'default-page' ~ ' '~ page_class,
+    jsController: '',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+	{% set detault_banner = page_data.custom_data.detault_banner %}
+	{% if detault_banner.description or detault_banner.image or detault_banner.title %}
+		{% set bannerData = {
+      top_banner_title: detault_banner.title,
+      top_banner_background: detault_banner.image,
+      top_banner_description: detault_banner.description
+    } %}
+    {% set getAnOffer = detault_banner.is_show_offer_form %}
+		{% if getAnOffer %}
+			{% set getAnOffer = {
+          text: global.theme_options.text_translation.default_global_settings_buttons.default_global_settings_gao,
+          url: global.theme_options.default_global_settings.default_global_settings_buttons.btn_offer_url
+        }
+      %}
+		{% endif %}
+		{% include "@views/components/top-banner/top-banner.twig" with {
+      topBannerData: bannerData,
+      classPage: 'datenschutz',
+      theme: 'gray',
+      getAnOffer: getAnOffer
+    }%}
+	{% else %}
+		{% include "@views/components/top-banner-title/top-banner-title.twig" with {
+      'data': {
+        'title': page_data.post_title
+      }
+    } %}
+	{% endif %}
+
+	<div class="container">
+		<div class="cms-content">
+			{{ page_data.post_content| content | raw }}
+		</div>
+	</div>
+	{% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

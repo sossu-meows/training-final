@@ -1,0 +1,33 @@
+{%
+  set options = {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+		autoplay: false,
+		infinite: true,
+		responsive: [
+		{
+      breakpoint: 767,
+      settings: {
+				slidesToShow: 1
+      }
+    }]
+  }
+%}
+
+{% if page_data.custom_data.slider_image_list %}
+  <div class="slider-image-block">
+    <div class="container">
+      <div class="slider-image-list" data-slick='{{ options|json_encode }}'>
+        {% for item in  page_data.custom_data.slider_image_list %}
+          <div class="slider-col">
+            <div class="slider-item">
+              <img class="slider-image rounded-8" src="{{ item.image }}" title="{{item.title}}"/>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

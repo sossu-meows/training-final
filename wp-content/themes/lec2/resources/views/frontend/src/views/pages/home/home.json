@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "home_banner": {
+        "home_title": "Lattice Education Competence Center",
+        "home_description": "<p>The use of FPGA technology is growing rapidly, finding new applications in the embedded world and beyond. FPGAs are often the best design choice for cost, power consumption and ease-of-use. Developers must have a solid competency in FPGA technology and design approaches as well as specific expertise to solve their design challenges.</p> <p> We constantly study the market, listen to developers and work closely with FPGA manufacturers like Lattice to develop training tailored to meet today's and tomorrow's needs. </p>",
+        "home_subtitle": "Your training platform around Low-Power-FPGAs"
+      },
+      "video": [
+        {
+          "ID": 999,
+          "custom_data": {
+            "video_url": "",
+            "video_file": {
+              "subtype": "mp4",
+              "type": "video",
+              "url": "~@/assets/images/mov_bbb.mp4"
+            }
+          },
+          "thumbnail": "~@/assets/images/home/home-video-poster.png"
+        }
+      ],
+      "service": {
+        "title": "We have teamed up to create a service for you",
+        "service_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. \nExercitation veniam consequat sunt nostrud amet.",
+        "services_name": [
+          { "service_name": "your company" },
+          { "service_name": "your company" },
+          { "service_name": "your company" }
+        ]
+      },
+      "news_feed": {
+        "news_feed_title": "Get the latest news from LEC2!",
+        "news_feed_link": "news.html"
+      },
+      "training_types": {
+        "title": "Different people - Different needs. <br> Pick the right training format for your needs",
+        "training_list": [
+          {
+            "training_type": {
+              "post_title": "Webinar",
+              "thumbnail": "~@/assets/images/training/training-image-1.png"
+            },
+            "content": "Our free on-line webinars address selected topics related to Lattice FPGAs. Our webinars provide you with all the information you need to successfully start your FPGA design.",
+            "cost": "Free",
+            "format": "Live Online or Recorded",
+            "time": "1 day"
+          },
+          {
+            "training_type": {
+              "post_title": "Seminar",
+              "thumbnail": "~@/assets/images/training/training-image-2.png"
+            },
+            "content": "Our free face-to-face seminars address selected topics related to Lattice FPGAs. Discuss your specific project requirements with the trainer. Our seminars provide you with all the information you need to successfully start your FPGA design.",
+            "cost": "Free",
+            "format": "Live Event",
+            "time": "1 - 2 hours"
+          },
+          {
+            "training_type": {
+              "post_title": "Face2Face",
+              "thumbnail": "~@/assets/images/training/training-image-3.png"
+            },
+            "content": "Experienced trainers conduct our face-to-face trainings either in selected hotels or directly at your location. Intensive exercises facilitate the introduction to the latest FPGA technology.",
+            "cost": "$500 - $3500",
+            "format": "Live Event",
+            "time": "1 to 5 days"
+          },
+          {
+            "training_type": {
+              "post_title": "Shorties",
+              "thumbnail": "~@/assets/images/training/training-image-4.png"
+            },
+            "content": "Our Shorties series focuses on the analysis, definition and the implementation of special, selected tasks. Save time and use the solutions presented for your projects.",
+            "cost": "$99 - $149",
+            "format": "Live Online or Recorded",
+            "time": "3 - 4 hours"
+          },
+          {
+            "training_type": {
+              "post_title": "Online",
+              "thumbnail": "~@/assets/images/training/training-image-5.png"
+            },
+            "content": "Browse through our extensive video library and find suitable solutions to make it easier for you to implement your special task.",
+            "cost": "$500 - $3500",
+            "format": "Live Online or Recorded",
+            "time": "1 to 5 days"
+          },
+          {
+            "training_type": {
+              "post_title": "Inhouse",
+              "thumbnail": "~@/assets/images/training/training-image-6.png"
+            },
+            "content": "Use our experts not only to get to know the FPGA development process on site but also to work on your project-specific tasks.",
+            "cost": "Individual",
+            "format": "On-Site",
+            "time": "Individual"
+          }
+        ]
+      },
+      "highlight_list": {
+        "highlight_title": "Latest Training Modules Available",
+        "highlight_list": [
+          {
+            "post_title": "Shorties: Radiant Design Flow",
+            "post_excerpt": "This Shortie demonstrates how to create a new Radiant software project, customize IP using IP Catalog, verify functionality with simulation, set timing and location constraints, process the design, analyse power consumption, analyse static timing, create on-chip debug logic.",
+            "url": "#"
+          },
+          {
+            "post_title": "Intensive Workshop: Crosslink NX",
+            "post_excerpt": " CrossLink™-NX family of low-power FPGAs can be used in a wide range of applications, and are optimized for bridging and processing needs in Embedded Vision applications – supporting a variety of high bandwidth sensor and display interfaces, video processing and machine learning inferencing. It is built on Lattice Nexus FPGA platform, using low-power 28 nm FD-SOI technology. It combines the flexibility of an FPGA with the low power and high reliability (due to extremely low SER) of FD-SOI technology.",
+            "url": "#"
+          },
+          {
+            "post_title": "Intensive Workshop: VHDL for Synthesis",
+            "post_excerpt": "The design of digital circuits in this scale needs a powerful hardware description",
+            "url": "#"
+          },
+          {
+            "post_title": "Intensive Workshop: VHDL for Synthesis",
+            "post_excerpt": "The design of digital circuits in this scale needs a powerful hardware description language which offers different levels of abstraction, so an engineer can...",
+            "url": "#"
+          }
+        ]
+      },
+      "advantages": {
+        "title": "Take your advantages with LEC2!",
+        "advantage_item": [
+          {
+            "image": "~@/assets/images/advantage/advantage-image-1.png",
+            "title": "Up to date",
+            "description": "Tech is constantly evolving and shaping the industry. Stay up to date with us and our constantly modernized trainings"
+          },
+          {
+            "image": "~@/assets/images/advantage/advantage-image-2.png",
+            "title": "Vast array of <br>training formats",
+            "description": "Pick the right training for your needs. Be it online or offline, a short introduction into a specialised topic or an extended expert – we’ve got you covered!"
+          },
+          {
+            "image": "~@/assets/images/advantage/advantage-image-3.png",
+            "title": "Hands on",
+            "description": "It’s not only important to invest into the devices for future purposes but to invest in knowledge, too. We listen to the developers needs and offer you the practical solutions with our trainings."
+          }
+        ]
+      },
+      "get_opportunities": {
+        "get_opportunities_title": "Get new opportunities with FPGA trainings",
+        "get_opportunities_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      }
+    }
+  }
+}

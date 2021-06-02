@@ -1,0 +1,45 @@
+@import "~@/scss/base";
+
+.advantage {
+  &-title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  &-item {
+    text-align: center;
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+  &-description {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@include tablet-down() {
+  .advantage {
+    &-description {
+      width: 100%;
+    }
+  }
+}
+
+@include mobile() {
+  .advantage {
+    &-item {
+      padding: 0 17px;
+      margin-bottom: 25px;
+    }
+    &-title {
+      margin-top: 12px;
+      margin-bottom: 6px;
+      font-size: 1.8rem;
+      line-height:24.51px;
+    }
+    &-description {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

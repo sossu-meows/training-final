@@ -1,0 +1,22 @@
+<section class="container">
+	<div class="section-top">
+		<h2>Icons font: "Lec2"</h2>
+	</div>
+
+	<div class="list-icons">
+		<div
+			class="row">
+			{# JS RENDER FROM $scope.listIcons #}
+			<div class="col-md-4" rv-each-icon="listIcons" rv-on-click="alert">
+				<div class="box-icon-font">
+					<p class="unit">
+						<i rv-class="icon.className"></i>
+						{icon.className}</p>
+					<div class="content-code">Content:
+						<input type="text" rv-value="icon.content"/></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>

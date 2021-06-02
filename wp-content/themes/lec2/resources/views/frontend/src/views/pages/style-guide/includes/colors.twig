@@ -1,0 +1,15 @@
+{% import "@views/pages/style-guide/includes/colors-macro.twig" as macros %}
+
+<section class="container">
+	<div class="section-top">
+		<h2>Colors</h2>
+	</div>
+
+	<h3 class="text-brand">Main colors</h3>
+	{{macros.colorBox('listMainColors')}}
+
+	<div class="my-4 py-3"></div>
+
+	<h3 class="text-brand">All colors</h3>
+	{{macros.colorBox('listColors')}}
+</section>

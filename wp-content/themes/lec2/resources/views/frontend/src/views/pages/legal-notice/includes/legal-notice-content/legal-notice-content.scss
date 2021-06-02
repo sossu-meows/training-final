@@ -1,0 +1,64 @@
+@import "~@/scss/base";
+
+.legal-notice-content {
+  margin-bottom: 80px;
+  .container {
+    max-width: 926px;
+  }
+
+  dl {
+    display: flex;
+    line-height: 30px;
+    margin-bottom: 27px;
+    dd,
+    dt {
+      white-space: pre-line;
+      width: 50%
+    }
+    dt {
+      padding-right: 10px;
+    }
+    dd {
+      padding-left: 10px;
+    }
+  }
+}
+
+@include tablet-up {
+  .legal-notice-content {
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+}
+
+@include tablet-down {
+  .legal-notice-content {
+    margin-top: 30px;
+  }
+}
+
+@include mobile {
+  .legal-notice-content {
+    margin-bottom: 37px;
+    dl {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      line-height: 19.07px;
+      dd {
+        padding-left: 0;
+      }
+      dt {
+        margin-bottom: 6px;
+        padding-right: 8px;
+        min-width: 136px;
+      }
+      dt,
+      dd {
+        width: auto;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}

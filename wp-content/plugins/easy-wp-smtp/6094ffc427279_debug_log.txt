@@ -1,0 +1,26 @@
+CLIENT -> SERVER: EHLO lec2.local
+CLIENT -> SERVER: STARTTLS
+CLIENT -> SERVER: EHLO lec2.local
+CLIENT -> SERVER: AUTH LOGIN
+CLIENT -> SERVER: [credentials hidden]CLIENT -> SERVER: [credentials hidden]CLIENT -> SERVER: MAIL FROM:<info@lec2-fpga.com>
+CLIENT -> SERVER: RCPT TO:<fasf@gmail.com>
+CLIENT -> SERVER: DATA
+CLIENT -> SERVER: Date: Fri, 14 May 2021 11:30:08 +0000
+CLIENT -> SERVER: To: fasf@gmail.com
+CLIENT -> SERVER: From: LEC2 - Team <info@lec2-fpga.com>
+CLIENT -> SERVER: Reply-To: info@lec2-fpga.com
+CLIENT -> SERVER: Subject: Welcome to LEC2
+CLIENT -> SERVER: Message-ID: <MOoCc1iJ5aTjBFphg2sjMzKms43lhE88AEWuygeM@lec2.local>
+CLIENT -> SERVER: X-Mailer: PHPMailer 6.1.6 (https://github.com/PHPMailer/PHPMailer)
+CLIENT -> SERVER: Return-Path: <info@lec2-fpga.com>
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+CLIENT -> SERVER: 
+CLIENT -> SERVER: <p>Hi fasf,</p>
+CLIENT -> SERVER: <p>Just wanted to send you a quick note&#8230;</p>
+CLIENT -> SERVER: <p>Thank you for joining the awesome LEC2 tribe.</p>
+CLIENT -> SERVER: <p>Only valuable emails from me, promise!</p>
+CLIENT -> SERVER: <p>Thanks!</p>
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+CLIENT -> SERVER: QUIT

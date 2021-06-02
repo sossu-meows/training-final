@@ -1,0 +1,91 @@
+@import '~@/scss/base';
+
+.filter-shorties-form {
+  form {
+    display: flex;
+    .form-group--type {
+      flex-basis: 284px;
+    }
+  }
+
+  .form-group--action {
+    margin-left: 14px;
+  }
+
+  .btn {
+    min-width: 108px;
+  }
+}
+
+.course-item {
+  border-bottom: 1px solid #81A3BE;
+  margin-bottom: 16px;
+  &:last-child {
+    border-bottom: 0;
+  }
+  &-listing {
+    .no-result {
+      text-align: center;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
+  h5 {
+    margin-bottom: 9px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .course-item-time {
+    color: $color-primary;
+    font-weight: 600;
+  }
+  &-left {
+    flex: 1;
+    padding-right: 5px;
+  }
+  .course-item-infor-link {
+    i {
+      font-size: 12px;
+      vertical-align: middle;
+    }
+  }
+  .course-item-link {
+    flex-basis: 108px;
+    flex-shrink: 0;
+  }
+}
+
+.pagination-header {
+  text-align: center;
+  .page-num {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    em {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    &--first {
+      color: $info;
+    }
+    &--current {
+      margin: 0 24px;
+      color: $info;
+      &.disabled {
+        color: #c7c7c7;
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+      em {
+        color: #c7c7c7;
+      }
+    }
+  }
+}

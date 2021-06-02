@@ -1,0 +1,561 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Job Offers"
+msgstr "Jobangebote"
+
+msgid "Job Offer"
+msgstr "Job Offer"
+
+msgid "Add New Job Offer"
+msgstr "Ein neues Stellenangebot erstellen"
+
+msgid "Locations"
+msgstr "Standorte"
+
+msgid "Location"
+msgstr "Ort"
+
+msgid "Applications"
+msgstr "Alle Angebote"
+
+msgid "All Locations"
+msgstr "Alle Orte"
+
+msgid "All Employers"
+msgstr "Alle twigeitgeber"
+
+msgid "All Authors"
+msgstr "Alle Autoren"
+
+msgid "All Job Offers"
+msgstr "Alle Stellenangebote"
+
+msgid "Job Title"
+msgstr "Berufsbezeichnung"
+
+msgid "Employer"
+msgstr "twigeitgeber"
+
+msgid "Author (Moderator)"
+msgstr "Ansprechpartner"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Creation Date"
+msgstr "Erstellungsdatum"
+
+msgid "Publish Date"
+msgstr "Erscheinungsdatum"
+
+msgid "Add New Profession"
+msgstr "Neuen Beruf hinzufügen"
+
+msgid "Add New Location"
+msgstr "Neuen Standort hinzufügen"
+
+msgid "Professions"
+msgstr "Berufe"
+
+msgid "Profession"
+msgstr "Berufsfeld"
+
+msgid "All Applications"
+msgstr "Alle Angebote"
+
+msgid "Application Id"
+msgstr "Referenznummer"
+
+msgid "Application Date"
+msgstr "Erstellungsdatum"
+
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+msgid "Add New Application"
+msgstr "Neue Anwendung hinzufügen"
+
+msgid "Filter By Job Title"
+msgstr "Filtern nach Jobtitel"
+
+msgid "Filter By Full Name"
+msgstr "Nach vollem Namen filtern"
+
+msgid "Search Job Offers"
+msgstr "Stellenangebote suchen"
+
+msgid "Search Job Applications"
+msgstr "Bewerbungen suchen"
+
+msgid "Load more"
+msgstr "Mehr laden"
+
+msgid "Candidate's Profiles"
+msgstr "Ihr Profil"
+
+msgid "This job doesn't have any application"
+msgstr "Dieser Job hat keine Bewerbung"
+
+msgid "Responsibilities"
+msgstr "Ihre Aufgaben"
+
+msgid "Company Name"
+msgstr "Name der Firma"
+
+msgid "Employer's Offer"
+msgstr "Wir bieten"
+
+msgid "Cost"
+msgstr "Kosten"
+
+msgid "Currency"
+msgstr "Währung"
+
+msgid "Per Month Or Year"
+msgstr "Pro Monat oder Jahr"
+
+msgid "Add requirement"
+msgstr "Anforderung hinzufügen"
+
+msgid "Label"
+msgstr "Etikette"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Uploaded CV"
+msgstr "Hochgeladener Lebenslauf"
+
+msgid "Recruiter Comment"
+msgstr "Recruiter-Kommentar"
+
+msgid "File name"
+msgstr "Dateiname"
+
+msgid "File size"
+msgstr "Dateigröße"
+
+msgid "Select employer"
+msgstr "twigeitgeber auswählen"
+
+msgid "Job Offer Status"
+msgstr "Status des Stellenangebotes"
+
+msgid "Your application sent successfully."
+msgstr "Ihre Bewerbung wurde erfolgreich versendet."
+
+msgid "Please, fill all mandatory fields"
+msgstr "Bitte füllen Sie alle Pflichtfelder aus"
+
+msgid "Image"
+msgstr "Bild"
+
+msgid "Offices"
+msgstr "Büros"
+
+msgid "All Offices"
+msgstr "Alle Büros"
+
+msgid "Add New Office"
+msgstr "Neues Büro hinzufügen"
+
+msgid "Office"
+msgstr "Büro"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+msgid "Moderators"
+msgstr "Moderatoren"
+
+msgid "This office doesn't have any moderator"
+msgstr "Dieses Büro hat keinen Moderator"
+
+msgid "Partners"
+msgstr "Partner"
+
+msgid "All Partners"
+msgstr "Alle Partner"
+
+msgid "Add New Partner"
+msgstr "Neuen Partner hinzufügen"
+
+msgid "Banner Title"
+msgstr "Bannertitel"
+
+msgid "Banner Description"
+msgstr "Banner Beschreibung"
+
+msgid "Banner Image"
+msgstr "Banner Bild"
+
+msgid "Is Banner Activated?"
+msgstr "Ist das Banner aktiviert?"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "Contact Form Title"
+msgstr "Titel des Kontaktformulars"
+
+msgid "Contact Office Title"
+msgstr "Kontakt Bürotitel"
+
+msgid "Sections"
+msgstr "Abschnitte"
+
+msgid "Download Files"
+msgstr "Dateien herunterladen"
+
+msgid "File"
+msgstr "Datei"
+
+msgid "Content Block"
+msgstr "Inhaltsblock"
+
+msgid "Has items?"
+msgstr "Gegenstände?"
+
+msgid "Texts"
+msgstr "Texte"
+
+msgid "Add Text"
+msgstr "Text hinzufügen"
+
+msgid "Add Item"
+msgstr "Artikel hinzufügen"
+
+msgid "Add Block"
+msgstr "Block hinzufügen"
+
+msgid "Show Contact?"
+msgstr "Kontakt anzeigen?"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Contact Title"
+msgstr "Kontakttitel"
+
+msgid "Contact Button Text"
+msgstr "Text der Kontaktschaltfläche"
+
+msgid "Contact Button URL"
+msgstr "URL der Kontaktschaltfläche"
+
+msgid "Clients"
+msgstr "Kunden"
+
+msgid "Client Logo"
+msgstr "Kundenlogo"
+
+msgid "Client URL"
+msgstr "Client-URL"
+
+msgid "Personnel Services"
+msgstr "Personaldienstleistungen"
+
+msgid "Managing Directors"
+msgstr "Geschäftsführer"
+
+msgid "Term Of Services"
+msgstr "Laufzeit der Dienste"
+
+msgid "Informations"
+msgstr "Informationen"
+
+msgid "Free Text Sections"
+msgstr "Informationen"
+
+msgid "Banner Image Tablet"
+msgstr "Banner Bild Tablet"
+
+msgid "Banner Image Mobile"
+msgstr "Banner Image Mobile"
+
+msgid "Latitude"
+msgstr "Breite"
+
+msgid "Longitude"
+msgstr "Längengrad"
+
+msgid "Is Title Displayed?"
+msgstr "Wird der Titel angezeigt?"
+
+msgid "Theme Options"
+msgstr "Themenoptionen"
+
+msgid "Search Applications"
+msgstr "Suche nach Anwendungen"
+
+msgid "Search Offices"
+msgstr "Büros durchsuchen"
+
+msgid "Update"
+msgstr "Aktualisieren"
+
+msgid "Header logo"
+msgstr "Header-Logo"
+
+msgid "Website"
+msgstr "Webseite"
+
+msgid "Header logo mobile"
+msgstr "Header-Logo für Handys"
+
+msgid "Contact email"
+msgstr "Kontakt E-mail"
+
+msgid "Footer logo"
+msgstr "Fußzeilenlogo"
+
+msgid "Social icons"
+msgstr "Soziale Symbole"
+
+msgid "Type"
+msgstr "Art"
+
+msgid "Link"
+msgstr "Verknüpfung"
+
+msgid "Copyright text"
+msgstr "Copyright-Text"
+
+msgid "Google API key"
+msgstr "Google API-Schlüssel"
+
+msgid "Facebook Icon"
+msgstr "Facebook-Symbol"
+
+msgid "Jobs Listing Page"
+msgstr "Jobs Listing Page"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Username"
+msgstr "Nutzername"
+
+msgid "Is auth?"
+msgstr "Ist auth?"
+
+msgid "Host"
+msgstr "Wirt"
+
+msgid "Port"
+msgstr "Hafen"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Email::SMTP settings"
+msgstr "Email:: SMTP-Einstellungen"
+
+msgid "Email::Email templates"
+msgstr "E-Mail:: E-Mail-Vorlagen"
+
+msgid "Job apply"
+msgstr "Job bewerben"
+
+msgid "From"
+msgstr "Von"
+
+msgid "Subject"
+msgstr "Gegenstand"
+
+msgid "Body"
+msgstr "Karosserie"
+
+msgid "Recipient email"
+msgstr "Empfänger E-Mail"
+
+msgid "Contact from"
+msgstr "Kontakt von"
+
+msgid "Contact subject"
+msgstr "Kontakt Betreff"
+
+msgid "Contact body"
+msgstr "Körper kontaktieren"
+
+msgid "Application Fields"
+msgstr "Anwendungsfelder"
+
+msgid "Contact Page Options"
+msgstr "Kontaktseitenoptionen"
+
+msgid "Default Template"
+msgstr "Standardvorlage"
+
+msgid "Download Page options"
+msgstr "Seitenoptionen herunterladen"
+
+msgid "Employer Template"
+msgstr "twigeitgebervorlage"
+
+msgid "HomePage Options"
+msgstr "Homepage-Optionen"
+
+msgid "Impressum Template"
+msgstr "Impressum Vorlage"
+
+msgid "Job Fields"
+msgstr "Auftragsfelder"
+
+msgid "Office Options"
+msgstr "Office-Optionen"
+
+msgid "Partners template"
+msgstr "Partner-Vorlage"
+
+msgid "User Options"
+msgstr "Benutzeroptionen"
+
+msgid "Banner"
+msgstr "Banner"
+
+msgid "Please enter the details of your request"
+msgstr "Bitte geben Sie die Details Ihrer Anfrage ein"
+
+msgid "Add your CV"
+msgstr "Fügen Sie Ihren Lebenslauf hinzu"
+
+msgid "or drop files here"
+msgstr "oder Dateien hier ablegen"
+
+msgid "Phone number"
+msgstr "Telefonnummer"
+
+msgid "click on icon"
+msgstr "Klicken Sie auf das Symbol"
+
+msgid "This is a required field"
+msgstr "Das ist ein Pflichtfeld"
+
+msgid "View"
+msgstr "Ansicht"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Awesome!"
+msgstr "Super!"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "How can we help?"
+msgstr "Wie können wir helfen?"
+
+msgid "optional"
+msgstr "optional"
+
+msgid "Thanks! We'll be in touch as soon as possible"
+msgstr "Vielen Dank! Wir werden uns so schnell wie möglich bei Ihnen melden"
+
+msgid "new"
+msgstr "Neu"
+
+msgid "New"
+msgstr "Neu"
+
+msgid "Search for job or keywords..."
+msgstr "Suche nach Job oder Stichwörtern.."
+
+msgid "Message has been sent!"
+msgstr "Ihre Nachricht wurde versendet."
+
+msgid "Thanks! We’ll be in touch as soon as possible"
+msgstr "Vielen Dank! Wir werden uns zeitnah bei Ihnen melden!"
+
+msgid "Reset Filter"
+msgstr "Filter zurücksetzen"
+
+msgid "Back to search results"
+msgstr "Zurück zu den Suchergebnissen"
+
+msgid "Requirements"
+msgstr "Anforderungen"
+
+msgid "What will you do"
+msgstr "Ihre Aufgaben"
+
+msgid "per"
+msgstr "pro"
+
+msgid "year"
+msgstr "Jahr"
+
+msgid "Year"
+msgstr "Jahr"
+
+msgid "month"
+msgstr "Monat"
+
+msgid "Month"
+msgstr "Monat"
+
+msgid "Sort by:"
+msgstr "Sortieren nach:"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Relevance"
+msgstr "Relevanz"
+
+msgid "Site Title"
+msgstr "Titel der Website"
+
+msgid "Tagline"
+msgstr "Untertitel"
+
+msgid "Edit Item"
+msgstr "Element betwigeiten"
+
+msgid "View Item"
+msgstr "Artikel anzeigen"
+
+msgid "Your CV has been sent successfully"
+msgstr "Ihr Lebenslauf wurde erfolgreich übermittelt."
+
+msgid "A total of <strong class=\"total\">%s</strong> jobs"
+msgstr "insgesamt <strong class=\"total\">%s</strong> Jobs"
+
+msgid "We are located in <span>%s</span> offices"
+msgstr "Sie finden uns an <span>%s</span> Standorten."
+
+msgid "Fill out the form and we’ll be in touch as soon as possible!"
+msgstr "Füllen Sie das Formular aus und wir werden uns zeitnah melden"
+
+msgid "Have uploaded CV?"
+msgstr "CV hochgeladen?"
+
+msgid "Work location"
+msgstr "twigeitsort"

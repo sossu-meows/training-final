@@ -1,0 +1,81 @@
+{% macro input(params) %}
+	<input {% if params.id %} id="{{ params.id }}" {% endif %} class="form-control {{ params.classes|default('') }}" type="{{ params.type|default('text') }}" name="{{ params.name }}" value="{{ params.value|default('') }}" {{ params.required ? 'required' : '' }} {{ params.autocomplete ? '' : 'autocomplete="off"' }} {% if params.placeholder %} placeholder="{{ params.placeholder }}" {% endif %}/>
+	{% if params.label %}
+		<label for="{{ params.id }}">{{params.label}}</label>
+	{% endif %}
+  {% if params.requireOption %}
+		<span class="required-hint"></span>
+	{% endif %}
+{% endmacro %}
+
+{% macro textarea(params) %}
+	<textarea {% if params.id %} id="{{ params.id }}" {% endif %} class="form-control {{ params.classes|default('') }}" {{ params.required ? 'required' : '' }} rows="{{ params.rows|default(3) }}" name="{{ params.name }}" {% if params.placeholder %} placeholder="{{ params.placeholder }}" {% endif %}></textarea>
+	{% if params.label %}
+		<label for="{{ params.id }}">{{params.label}}</label>
+	{% endif %}
+  {% if params.requireOption %}
+		<span class="required-hint"></span>
+	{% endif %}
+{% endmacro %}
+
+{% macro select(params) %}
+	<div class="select-wrapper">
+		{% if params.label %}
+			<label class="select-label" data-toggle="dropdown" for="{{ params.id }}">{{params.label}}</label>
+		{% endif %}
+    {% if params.requireOption %}
+		  <span class="required-hint"></span>
+	  {% endif %}
+		<select name="{{ params.name }}" id="{{ params.id }}" {{params.search ? 'data-live-search="true"' : ''}} {{ params.required ? 'required' : '' }} class="{{ params.classes|default('') }}" {{ params.multiple ? 'multiple' : '' }}>
+
+			{% if params.includeBlank %}
+				<option value="" class="blank-option" selected>{{params.includeText|default('Choose...')}}</option>
+			{% endif %}
+
+			{# RENDER SELECT OPTIONS  #}
+			{% for key, item in params.options %}
+				{# TYPE 1 [{value, label}] #}
+				{% if item.value is defined and item.label is defined %}
+					<option value="{{ item.value }}" {{ item.value == params.selected ? 'selected' : '' }} {{ item.disabled ? 'disabled' : '' }}>{{ item.label }}</option>
+				{% else %}
+					{# RENDER SELECT WITH GROUP  #}
+					{% if item is iterable %}
+						<optgroup label="{{ key }}">
+							{% for subKey, subValue in item %}
+								<option value="{{ subKey }}" {{ subKey == params.selected ? 'selected' : '' }}>{{ subValue }}</option>
+							{% endfor %}
+						</optgroup>
+
+						{# RENDER NORMALY  #}
+					{% else %}
+
+						{# TYPE 2 [{value, label}] #}
+						<option value="{{ key }}" {{ key == params.selected ? 'selected' : '' }} >{{ value }}</option>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</select>
+	</div>
+{% endmacro %}
+
+{% macro selectCost(params) %}
+	<div class="select-wrapper">
+		{% if params.label %}
+			<label class="select-label" data-toggle="dropdown" for="{{ params.id }}">{{params.label}}</label>
+		{% endif %}
+    {% if params.requireOption %}
+		  <span class="required-hint"></span>
+	  {% endif %}
+		<select name="{{ params.name }}" id="{{ params.id }}" {{params.search ? 'data-live-search="true"' : ''}} {{ params.required ? 'required' : '' }} class="{{ params.classes|default('') }}" {{ params.multiple ? 'multiple' : '' }}>
+
+			{% if params.includeBlank %}
+				<option value="" class="blank-option" selected>{{params.includeText|default('Choose...')}}</option>
+			{% endif %}
+
+			{# RENDER SELECT OPTIONS  #}
+			{% for key, item in params.options %}
+				<option data-cost="{{item.cost}}" data-url="{{item.url|raw}}" value="{{ item.value }}" {{ item.value == params.selected ? 'selected' : '' }} {{ item.disabled ? 'disabled' : '' }}>{{ item.label }}</option>
+			{% endfor %}
+		</select>
+	</div>
+{% endmacro %}

@@ -1,0 +1,25 @@
+{% from "@views/macros/navigation/list.twig" import list %}
+
+{% set footerMenu = [] %}
+{% set footer_menu_items = global.theme_options.footer_menu_website.footer_menu_items %}
+{% for menuItem in footer_menu_items %}
+    {% set footerMenu = footerMenu|merge([{
+      title: menuItem.footer_menu_item_title,
+      href: menuItem.footer_menu_item_url
+    }]) %}
+{% endfor %}
+<footer class="site-footer{{ viewData.footerType ? ' site-footer--'~ viewData.footerType: ''}}">
+	<div class="container">
+		<div class="footer-copy-right">{{ global.theme_options.website.copy_right_text }}</div>
+		<div class="footer-bottom">
+      <div class="footer-social-col">
+				{% include "@views/components/socials/socials.twig" with {
+					socials: global.theme_options.footer_menu_website.footer_social_networks
+				} %}
+			</div>
+			<div class="footer-menu">
+				{{ list(footerMenu) }}
+			</div>
+		</div>
+	</div>
+</footer>

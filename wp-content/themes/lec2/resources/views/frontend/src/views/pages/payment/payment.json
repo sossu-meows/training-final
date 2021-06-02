@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "state": "Payment"
+  },
+  "page_data": {
+    "custom_data": {
+      "top_banner": {
+        "top_banner_background_type": "image",
+        "top_banner_background": "~@/assets/images/payment-banner.png",
+        "top_banner_title": "Buy Training",
+        "top_banner_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      },
+      "payment_content": {
+        "training": "Training",
+        "training_content": "Professional VHDL",
+        "date": "Date",
+        "date_content": "28.08.2020",
+        "price": "Price",
+        "price_content": "200$",
+        "type": "Type",
+        "type_content": "LEC2 Online",
+        "student": "Student"
+      }
+    }
+  }
+}

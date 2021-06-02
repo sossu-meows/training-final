@@ -1,0 +1,42 @@
+@import "~@/scss/base";
+
+.default-page,
+.single {
+  .cms-content {
+    padding-bottom: 50px;
+  }
+}
+
+.cms-content {
+  font-size: 1.8rem;
+  p {
+    margin-bottom: 24px;
+  }
+  .alignleft {
+    float: left;
+    margin-right: 24px;
+  }
+  .alignright {
+    float: right;
+    margin-left: 24px;
+  }
+  @include mobile() {
+    font-size: 1.4rem;
+
+    .alignright,
+    .alignleft {
+      display: block;
+      float: none;
+      text-align: center;
+      margin: 0 auto 24px;
+    }
+  }
+
+  figure {
+    margin-bottom: 20px;
+    figcaption {
+      padding: 15px;
+    }
+  }
+}
+

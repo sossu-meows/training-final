@@ -1,0 +1,37 @@
+{% macro pagination(total, current, url, nearbyPagesLimit = 4) %}
+	{% if total > 1 %}
+		<div class="pagination">
+			{% set prevDisable = '' %}
+			{% if current == 1 %}
+				{% set prevDisable = ' disabled' %}
+			{% endif %}
+			<a class="prev page-number{{ prevDisable }}" href="{{ (url ~ (current-1))|e }}"><em class="icon-chevron-left-solid"></em></a>
+			{% for i in 1..total %}
+				{% if 0 == (current - nearbyPagesLimit) - loop.index %}
+					<a class="page-number" href="{{ (url ~ 1)|e }}">1</a>
+					{% if 1 != loop.index %}
+						<span class="page-number">...</span>
+					{% endif %}
+				{% elseif 0 == (current + nearbyPagesLimit) - loop.index  and (current + nearbyPagesLimit) < total %}
+					<span class="page-number">...</span>
+				{% elseif 0 < (current - nearbyPagesLimit) - loop.index %}
+				{% elseif 0 > (current + nearbyPagesLimit) - loop.index %}
+				{% else %}
+					{% if current == loop.index  %}
+						<span class="page-number current" aria-current="page">{{ loop.index }}</span>
+					{% else %}
+						<a class="page-number" href="{{ url ~ loop.index }}">{{ loop.index }}</a>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+			{% if current != total  and (current + nearbyPagesLimit) < total %}
+				<a class="page-number" href="{{ (url ~ total)|e }}">{{ total }}</a>
+			{% endif %}
+			{% set nextDisable = '' %}
+			{% if current >= total %}
+				{% set nextDisable = ' disabled' %}
+			{% endif %}
+			<a class="next page-number{{ nextDisable }}" href="{{ (url ~ (current+1))|e }}"><em class="icon-chevron-right-solid"></em></a>
+		</div>
+	{% endif %}
+{% endmacro %}

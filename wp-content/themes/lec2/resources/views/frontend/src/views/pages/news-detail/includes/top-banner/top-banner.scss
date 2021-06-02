@@ -1,0 +1,50 @@
+@import "~@/scss/base";
+
+.top-banner {
+  &--news-detail {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 130px;
+    padding-bottom: 15vw;
+    background: #EDEBEB;
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 7.1875vw;
+      background: url('~@/assets/images/bg-corner-baner-bottom-w.png') center bottom no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      color: $color-dark;
+      font-size: 3.6rem;
+      margin-bottom: 32px;
+    }
+    .top-banner-content {
+      margin-bottom: 54px;
+    }
+  }
+}
+
+@include mobile() {
+  .top-banner {
+    &--news-detail {
+      padding-top: 35px;
+      padding-bottom: 15.625vw;
+      &:after {
+        height: 8.77vw;
+        background-image: url('~@/assets/images/bg-corner-baner-bottom-w-mb.png');
+      }
+      h1 {
+        font-size: 2.4rem;
+        line-height: 32.68px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,13 @@
+{% if service.services_name %}
+  <div class="service-block">
+    <div class="container">
+      <h2 class="service-title">{{ service.title}}</h2>
+      <div class="service-desc lead">{{ service.service_description|raw}}</div>
+      <div class="service-list">
+        {% for serviceItem in service.services_name %}
+          <div class="service-item">{{ serviceItem.service_name }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,60 @@
+@import "~@/scss/base";
+
+.mission-block {
+  position: relative;
+  .primary-title {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: 24.68px;
+    text-align: center;
+  }
+  .mission-item {
+    margin-bottom: 24px;
+    text-align: center;
+    .mission-item-image {
+      margin-bottom: 9px;
+      img {
+        max-width: 80px;
+      }
+    }
+    .mission-item-number {
+      margin-bottom: 8px;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 65.37px;
+    }
+    .mission-item-title {
+      white-space: pre-line;
+      font-size: 1.8rem;
+      line-height: 24.51px;
+    }
+  }
+}
+
+@include tablet-up() {
+  .mission-block {
+    padding: 70px 0;
+
+    .primary-title {
+      margin-bottom: 46px;
+    }
+  }
+}
+
+@include mobile {
+  .mission-block {
+    padding-top: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      height: 58vw;
+      width: 100%;
+      background: url("~@/assets/images/bg-gray-top-radius-mb.png") center top
+        no-repeat transparent;
+      background-size: cover;
+    }
+  }
+}

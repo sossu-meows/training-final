@@ -1,0 +1,66 @@
+@import "~@/scss/base";
+
+.trainings-overview-listing {
+  position: relative;
+  z-index: 10;
+  background-color: #f1f1f1;
+  .top-banner {
+    padding-bottom: 7.95vw;
+    &:after {
+      background-image: url('~@/assets/images/bg-corner-baner-bottom-gf1.png');
+    }
+    &-image {
+      text-align: center;
+      img {
+        max-width: 372px;
+      }
+    }
+  }
+
+  .trainings-overview-content {
+    margin-top: -7.95vw;
+    padding-top: 90px;
+    z-index: 2;
+  }
+
+  .pagination {
+    padding: 15px 0;
+  }
+
+  .no-result-wrapper {
+    justify-content: center;
+  }
+}
+
+@include desktop {
+  .trainings-overview-listing {
+    .top-banner-image {
+      text-align: right;
+    }
+  }
+}
+
+@include mobile {
+  .trainings-overview-listing {
+    .top-banner {
+      padding-bottom: 10vw;
+      &:after {
+        background-image: url('~@/assets/images/bg-corner-baner-bottom-gf1-mb.png');
+      }
+      &-image {
+        img {
+          max-width: 217px;
+        }
+      }
+    }
+
+    .trainings-overview-content {
+      margin-top: -10vw;
+      padding-top: 60px;
+    }
+
+    .pagination {
+      padding: 24px 0;
+    }
+  }
+}

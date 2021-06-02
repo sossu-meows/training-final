@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "banner": {
+        "image": "~@/assets/images/training-listing/training-listing-banner.png",
+        "title": "Architecture Trainings",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      },
+      "cats": [
+        { "label": "All", "value": 28 },
+        { "label": "Application", "value": 28 },
+        { "label": "Architecture", "value": 29 },
+        { "label": "Methodology", "value": 30 },
+        { "label": "Optimization", "value": 31 },
+        { "label": "Tools", "value": 32 }
+      ],
+      "training_types": [
+        { "label": "All", "value": 39 },
+        { "label": "Webinar", "value": 40 },
+        { "label": "Seminar", "value": 41 },
+        { "label": "Face2Face", "value": 42 },
+        { "label": "Shorties", "value": 43 },
+        { "label": "Video", "value": 44 },
+        { "label": "Inhouse", "value": 45 }
+      ],
+      "trainings": {
+        "current_page": 1,
+        "total_pages": 5,
+        "path": "trainings-overview-listing.html",
+        "data": [
+          {
+            "post_title": "Intensive Workshop: Crosslink NX",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course01.png"
+          },
+          {
+            "post_title": "Compact VHDL for Simulation",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course02.png"
+          },
+          {
+            "post_title": "FPGA",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course03.png"
+          },
+          {
+            "post_title": "VIVADO",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course04.png"
+          },
+          {
+            "post_title": "ASIC",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course05.png"
+          },
+          {
+            "post_title": "AXI",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course06.png"
+          },
+          {
+            "post_title": "FPGA",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course07.png"
+          },
+          {
+            "post_title": "VIVADO",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course08.png"
+          },
+          {
+            "post_title": "ASIC",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course09.png"
+          },
+          {
+            "post_title": "AXI",
+            "post_excerpt": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "url": "./trainings-overview-listing-detail.html",
+            "thumbnail": "~@/assets/images/training-listing/course10.png"
+          }
+        ]
+      }
+    },
+    "url": "http://localhost:6325/trainings-overview-listing.html"
+  }
+}

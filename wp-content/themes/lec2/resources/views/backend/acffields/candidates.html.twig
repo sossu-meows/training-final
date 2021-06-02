@@ -1,0 +1,19 @@
+{% if page_data.applications.total_posts > 0  %}
+<ul id="list_applications_content">
+    {% for app in page_data.applications.data %}
+       {{ app.custom_data.html | raw }}
+    {% endfor %}
+</ul>
+    {% if(page_data.applications.show_load_more) %}
+        <button data-url="{{ global.ajax_url }}"
+                data-query="{{ page_data.query }}"
+                data-next-page="{{ page_data.applications.next_page }}"
+                type="button"
+                id="btn_more_application"
+                class="page-title-action ">{{ "Load more" | trans }}
+        </button>
+        <img  class="btn-loadmore-icon hidden" src="{{ global.admin_url }}/images/spinner-2x.gif" >
+     {% endif %}
+{% else %}
+    <p>{{ "This job doesn't have any application" | trans }}</p>
+{%  endif %}

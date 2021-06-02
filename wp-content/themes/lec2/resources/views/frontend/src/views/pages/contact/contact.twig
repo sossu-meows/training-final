@@ -1,0 +1,52 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'contact-page',
+    jsController: 'contact',
+    headerTheme: 'gray',
+    footerType: 'white'
+  }
+%}
+
+{% block pageContent %}
+	{% include "@views/components/top-banner-title/top-banner-title.twig" with {
+    'data': {
+      'title': page_data.post_title
+    },
+    theme: 'gray'
+  } %}
+
+	<div class="contact-form-block">
+		<div class="container">
+			{% set formContent = page_data.custom_data %}
+			{% include "@views/components/contact-form/contact-form.twig" with {
+        'salutationGroup': formContent.salutation_group,
+        'titleLabel': formContent.title,
+        'firstnameLabel':formContent.firstname,
+        'lastnameLabel': formContent.lastname,
+        'companyLabel': formContent.company,
+        'divisionLabel': formContent.division,
+        'countryLabel': formContent.country,
+        'streetLabel': formContent.street,
+        'postcodeLabel': formContent.postcode,
+        'cityLabel': formContent.city,
+        'emailLabel': formContent.email,
+        'phoneLabel': formContent.phone,
+        'messageLabel': formContent.message,
+        'privacyLabel': formContent.privacy,
+        'agreementText': formContent.agreement,
+        "recaptcha": formContent.recaptcha_gg,
+        'buttonText': formContent.submit_button,
+
+      } %}
+		</div>
+	</div>
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+
+{% endblock %}

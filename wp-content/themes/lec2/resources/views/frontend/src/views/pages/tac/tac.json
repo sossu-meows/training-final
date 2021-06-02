@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "banner": {
+        "image": "~@/assets/images/tac-banner.png",
+        "title": "General Terms and Conditions (TAC) of Krassin Consulting GmbH"
+      }
+    },
+    "post_content": "<h5>1. General</h5> <p>The legal relationship between the event participant and Krassin Consulting GmbH (hereinafter referred to as “KC”) is governed by the following General Terms and Conditions in conjunction with the registration form. All services within the scope of our events are based on these “General Terms and Conditions for KC Event Participants” of KC.</p> <h5>2. Registrations and conclusion of contracts</h5> <p>You can only register via our corresponding event website. Each registration is binding for you as soon as you receive a confirmation of receipt of your registration by e-mail from our event service (time of contract conclusion). As the number of participants for our events is limited, we consider registrations in the order in which they are received. A contract is only concluded upon binding confirmation of registration by KC.</p> <h5>3. Cancellations and right of withdrawal of the organizer</h5> <p> a. For seminars/training </p><p>A confirmed registration can be cancelled by the participant in writing. In the event of cancellation or rebooking at the participant’s request up to 20 working days before the start of the seminar, we will charge a flat fee of $ 49 plus VAT, unless the participant can prove that the expense was significantly lower. In the event of cancellation up to 10 working days before the start of the seminar, 80% of the total amount will be due. After that or in case of no-show of the participant, the full seminar fee will be due. Seminar bookings are transferable upon agreement with KC. Please send rebookings and cancellations in writing to info@lec2-fpga.com.</p>"
+  }
+}

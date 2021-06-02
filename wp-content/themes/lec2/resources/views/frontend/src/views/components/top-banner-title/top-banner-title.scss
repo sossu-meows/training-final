@@ -1,0 +1,21 @@
+@import "~@/scss/base";
+
+.top-banner.top-banner-title {
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 10.5vw;
+  margin-bottom: 0;
+  text-align: center;
+
+  .top-banner-content {
+    padding-top: 0;
+  }
+
+}
+
+@include tablet-down() {
+  .top-banner.top-banner-title {
+    padding-top: 10vw;
+    padding-bottom: 20vw;
+  }
+}

@@ -1,0 +1,46 @@
+@import "~@/scss/base";
+
+.award-block {
+  padding: 18px 0 4px;
+  background: url('~@/assets/images/bg-gray-top-radius-mb.png') center top no-repeat;
+  background-size: contain;
+  .primary-title {
+    margin-bottom: 42px;
+    text-align: center;
+  }
+  .award-item {
+    margin-bottom: 22px;
+    text-align: center;
+    .award-item-image {
+      margin-bottom: 12px;
+      img {
+        max-width: 72px;
+      }
+    }
+    .award-item-title {
+      margin-bottom: 9px;
+      font-size: 1.8rem;
+      line-height: 24px;
+    }
+    .award-item-text {
+      white-space: pre-line;
+    }
+  }
+}
+
+@include tablet-up() {
+  .award-block {
+    padding: 60px 0 57px;   
+    background-image: url('~@/assets/images/bg-gray-top-radius.png');
+    background-size: 100% auto;    
+
+    .award-item {
+      .award-item-image {
+        margin-bottom: 24px;
+      }
+      .award-item-title {
+        margin-bottom: 19px;
+      }
+    }
+  }
+}

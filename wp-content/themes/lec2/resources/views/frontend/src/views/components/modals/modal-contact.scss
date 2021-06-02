@@ -1,0 +1,102 @@
+@import "~@/scss/base";
+
+.modal {
+  .modal-header {
+    position: relative;
+    border-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .close {
+      padding: 0;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      background: none;
+      outline: none;
+      margin: 0;
+      opacity: 1;
+      line-height: 1;
+      text-shadow: none;
+      color: #7F8B8C;
+      &:after {
+        @include font-icon();
+        content: '\e913';
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .modal-title {
+    color: $color-primary;
+    font-size: 3.6rem;
+    line-height: 49.03px;
+    text-align: center;
+  }
+  .modal-description {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 12px;
+  }
+  .form-group-actions {
+    a {
+      margin-left: 42px;
+      color: $color-primary;
+    }
+  }
+}
+
+@include tablet {
+  .modal-dialog {
+    max-width: 750px;
+  }
+}
+
+@include desktop {
+  .modal-dialog {
+    max-width: 984px;
+  }
+}
+
+@include mobile {
+  .modal {
+    &-dialog {
+      padding: 31px;
+    }
+    .modal-header {
+      padding: 24px;
+      .close {
+        right: 24px;
+        top: 17px;
+        &::after {
+          font-size: .9rem;
+        }
+      }
+    }
+    .modal-title {
+      font-size: 1.8rem;
+      line-height: 24.51px;
+    }
+    .modal-description {
+      font-size: 1.4rem;
+    }
+    .modal-body {
+      padding: 0 24px 24px;
+    }
+    .form-group-actions {
+      a {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@include mobile-xs {
+  .modal-dialog {
+    padding: 20px;
+    .btn {
+      min-width: unset;
+      width: 100%;
+    }
+  }
+}

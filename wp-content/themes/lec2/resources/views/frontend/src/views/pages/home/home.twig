@@ -1,0 +1,58 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'home-page',
+    jsController: 'home',
+    btnRequestClass: 'btn-outline-info',
+    headerTheme: 'dark',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set homeBanner = page_data.custom_data.home_banner %}
+
+  {% set homeBannerData = {
+      top_banner_title: homeBanner.home_title,
+      top_banner_video: page_data.custom_data.video[0].custom_data.video_file.url,
+      top_banner_video_poster: page_data.custom_data.video[0].thumbnail,
+      top_banner_description : homeBanner.home_description,
+      top_banner_subtitle: homeBanner.home_subtitle,
+    }
+  %}
+
+  {% include "@views/pages/home/includes/top-banner/top-banner.twig" with {
+    'topBannerData': homeBannerData,
+  }%}
+
+  {# {% include "@views/pages/home/includes/video/video.twig" with {
+  }%} #}
+
+  {% include "@views/components/journey-block/journey-block.twig" with {
+    'data': global.theme_options.journey,
+  }%}
+
+  {% include "@views/components/news-feed/news-feed.twig" with {
+    'data': global.theme_options.news_feed
+  }%}
+
+  {% include "@views/components/training-card/training-card.twig" with {
+    'data': page_data.custom_data.training_types,
+  }%}
+
+  {% include "@views/pages/home/includes/highlight/highlight.twig" with {
+    'data': page_data.custom_data.highlight_list,
+  }%}
+
+   {% include "@views/pages/home/includes/advantage-block/advantage-block.twig" with {
+    'data': page_data.custom_data.advantages,
+  }%}
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+
+{% endblock %}

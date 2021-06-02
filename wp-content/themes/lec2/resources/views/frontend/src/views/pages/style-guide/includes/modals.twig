@@ -1,0 +1,11 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+<section class="container">
+	<div class="section-top">
+		<h2>Modals</h2>
+	</div>
+
+	<button class="btn btn-brand" data-target="#contactForm" data-toggle="modal">Click to see modal</button>
+
+	{% include "@views/components/modals/modal-contact.twig" %}
+</section>

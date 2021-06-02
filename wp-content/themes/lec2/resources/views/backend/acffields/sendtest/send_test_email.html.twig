@@ -1,0 +1,56 @@
+<div class="acf-fields">
+
+    <div class="acf-field acf-field-email {{ page_data.data.id }}-send-test-email">
+        <div class="acf-label">
+            <label for="{{ page_data.data.id }}-send-test-email">To email</label></div>
+        <div class="acf-input">
+            <div class="acf-input-wrap">
+                <input type="email" id="{{ page_data.data.id }}-send-test-email" value="" >
+            </div>
+        </div>
+    </div>
+
+    <div class="acf-field acf-field-email {{ page_data.data.id }}-send-test-subject">
+        <div class="acf-label">
+            <label for="{{ page_data.data.id }}-send-test-subject">Subject</label></div>
+        <div class="acf-input">
+            <div class="acf-input-wrap">
+                <input type="text" id="{{ page_data.data.id }}-send-test-subject" value="Send test email" >
+            </div>
+        </div>
+    </div>
+
+    <div class="acf-field acf-field-email {{ page_data.data.id }}-send-test-message">
+        <div class="acf-label">
+            <label for="{{ page_data.data.id }}-send-test-message">Message</label></div>
+        <div class="acf-input">
+            <div class="acf-input-wrap">
+                <textarea id="{{ page_data.data.id }}-send-test-message" rows="8" spellcheck="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="acf-field acf-field-email {{ page_data.data.id }}-send-test-result">
+        <div class="acf-input">
+            <div class="acf-input-wrap">
+                <div id="{{ page_data.data.id }}-send-test-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="acf-field acf-field-email {{ page_data.data.id }}-send-test-action">
+        <span class="spinner"></span>
+        <button type="button" class="button button-primary button-large btn-send-test-email"
+                data-to-email="#{{ page_data.data.id }}-send-test-email"
+                data-subject="#{{ page_data.data.id }}-send-test-subject"
+                data-message="#{{ page_data.data.id }}-send-test-message"
+                data-result="#{{ page_data.data.id }}-send-test-result"
+                data-url="{{ global.ajax_url }}"
+        >
+            {{ page_data.data.label  }}
+        </button>
+    </div>
+
+
+
+</div>

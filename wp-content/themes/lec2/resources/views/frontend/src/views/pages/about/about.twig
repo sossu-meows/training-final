@@ -1,0 +1,62 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'about-page',
+    jsController: 'about',
+    btnRequestClass: 'btn-outline-info',
+    headerTheme: 'dark',
+    footerType: 'white'
+  }
+%}
+
+{% block pageContent %}
+	{% set about_banner = page_data.custom_data.about_banner %}
+	{% set bannerData = {
+    top_banner_title: about_banner.title,
+    top_banner_background: about_banner.image,
+    top_banner_description: about_banner.about_description,
+  } %}
+	{% include "@views/components/top-banner/top-banner.twig" with {
+    'topBannerData': bannerData,
+    classPage: 'about',
+    colContent: 'col-md-7',
+    colImage: 'col-md-5'
+  }%}
+	{% include "@views/pages/about/includes/about-block/about-block.twig" with {
+    'data': page_data.custom_data.about_list
+  }%}
+	{% include "@views/pages/about/includes/mission-block/mission-block.twig" with {
+    'data': page_data.custom_data.mission
+  }%}
+	{% include "@views/pages/about/includes/location-block/location-block.twig" with {
+    'data': page_data.custom_data.location
+  }%}
+	{#
+		{% set testimonials = page_data.custom_data.testimonials %}
+		{% set testimonialList = [] %}
+		{% for testimonial in testimonials.testimonials %}
+			{% set testimonialList = testimonialList|merge([{
+			name: testimonial.post_title,
+			image: testimonial.thumbnail,
+			description: testimonial.custom_data.testimonial_client_description,
+			position: testimonial.custom_data.testimonial_client_position,
+			}]) %}
+		{% endfor %}
+		{% set testimonialsData = {
+		title: testimonials.title,
+		testimonial_list: testimonialList,
+		} %}
+		{% include "@views/components/testimonials-block/testimonials-block.twig" with {
+		'data': testimonialsData
+		}%} #}
+	{# {% include "@views/pages/about/includes/award-block/award-block.twig" with {
+		'data': page_data.custom_data.awards
+		}%} #}
+
+{% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    theme: 'primary',
+    btnTheme: 'info',
+  }%}{% endblock %}

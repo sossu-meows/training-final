@@ -1,0 +1,38 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'trainings-overview-page',
+    jsController: 'trainings-overview',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set overview_banner = page_data.custom_data.overview_banner %}
+  {% set bannerData = {
+    top_banner_title: overview_banner.title,
+    top_banner_background: overview_banner.image,
+    top_banner_description: overview_banner.description,
+  } %}
+  {% include "@views/components/top-banner/top-banner.twig" with {
+    topBannerData: bannerData,
+    classPage: 'trainings',
+    theme: 'gray'
+  }%}
+
+  {% include "@views/components/journey-block/journey-block.twig" with {
+    'data': global.theme_options.journey,
+  }%}
+
+   {% include "@views/pages/trainings-overview/includes/trainings-format/trainings-format.twig" with {
+    'data': page_data.custom_data.training_format,
+  }%}
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

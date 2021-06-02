@@ -1,0 +1,20 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+{%
+  set viewData = {
+    bodyClass: 'style-guide-page',
+    jsController: 'style-guide',
+  }
+%}
+
+{% block pageContent %}
+  {% include "@views/pages/style-guide/includes/typography.twig" %}
+	{% include "@views/pages/style-guide/includes/buttons.twig" %}
+	{% include "@views/pages/style-guide/includes/colors.twig" %}
+  {% include "@views/pages/style-guide/includes/icons-font.twig" %}
+	{% include "@views/pages/style-guide/includes/form-elements.twig" %}
+	{% include "@views/pages/style-guide/includes/modals.twig" %}
+	{% include "@views/pages/style-guide/includes/components.twig" %}
+  {% include "@views/pages/style-guide/includes/pagination.twig" %}  
+{% endblock %}

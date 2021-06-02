@@ -1,0 +1,40 @@
+<div class="news-card-block">
+	<div class="container">
+		<h2 class="text-center">
+			{{data.title}}
+		</h2>
+		<div class="news-item-wrapper">
+			<div id="news-item-listing" class="news-item-row">
+				<div class="news-item-col mb-42" rv-each-news="newsList.items">
+					<div class="news-item">
+						<div rv-if="news.thumbnail | isEmpty" class="news-item-video">
+							<video rv-poster="news.custom_data.video.thumbnail" controls>
+								<source rv-src="news.custom_data.video.custom_data.video_file.url" type="video/mp4">
+							</video>
+							<video rv-if="news.custom_data.video.custom_data.video_file | isEmpty" rv-poster="news.custom_data.video.thumbnail" controls>
+								<source rv-src="news.custom_data.video.custom_data.video_url" type="video/mp4">
+							</video>
+						</div>
+						<div rv-if="news.thumbnail | isNotEmpty" class="news-item-image">
+							<img class="rounded-8" class="rounded-8" rv-src="news.thumbnail" rv-alt="news.post_title"/>
+						</div>
+						<div class="news-item-content">
+							<h4 class="news-item-title" rv-text="news.post_title"></h4>
+							<p class="news-item-description" rv-text="news.custom_data.short_description"></p>
+						</div>
+						<div class="news-item-link">
+							<a rv-href="news.url">{{ global.theme_options.text_translation.default_global_settings_text.more }}
+								<i class="icon-chevron-right-solid"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news-link text-center">
+			<button type="button" id="loadMore" class="btn btn-primary">
+				{{global.theme_options.text_translation.default_global_settings_buttons.read_all_news}}
+			</button>
+		</div>
+	</div>
+</div>

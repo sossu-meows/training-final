@@ -1,0 +1,35 @@
+
+@import "~@/scss/base";
+
+.trainings-overview-listing-detail-page {
+  .banner-loop-block {
+    position: relative;
+    z-index: 2;
+    margin-top: -7.9vw;
+    padding-top: 100px;
+    .banner-loop {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &.woocommerce {
+    margin-top: 0;
+  }
+}
+
+@include mobile {
+  .trainings-overview-listing-detail-page {
+    .banner-loop-block {
+      margin-top: -14.625vw;
+      padding-top: 14.625vw;
+      .banner-loop {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

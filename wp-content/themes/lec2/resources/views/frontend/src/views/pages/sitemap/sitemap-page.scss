@@ -1,0 +1,82 @@
+@import "@/scss/base.scss";
+
+.sitemap-page {
+  padding: 40px 0;
+  background-color: #eeeef4;
+
+  .cookie-message {
+    display: none;
+  }
+
+  .site-main {
+    margin-top: 40px;
+    @include mobile() {
+      margin-top: 20px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    @extend %h2;
+  }
+
+  .responsive-controls {
+    margin: 50px 0 0px;
+
+    .btn {
+      border-width: 1px;
+      min-width: 150px;
+
+      &:not(:last-child) {
+        border-right: 0;
+      }
+    }
+
+    @include mobile() {
+      .btn-group {
+        width: 100%;
+        .btn {
+          min-width: 33%;
+        }
+      }
+    }
+  }
+
+  .list-page-cards {
+    margin-top: 70px;
+    justify-content: center;
+  }
+
+  .page-card {
+    $ratio: 4/3;
+    $resolution: 1440px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 14px 0 rgba(82, 63, 105, 0.1);
+    position: relative;
+
+    &__preview {
+      @include ratio-frame($ratio);
+      overflow: hidden;
+
+      iframe {
+        position: absolute;
+        transform-origin: top left;
+        width: $resolution;
+        height: $resolution / $ratio;
+      }
+    }
+
+    &__content {
+      padding: 10px 20px;
+      text-align: center;
+      font-weight: 500;
+      background-color: #526b77;
+      color: #ffffff;
+      display: block;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

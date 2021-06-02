@@ -1,0 +1,144 @@
+@import "~@/scss/base";
+
+.top-banner {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 10vw;
+  color: $color-primary;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7.1875vw;
+    background: url('~@/assets/images/bg-corner-baner-bottom-w.png') center bottom no-repeat;
+    background-size: cover;
+  }
+  &--partners-detail {
+    &:after {
+      display: none;
+    }
+  }
+  &--default  {
+    background-color: $color-primary;
+    color: $color-white;
+    h1 {
+      color: $color-white;
+    }
+    .top-banner {
+      &-content {
+        color: $color-white;
+      }
+    } 
+  }
+  &--info  {
+    background: $info;
+    color: $color-dark;
+    h1 {
+      color: $color-dark;
+    }
+  }
+
+  &--white {
+    background: $color-white;
+  }
+
+  &--gray {
+    background: #EEECEC;
+  }
+
+  &--linear {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EEECEC;
+  }
+
+  .row {
+    align-items: center;
+  }
+  h1 {
+    font-size: 3.6rem;
+    line-height: 49px;
+    margin-bottom: 42px;
+  }
+  .subtitle {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  p {
+    @extend %lead;
+    white-space: pre-line;
+    margin-bottom: 30px;
+  }
+  &-image {
+    text-align: right;
+  }
+  &-action {
+    form {
+      display: flex;
+    }
+    .form-actions {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+    .form-group {
+      margin-bottom: 0;
+      input {
+        width: 210px;
+      }
+    }
+    .btn {
+      width: 210px;
+    }
+  }
+  &-button {
+    margin-top: 42px;
+  }
+}
+
+@include mobile() {
+  .top-banner {
+    padding-top: 35px;
+    padding-bottom: 15.625vw;
+    &:after {
+      height: 8.895vw;
+      background-image: url('~@/assets/images/bg-corner-baner-bottom-w-mb.png');
+    }
+ 
+    h1 {
+      font-size: 2.4rem;
+      line-height: 32.68px;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 1.8;
+      line-height: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    &-image {
+      text-align: center;
+      padding-top: 24px;
+      padding-left: 0;
+    }
+    &-action {
+      form {
+        flex-direction: column;
+        align-items: center;
+        .form-actions {
+          margin-left: 0;
+          margin-top: 12px;
+        }
+      }
+    }
+    &-button {
+      margin-top: 20px;
+    }
+  }
+}
+

@@ -1,0 +1,97 @@
+@import "~@/scss/base";
+
+.filter-form form {
+  margin: 0 -10px 27px;
+  display: flex;
+  flex-wrap: wrap;
+  .form-group {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 100%;
+
+    .form-control {
+      border-color: $input-placeholder-color;
+      background-color: transparent;
+    }
+    .bootstrap-select {
+      > .dropdown-toggle {
+        border-color: $input-placeholder-color;
+        background-color: transparent;
+        &:not(:disabled):not(:disabled):active,
+        &:hover {
+          background-color: transparent;
+        }
+        &:after {
+          color: $input-placeholder-color;
+        }
+      }
+      &.is-selected {
+        .filter-option-inner-inner{
+          color: $color-dark;
+        }
+      }
+    }
+    &--query {
+      position: relative;
+      &:after {
+        position: absolute;
+        right: 23px;
+        top: 13px;
+        @include font-icon();
+        content: '\e916';
+        color: $input-placeholder-color;
+      }
+    }
+    &--action {
+      .btn {
+        width: 100%;
+        min-width: unset;
+        color: $color-dark;
+      }
+    }
+  }
+}
+
+@include tablet-up {
+  .filter-block {
+    .inner {
+      max-width: 1095px;
+      .filter-form {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  .filter-form form {
+    margin-bottom: 20px;
+    .form-group {
+      &--query {
+        flex: 1;
+      }
+      &--type,
+      &--action {
+        flex-basis: 210px;
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .filter-form form {
+    margin-bottom: 20px;
+    .form-group {
+      &--action {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .filter-block {
+    .inner {
+      max-width: 250px;
+    }
+  }
+}

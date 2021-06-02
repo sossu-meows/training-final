@@ -1,0 +1,165 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  &.show-modal {
+    overflow: hidden;
+  }
+}
+
+.vs-hidden {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  @include clearfix();
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Fix iOS auto apply style font phone number
+a[href^=tel]:not(.btn) {
+  text-decoration:inherit;
+  color: inherit;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-tablet-up {
+  @include tablet-up() {
+    display: none;
+  }
+}
+
+.hidden-mobile-down {
+  @include mobile() {
+    display: none;
+  }
+}
+
+@keyframes show-languages {
+  from {
+   opacity:0;
+   -webkit-transform:translate3d(0, -5%, 0);
+   transform:translate3d(0, -5%, 0)
+  }
+  to {
+   opacity:1;
+   -webkit-transform:translate3d(0, 0, 0);
+   transform:translate3d(0, 0, 0)
+  }
+}
+
+// update slick style
+.slick-slider {
+  .slick-slide {
+    outline: none;
+    img {
+      image-rendering: -webkit-optimize-contrast;
+      filter: none;
+      -webkit-filter: blur(0px);
+    }
+  }
+
+  .slick-arrow {
+    z-index: 2;
+    width: 13px;
+    height: 20px;
+    &:before {
+      @include  font-icon();
+      color: #555;
+    }
+    &.slick-disabled {
+      pointer-events: none;
+      opacity: .5;
+    }
+    &:not(.slick-disabled) {
+      &:hover {
+        &:before {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .slick-next {
+    &:before {
+      content: "\E905";
+    }
+  }
+  .slick-prev {
+    &:before {
+      content: "\E904";
+    }
+  }
+}
+
+.bg-gradient-gray {
+  background: url('~@/assets/images/bg-gray-top-radius.png') center top no-repeat;
+  background-size: cover;
+  @include mobile {
+    background-image: url('~@/assets/images/bg-gray-top-radius-mb.png');
+    background-size: 100% auto;
+  }
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
+@include mobile {
+  .container {
+    padding-left: $grid-padding-mb;
+    padding-right: $grid-padding-mb;
+  }
+}
+
+// sweet alert
+.swal2-container {
+  .swal2-title {
+    color: $color-primary;
+    @extend %h2;
+    font-weight: 700
+  }
+  .swal2-content {
+    @extend %lead;
+    padding: 0;
+    color: $color-dark;
+    > div {
+      white-space: pre-line;
+    }
+  }
+  &--newsletter {
+    .swal2-popup {
+      width: 670px;
+      @include mobile {
+        width: 300px;
+      }
+    }
+
+    .swal2-header {
+      margin-bottom: 28px;
+    }
+
+    .swal2-styled.swal2-confirm {
+      min-width: 210px;
+      height: 40px;
+      background-color: $color-light-green;
+      font-size: 1.4rem;
+      color: $color-primary;
+      box-shadow: none;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+  }
+}

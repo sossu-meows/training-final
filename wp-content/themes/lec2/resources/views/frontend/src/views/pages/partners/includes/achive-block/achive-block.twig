@@ -1,0 +1,20 @@
+<div class="achive-block">
+  <div class="container">
+    <h3 class="text-center"> {{data.title}} </h3>
+    <div class="row row-flex">
+      {% for achiveItem in data.results %}
+        <div class="col-md-3">
+          <div class="achive-item text-center">
+            <div class="achive-item-icon">
+                <i class="{{achiveItem.icon}}"></i>
+            </div>
+            <div class="achive-item-content">
+              <h4 class="achive-item-percent">{{ achiveItem.percent }}</h4>
+              <div class="achive-item-description">{{ achiveItem.description|raw }}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

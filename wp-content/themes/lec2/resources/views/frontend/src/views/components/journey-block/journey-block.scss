@@ -1,0 +1,566 @@
+@import "~@/scss/base";
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.journey-block {
+  position: relative;
+  z-index: 2;
+  .primary-title {
+    text-align: center;
+  }
+  .inner {
+    margin-top: 19px;
+    padding-bottom: 26px;
+  }
+
+  .journey-list {
+    position: relative;
+    margin: 42px auto 0;
+    .journey-item {
+      &:hover,
+      &:active {
+        .journey-item-icon {
+          box-shadow: none;
+          &:after {
+            opacity: 1;
+            transform: scale(1);
+          }
+
+          > span {
+            transform: scale(1.5);
+          }
+        }
+      }
+      .journey-item-icon {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color-white;
+        box-shadow: 0px 10px 20px rgba(119, 119, 119, 0.2);
+        border-radius: 50%;
+        text-align: center;
+        color: $info;
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          left: -20px;
+          top: -20px;
+          right: -20px;
+          bottom: -20px;
+          opacity: 0;
+          background-color: $color-white;
+          box-shadow: 0px 4px 20px rgba(120, 203, 196, 0.4);
+          border-radius: 50%;
+          transition: all .3s;
+        }
+        > span {
+          font-size: 3.2rem;
+          line-height: 1;
+          transition: all .3s;
+          &.icon-app {
+            font-size: 3rem;
+          }
+          &.icon-car {
+            font-size: 1.5rem;
+          }
+          &.icon-car {
+            font-size: 1.5rem;
+          }
+          &.icon-setting {
+            font-size: 4rem;
+          }
+        }
+      }
+
+      &:first-child {
+        .journey-item-icon {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &:nth-child(2) {
+        .journey-item-icon {
+          width: 60px;
+          height: 60px;
+
+        }
+      }
+
+      &:nth-child(3) {
+        .journey-item-icon {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      &:nth-child(4) {
+        .journey-item-icon {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      &:nth-child(5) {
+        .journey-item-icon {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .journey-item-description {
+        // white-space: pre-line;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        // -webkit-box-orient: vertical;
+        // overflow: hidden;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 769px) {
+  .journey-block {
+    .inner {
+      margin-top: -36px;
+      padding-bottom: 48px;
+      overflow: hidden;
+    }
+    .journey-list {
+      margin-top: 160px;
+      width: 429px;
+      height: 294px;
+      background: url('~@/assets/images/bg-journey.png') right center no-repeat;
+      background-size: contain;
+
+      .journey-item {
+        display: block;
+        position: absolute;
+        text-decoration: none;
+        color: $color-dark;
+        &:first-child {
+          top: -30%;
+          left: 28%;
+          width: 360px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 63px;
+            width: 8%;
+            height: 56%;
+            background: url('~@/assets/images/dot-journey-application.svg') right center no-repeat;
+            background-size: contain;
+          }
+
+          .journey-item-inner {
+            margin-left: 62px;
+            margin-top: -15px;
+          }
+
+          &:hover {
+            .journey-item-inner {
+              margin-left: 75px;
+            }
+          }
+
+          .journey-item-icon {
+            animation-name: scale-up;
+            animation-duration: 3s;
+            animation-delay: 18s;
+          }
+        }
+        &:nth-child(2) {
+          top: -18%;
+          left: -6%;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 32px;
+            right: -22px;
+            width: 100%;
+            height: 86%;
+            background: url('~@/assets/images/dot-journey-optimization.svg') right center no-repeat;
+            background-size: contain;
+          }
+
+          .journey-item-content {
+            width: 169px;
+            margin-top: 62px;
+            margin-left: -157px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+
+          .journey-item-icon {
+            animation-name: scale-up;
+            animation-duration: 3s;
+            animation-delay: 15s;
+          }
+
+        }
+        &:nth-child(3) {
+          top: -8%;
+          right: -45%;
+          width: 400px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 90px;
+            width: 12%;
+            height: 75%;
+            background: url('~@/assets/images/dot-journey-methodology.svg') right center no-repeat;
+            background-size: contain;
+          }
+
+          .journey-item-inner {
+            margin-left: 92px;
+            margin-top: 6px;
+          }
+
+          &:hover {
+            .journey-item-inner {
+              margin-left: 106px;
+            }
+          }
+
+          .journey-item-icon {
+            animation-name: scale-up;
+            animation-duration: 3s;
+            animation-delay: 12s;
+          }
+        }
+        &:nth-child(4) {
+          top: 7%;
+          left: 16%;
+          width: 310px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 112px;
+            width: 18%;
+            height: 30%;
+            background: url('~@/assets/images/dot-journey-tools.svg') right center no-repeat;
+            background-size: contain;
+          }
+
+          .journey-item-content {
+            width: 200px;
+            margin-top: 106px;
+            margin-left: -167px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+
+          .journey-item-icon {
+            animation-name: scale-up;
+            animation-duration: 3s;
+            animation-delay: 9s;
+          }
+        }
+        &:nth-child(5) {
+          top: 23%;
+          right: -64%;
+          width: 345px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 135px;
+            width: 22%;
+            height: 100%;
+            background: url('~@/assets/images/dot-journey-architecture.svg') right center no-repeat;
+            background-size: contain;
+          }
+
+          .journey-item-inner {
+            margin-left: 134px;
+            margin-top: 26px;
+          }
+
+          &:hover {
+            .journey-item-inner {
+              margin-left: 147px;
+            }
+          }
+
+          .journey-item-icon {
+            animation-name: scale-up;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+          }
+        }
+
+        &:hover {
+          .journey-item-content {
+            // margin-top: 123px;
+          }
+        }
+
+        .journey-item-inner {
+          transition: all .3s;
+        }
+
+        .journey-item-title {
+          margin-bottom: 8px;
+        }
+        .journey-item-link {
+          color: #7BE1D1;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .journey-block {
+    overflow: hidden;
+    .journey-list {
+      background: url('~@/assets/images/bg-journey-mb.png') left center no-repeat;
+      background-size: contain;
+      width: 260px;
+      height: 522px;
+      margin-top: 125px;
+      .journey-item {
+        display: block;
+        position: absolute;
+        &:first-child {
+          top: -16%;
+          left: 88%;
+          width: 100px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 53px;
+            right: 69px;
+            width: 8%;
+            height: 75%;
+            background: url('~@/assets/images/dot-journey-application.svg') right center no-repeat;
+            background-size: contain;
+          }
+          .journey-item-content {
+            width: 265px;
+            margin-top: 3px;
+            margin-left: -275px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+        }
+        &:nth-child(2) {
+          top: -1.5%;
+          left: -13px;
+          width: 175px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 75px;
+            right: 138px;
+            width: 10%;
+            height: 68%;
+            background: url('~@/assets/images/dot-journey-optimization-mb.svg') right center no-repeat;
+            background-size: contain;
+          }
+          .journey-item-inner {
+            margin-left: 25px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: left;
+            }
+          }
+
+          .journey-item-content {
+            width: 140px;
+            margin-top: -3px;
+            margin-left: 48px;
+          }
+
+        }
+        &:nth-child(3) {
+          top: 18%;
+          right: -14%;
+          width: 100px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 86px;
+            right: 52px;
+            width: 12%;
+            height: 86%;
+            background: url('~@/assets/images/dot-journey-methodology-mb.svg') right center no-repeat;
+            background-size: contain;
+          }
+          .journey-item-content {
+            width: 126px;
+            margin-top: 0px;
+            margin-left: -138px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+        }
+        &:nth-child(4) {
+          top: 34%;
+          left: 9%;
+          width: 100px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 96px;
+            right: 40px;
+            width: 14%;
+            height: 46%;
+            background: url('~@/assets/images/dot-journey-tools-mb.svg') right center no-repeat;
+            background-size: contain;
+          }
+
+          .journey-item-inner {
+            width: 76px;
+            margin-top: 100px;
+            margin-left: -44px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+        }
+        &:nth-child(5) {
+          top: 58%;
+          right: -9%;
+          width: 185px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 79px;
+            right: 118px;
+            width: 8.5%;
+            height: 100%;
+            background: url('~@/assets/images/dot-journey-architecture-mb.svg') right center no-repeat;
+            background-size: contain;
+          }
+          .journey-item-inner {
+            margin-left: 72px;
+            margin-top: 126px;
+          }
+        }
+
+        .journey-item-content {
+
+          color: $color-dark;
+          .journey-item-title {
+            margin-bottom: 4px;
+            font-size: 1.6rem;
+            line-height: 21.79px;
+          }
+          .journey-item-description {
+            font-size: 1.2rem;
+            line-height: 16.34px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@include mobile-small {
+  .journey-block {
+    overflow: hidden;
+    .journey-list {
+      .journey-item {
+        &:first-child {
+          &:after {
+            top: 54px;
+            right: 68px;
+          }
+          .journey-item-content {
+            width: 248px;
+            margin-left: -248px;
+            margin-top: -3px;
+          }
+        }
+        &:nth-child(2) {
+          top: -2%;
+          &:after {
+            top: 77px;
+          }
+        }
+        &:nth-child(3) {
+          top: 18%;
+          right: -14%;
+          width: 100px;
+          &:after {
+            top: 85px;
+            right: 55px;
+          }
+          .journey-item-content {
+            margin-top: -4px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+        }
+        &:nth-child(4) {
+          top: 34%;
+          left: 9%;
+          width: 100px;
+          &:after {
+            top: 96px;
+            right: 40px;
+            width: 14%;
+            height: 46%;
+          }
+
+          .journey-item-inner {
+            width: 76px;
+            margin-top: 100px;
+            margin-left: -44px;
+            .journey-item-title,
+            .journey-item-description {
+              text-align: right;
+            }
+          }
+        }
+        &:nth-child(5) {
+          top: 58%;
+          right: -9%;
+          width: 185px;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 80px;
+            right: 115px;
+            width: 8.5%;
+          }
+          .journey-item-inner {
+            margin-left: 72px;
+            margin-top: 126px;
+          }
+        }
+      }
+    }
+  }
+}

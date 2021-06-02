@@ -1,0 +1,15 @@
+/.htaccess
+/.idea/
+/wp-config.php
+/wp-content/uploads/*
+/wp-content/languages/*
+/wp-content/uploads.dist/cache
+ wp-content/logs/
+/.env
+/_docker/mariadb/datadir/*
+/_docker/.env
+/_docker/nginx/conf.d/*
+_docker/nginx/logs/*
+/wp-content/themes/lec2/vendor/*
+**.DS_Store**
+Search-Replace-DB

@@ -1,0 +1,16 @@
+a {
+	color: $color-link;
+  text-decoration: none;
+
+	&:hover {
+    color: $color-link;
+    text-decoration: none;
+  }
+  &.link-block {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

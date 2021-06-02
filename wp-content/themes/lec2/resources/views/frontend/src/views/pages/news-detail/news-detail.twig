@@ -1,0 +1,43 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'news-detail-page',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% include "@views/pages/news-detail/includes/top-banner/top-banner.twig" with {
+    'data': page_data.custom_data.top_banner
+  }%}
+
+  {% if page_data.custom_data.video %}
+    {% set videoData = {
+        video_url: page_data.custom_data.video.custom_data.video_file.url,
+        thumbnail: page_data.custom_data.video.thumbnail,
+      }
+    %}
+    {% include "@views/pages/news-detail/includes/video/video.twig" with {
+      'data': videoData
+    }%}
+  {% endif %}
+
+  {% include "@views/pages/news-detail/includes/slider-image/slider-image.twig" with {
+  }%}
+
+  {% include "@views/components/banner-loop/banner-loop.twig" with {
+    'data': page_data.custom_data.news_detail_list
+  }%}
+
+  {% include "@views/components/news-feed/news-feed.twig" with {
+    'data': global.theme_options.news_feed
+  }%}
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

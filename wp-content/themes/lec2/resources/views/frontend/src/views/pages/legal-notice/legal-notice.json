@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "banner": {
+        "image": "~@/assets/images/impressum-banner.png",
+        "title": "Legal Notice"
+      }
+    },
+    "post_content": "<dl><dt><strong>Krassin Consulting GmbH</strong></dt><dd>Hugstmattweg 30 <br> 79112 Freiburg <br> Phone E. Krassin: +49 (0) 171 5471130 <br> Phone E. Hoerner: +41 (0) 76 370 89 74 <br> E-Mail: <a href='mailto:info@lec2.de'><strong> info@lec2-fpga.com  </strong> </a> <br>Internet: <a href='https://www.lec2-fpga.com'><strong> www.lec2-fpga.com </strong></a></dd></dl><dl><dt><strong>Authorized representative managing director:</strong></dt><dd>Eugen Krassin</dd></dl><dl><dt><strong>Register court:</strong></dt><dd>Amtsgericht Freiburg i. Breisgau</dd></dl><dl><dt><strong>Registration number:</strong></dt><dd>HRB 700052</dd></dl><dl><dt><strong>Person responsible for content according to §10 Absatz 3 MDStV:</strong></dt><dd>Dipl. Ing. Eugen Krassin (Adress see above)</dd></dl><p>Please note that this website follows German law and therefore the legal notice is in accordance with German legal notice obligations.</p>"
+  }
+}

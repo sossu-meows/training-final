@@ -1,0 +1,56 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+<div id="{{id}}" class="filter-schedule-form js-filter-schedule-form filter-header">
+	<form>
+		<div class="form-group-filter">
+			<div class="form-group form-group--type">
+				<!-- start: this will remove after localtion and date finish -->
+				{% set typeSelect = [] %}
+				{% for typeItem in type %}
+					{% set disabled = false %}
+					{% if typeItem.value == 'location' %}
+						{% set disabled = true %}
+					{% endif %}
+
+					{% set typeSelect = typeSelect|merge([{
+						label: typeItem.label,
+						value: typeItem.value,
+						disabled:disabled
+					}]) %}
+				{% endfor %}
+				<!-- end: this will remove after localtion and date finish -->
+				{{ forms.select({name: 'type_id', id:'type_select', classes: 'selectpicker', options: typeSelect, search: false} ) }}
+			</div>
+			<div class="form-group form-group--type location">
+				{{ forms.select({name:'location_id', id:'location', classes: 'selectpicker', options: location, search: false} ) }}
+			</div>
+			<div class="form-group form-group--type date-picker">
+				{{ forms.input({id: 'fromDatepicker', name: 'from', value:'', placeholder: fromLabel|raw, type: 'text', autocomplete: false, required: true})}}
+			</div>
+			<div class="form-group form-group--type date-picker">
+				{{ forms.input({id: 'toDatepicker', name: 'to', value:'', placeholder: toLabel|raw, type: 'text', autocomplete: false, required: true})}}
+			</div>
+			<div class="form-group form-group--type keyword">
+				{{ forms.input({id: 'keyword', name: 'keyword', value:'', placeholder: keywordLabel|raw, type: 'text', autocomplete: false})}}
+			</div>
+		</div>
+		<div class="form-group  form-group--action">
+			<button type="submit" class="btn btn-info">{{buttonFilterText|raw}}</button>
+		</div>
+	</form>
+	<div class="filter-header__content">
+		<div class="course-item-listing">
+			<div class="course-item" rv-each-item="courseListSchedule.items">
+				<h5 rv-text="item.post_title"></h5>
+				<div class="course-item-content">
+					<div class="course-item-left">
+						<a class="course-item-infor-link" rv-href="item.infor_url">{{global.theme_options.text_translation.default_global_settings_text.more_information}}
+							<i class="icon-chevron-right-solid"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pagination-schedule"  class="pagination-header"></div>
+	</div>
+</div>

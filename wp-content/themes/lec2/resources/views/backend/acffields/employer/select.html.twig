@@ -1,0 +1,6 @@
+<select id="{{ page_data.data.key }}" name="{{  page_data.data.name }}">
+    <option value="" >{{ "Select employer" | trans }}</option>
+    {% for user in page_data.data.choices %}
+        <option value="{{ user.value}}" {{ user.is_selected }}>{{ user.text }}</option>
+    {% endfor %}
+</select>

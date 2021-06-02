@@ -1,0 +1,25 @@
+{% if data.journey_categories %}
+<section class="journey-block js-journey-block">
+	<div class="container journey-block-container">
+		<div class="inner">
+			<h2 class="primary-title">{{ data.journey_title }}</h2>
+      <p class="lead text-center">{{ data.journey_desc | raw }}</p>
+			<div class="journey-list">
+        {% for journeyItem in data.journey_categories | reverse %}
+          <a href="{{data.journey_link}}" class="journey-item" data-index="?search=&training_cat_id={{journeyItem.category.term_id}}">
+            <div class="journey-item-inner">
+              <div class="journey-item-icon">
+                <span class="{{journeyItem.icon}}"></span>
+              </div>
+              <div class="journey-item-content">
+                <h4 class="journey-item-title">{{ journeyItem.category.name }}</h4>
+                <div class="journey-item-description">{{ journeyItem.category.description|raw }}</div>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}

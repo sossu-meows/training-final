@@ -1,0 +1,59 @@
+<header class="site-header {{ viewData.headerTheme ? ' site-header--'~ viewData.headerTheme: ''}}">
+	<div class="header-inner">
+		<div class="header-left">
+			<a href="{{global.home_url}}" title="{{ global.theme_options.page_title }}">
+				<img src="{{ global.theme_options.website.header_logo }}" alt="{{ global.blog_name }}" class="logo logo-dark">
+				<img src="{{ global.theme_options.website.white_header_logo }}" alt="{{ global.blog_name }}" class="logo logo-white">
+			</a>
+		</div>
+		<div class="header-right">
+			<button class="menu-toggle" data-href="#header-nav" id="menu-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div id="header-nav">
+				<div class="menu-mobile">
+					<div class="header-menu">
+						{% include "@views/components/menu/menu.twig" %}
+					</div>
+					<div class="header-action">
+						<a href="{{global.theme_options.links.trainings_overview_listing_link}}" class="header-write btn" data-custom-modal="#shortiesForm" data-show="right">{{ global.theme_options.text_translation.default_global_settings_text.default_global_settings_shorties }}<em class="icon-caret-down"></em></a>
+						<button class="header-request btn {{viewData.btnRequestClass|default('btn-primary')}}" data-toggle="modal" data-target="#contactForm">{{ global.theme_options.text_translation.default_global_settings_text.default_global_settings_we_are_hiring }}</button>
+					</div>
+					<div class="header-socials d-lock d-lg-none">
+						{% include "@views/components/socials/socials.twig" with {
+							socials: global.theme_options.footer_menu_website.footer_social_networks
+						} %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+{% include "@views/components/filter-shorties/filter-shorties.twig" with {
+	id: "shortiesForm",
+	trainingCat: global.filter_shorties,
+	buttonFilterText: global.theme_options.text_translation.default_global_settings_buttons.filter,
+}%}
+
+{% include "@views/components/filter-schedule/filter-schedule.twig" with {
+	id: "scheduleForm",
+	type: global.filter_schedule.types,
+	fromLabel: global.theme_options.text_translation.default_global_settings_text.from_text,
+	toLabel: global.theme_options.text_translation.default_global_settings_text.to_text,
+	location: global.filter_schedule.location,
+	keywordLabel: global.theme_options.text_translation.default_global_settings_text.keyword_text,
+	buttonFilterText: global.theme_options.text_translation.default_global_settings_buttons.filter,
+}%}
+
+{% include "@views/components/filter-modules/filter-modules.twig" with {
+	id: "filterModules",
+	action: global.theme_options.journey.journey_link,
+	typeLabel: global.theme_options.text_translation.default_global_settings_text.typeText,
+	formatLabel: global.theme_options.text_translation.default_global_settings_text.formatText,
+  keywordLabel: global.theme_options.text_translation.default_global_settings_text.keyword_text,
+	trainingCat: global.filter_modules.training_cat,
+	trainingType: global.filter_modules.training_type,
+	buttonText: global.theme_options.text_translation.default_global_settings_buttons.show_trainings
+}%}

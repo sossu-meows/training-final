@@ -1,0 +1,5 @@
+<select name="{{ page_data.name }}" id="{{ page_data.name }}" class="">
+    {% for key,  item in  page_data.list_filter %}
+        <option {% if key == page_data.selected %} selected {% endif %} value="{{ key }}"> {{ item }}</option>
+    {% endfor %}
+</select>

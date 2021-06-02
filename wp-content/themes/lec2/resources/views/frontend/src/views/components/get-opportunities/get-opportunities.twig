@@ -1,0 +1,13 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+<div class="get-opportunities-block {{theme}}">
+	<div class="container">
+		<h2>{{ global.theme_options.form_offer.title }}</h2>
+		<div class="get-opportunities-description">
+      {{global.theme_options.form_offer.description}}
+		</div>
+    {% include "@views/components/get-offer-form/get-offer-form.twig" with {
+      btnTheme: btnTheme,
+    }%}
+	</div>
+</div>

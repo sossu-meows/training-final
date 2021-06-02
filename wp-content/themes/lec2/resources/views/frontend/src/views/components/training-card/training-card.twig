@@ -1,0 +1,41 @@
+{% if data.training_list %}
+	<div class="training-block js-training-card">
+		<div class="container">
+			<h2>{{ data.title | content |raw }}</h2>
+			<div class="training-list row">
+				{% for trainingItem in data.training_list %}
+					<div class="col-lg-6">
+						<a class="training-item" href="{{global.theme_options.journey.journey_link}}" data-index="?search=&training_type_id={{trainingItem.training_type.ID}}">
+							<div class="training-img">
+								<img class="rounded-8" src="{{ trainingItem.training_type.thumbnail }}" alt="{{ trainingItem.training_type.post_title }}"/>
+							</div>
+							<div class="training-content">
+								<h4 class="training-title">
+									{{ trainingItem.training_type.post_title }}
+								</h4>
+								<p class="training-description">
+									{{ trainingItem.content|raw }}
+								</p>
+								<div class="training-cost">{{ global.theme_options.text_translation.default_global_settings_text.cost }}:
+									<strong>
+										{{trainingItem.cost|raw}}
+									</strong>
+								</div>
+								<div class="training-format">{{ global.theme_options.text_translation.default_global_settings_text.format }}:
+									<strong>
+										{{trainingItem.format|raw}}
+									</strong>
+								</div>
+								<div class="training-time">{{ global.theme_options.text_translation.default_global_settings_text.duration }}:
+									<strong>
+										{{trainingItem.time|raw}}
+									</strong>
+								</div>
+							</div>
+						</a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endif %}

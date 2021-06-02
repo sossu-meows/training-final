@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "partners_banner": {
+        "partner_image": "~@/assets/images/partners/partner-banner.png",
+        "title": "Partner with Lattice",
+        "partner_description": "We don’t only want to invest in knowledge and fulfill the customers and developers needs – we want to give a platform to you as partner as well. We’re already teaming up with great names and experienced partners. If you need a platform – join us and benefit form a variety of advantages. We welcome you!",
+        "isButton": true,
+        "buttonText": "Become a partner"
+      },
+      "partners_section": {
+        "title": "Our Partners",
+        "partner_list": [
+          {
+            "thumbnail": "./assets/images/partners/our-partner01.png",
+            "url": "partners-detail.html",
+            "post_title": "TRIAS Microelectronik GmbH",
+            "custom_data": {
+              "partners_short_description": "",
+              "url": "partners-detail.html"
+            }
+          },
+          {
+            "thumbnail": "./assets/images/partners/our-partner02.png",
+            "url": "partners-detail.html",
+            "post_title": "TED Conference",
+            "custom_data": {
+              "partners_short_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."
+            }
+          },
+          {
+            "thumbnail": "./assets/images/partners/our-partner03.png",
+            "url": "partners-detail.html",
+            "post_title": "Trenz Electronic GmbH",
+            "custom_data": {
+              "partners_short_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+              "url": "partners-detail.html"
+            }
+          },
+          {
+            "thumbnail": "./assets/images/partners/our-partner04.png",
+            "url": "partners-detail.html",
+            "post_title": "TED Conference",
+            "custom_data": {
+              "partners_short_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+              "url": "partners-detail.html"
+            }
+          },
+          {
+            "thumbnail": "./assets/images/partners/our-partner05.png",
+            "url": "partners-detail.html",
+            "post_title": "El Camino GmbH",
+            "custom_data": {
+              "partners_short_description": "",
+              "url": "partners-detail.html"
+            }
+          },
+          {
+            "thumbnail": "./assets/images/partners/our-partner06.png",
+            "url": "partners-detail.html",
+            "post_title": "Deep Safety GmbH",
+            "custom_data": {
+              "partners_short_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+              "url": "partners-detail.html"
+            }
+          },
+          {
+            "thumbnail": "./assets/images/partners/our-partner07.png",
+            "url": "partners-detail.html",
+            "post_title": "Arrow Central Europe GmbH",
+            "custom_data": {
+              "partners_short_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."
+            }
+          }
+        ]
+
+      },
+      "benefit_section": {
+        "title": "Your advantages to partner up with LEC2",
+        "description": "<h4>Single Access Point</h4><p>Use one platform for all Lattice related education services</p><h4>Management, Organization and Logistics Marketing</h4><p>Gain visibility and exposure through our website, congresses and exhibitions, promotion through newsletters, press and social media </p><h4>Exchange ideas with experts and use the synergies</h4><h4>Customer contacts and lead generation Certification Program</h4>",
+        "image": "~@/assets/images/partners/partner01.png"
+      },
+      "service_section": {
+        "title": "300 000 + customer club",
+        "description": "<p> Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.</p> <p>Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>",
+        "image": "~@/assets/images/partners/partner02.png"
+      },
+      "values_section": {
+        "title": "Why clients choose Lettice?",
+        "description": "<h4>Global</h4><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p><h4>Appealing</h4><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p><h4>Productive</h4><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p><h3>",
+        "image": "~@/assets/images/partners/partner03.png"
+      },
+      "achive_results": {
+        "title": "Achive higher results together",
+        "results": [
+          {
+            "icon": "icon-verified",
+            "percent": "+10%",
+            "description": "<p>customer retention</p>"
+          },
+          {
+            "icon": "icon-verified",
+            "percent": "+10%",
+            "description": "<p>customer retention</p>"
+          },
+          {
+            "icon": "icon-hourglass-empty",
+            "percent": "+10%",
+            "description": "<p>customer retention</p>"
+          },
+          {
+            "icon": "icon-hourglass-empty",
+            "percent": "+10%",
+            "description": "<p>customer retention</p>"
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Voices from our partners",
+        "testimonials": [
+          {
+            "post_title": "Trenz Electronic",
+            "thumbnail": "~@/assets/images/partners/our-partner01.png",
+            "custom_data": {
+              "testimonial_client_position": "LEC2 Partner",
+              "testimonial_client_description": "“As an experienced manufacturer of Lattice modules, we are excited about the new LEC2 education platform and supporting the training for Lattice FPGAs with our know-how in hardware design. These both components complement each other very well and provide to the customer a complete package to get started with his own design.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/partners/our-partner02.png",
+            "custom_data": {
+              "testimonial_client_position": "LEC2 Partner",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/partners/our-partner03.png",
+            "custom_data": {
+              "testimonial_client_position": "Trenz Electronic",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/partners/our-partner04.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/partners/our-partner05.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/partners/our-partner06.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/partners/our-partner07.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          }
+        ]
+      },
+      "join_with_us": {
+        "title": "Join our partner network!",
+        "description": "<p>We cooperate with many partners from various industries and offer a worldwide partner network of experts. So don't wait, become a part of this network and benefit from synergies!</p>",
+        "button_title": "Become a Partner",
+        "link": "#"
+      }
+    }
+  }
+}

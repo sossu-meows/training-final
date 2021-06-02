@@ -1,0 +1,9 @@
+{
+  "scripts": [
+    "js/app.js?v=913214a4e9ebed813648"
+  ],
+  "styles": [
+    "styles/app.css?v=946166e658de2d194e47",
+    "styles/style.css?v=70b4b65cde8db4205d13"
+  ]
+}

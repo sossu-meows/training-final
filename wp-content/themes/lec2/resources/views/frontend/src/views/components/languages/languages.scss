@@ -1,0 +1,86 @@
+@import "~@/scss/base";
+
+.language-box {
+  position: relative;
+  .btn-language {
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #7F828C;
+    white-space: nowrap;
+    @include roboto();
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      font-size: 2.4rem;
+    }    
+  }
+
+  &:hover {
+    .language-dropdown {
+      display: block;
+      animation: show-languages .25s ease-out forwards;
+    }
+  }
+
+  .language-dropdown {
+    width: 160px;
+    padding-bottom: 20px;
+    left: 50%;
+    margin-left: -80px;
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    transition: 0.25s all;    
+
+    ul {
+      background-color: $color-white;
+      border-radius: 5px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      &:after {
+        content: "";
+        box-shadow: 0 2px 20px rgba(0,0,0,.1);
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #fff;
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 13px;
+        left: 73px;
+      }
+
+      li {
+        a {
+          display: block;
+          padding: 10px;
+          @include roboto();
+        }
+
+        &:first-child a{
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+
+        &:last-child a{
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+
+        &:hover a{
+          background-color: $color-white;
+          color: $color-primary;
+        }
+
+        &.active a{
+          background-color: $color-main;;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

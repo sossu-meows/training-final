@@ -1,0 +1,133 @@
+@import "~@/scss/base";
+
+.banner-block {
+  position: relative;
+
+  .banner-item {
+    padding-top: 32px;
+    padding-bottom: 35px;
+    color: $color-white;
+    &-image {
+      padding-bottom: 32px;
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+    }
+    &-text {
+      @extend %lead;
+      *:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 32px;
+        margin-bottom: 8px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &-title {
+      margin-bottom: 32px;
+    }
+  }
+  &--primary {
+    background-color: $color-primary;
+  }
+  &--info {
+    background-color: $info;
+    .banner-item-content {
+      color: $color-dark;
+    }
+  }
+  &--transparent {
+    background-color: transparent;
+    .banner-item {
+      color: $color-dark;
+      &-title {
+        margin-bottom: 12px;
+      }
+      &-text {
+        h4 {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop() {
+  .banner-block {
+    .banner-item {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-left: -12px;
+      margin-right: -12px;
+      &-image,
+      &-content {
+        padding: 0 12px;
+      }
+      &-image {
+        margin-bottom: 0;
+        flex: 1 52%;
+        width: 52%;
+        img {
+          min-height: 100%;
+        }
+      }
+      &-content {
+        flex: 1 48%;
+        width: 48%;
+      }
+      &-title {
+        margin-bottom: 32px;
+      }
+      &-text {
+        h4 {
+          margin-top: 35px;
+        }
+      }
+      &.right {
+        flex-direction: row-reverse;
+        .banner-item-image {
+          margin-bottom: 0;
+          flex-basis: 48%;
+          width: 48%;
+        }
+        .banner-item-content {
+          flex-basis: 51%;
+          width: 51%;
+        }
+      }
+      &.center {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@include tablet-down {
+  .banner-block {
+    .banner-item-image img {
+      max-height: 300px;
+    }
+  }
+}
+
+@include breakpoint($min: $breakpoint-xl) {
+  .banner-block {
+    .banner-item {
+      margin-left: -27px;
+      margin-right: -27px;
+      &-image {
+        padding: 0 27px;
+      }
+      &-content {
+        padding: 0 27px;
+      }
+    }
+  }
+}

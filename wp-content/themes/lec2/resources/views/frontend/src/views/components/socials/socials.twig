@@ -1,0 +1,9 @@
+{% if socials %}
+<div class="socials">
+  {% for social in socials %}
+    <a href="{{social.footer_social_network_url}}" target="_blank" rel="noopener" title="{{social.footer_socical_network_title}}">
+      <i class="icon {{social.footer_socical_network_icon_font}}"></i>
+    </a>
+  {% endfor %}
+</div>
+{% endif %}

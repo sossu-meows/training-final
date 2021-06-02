@@ -1,0 +1,16 @@
+<div class="award-block">
+	<div class="container">
+    <h2 class="primary-title">{{ data.title }}</h2>
+    <div class="award-list row">
+      {% for awardItem in data.awards %}
+        <div class="col-md-4 award-item">
+          <div class="award-item-image">
+            <img class="rounded-8" src="{{ awardItem.image }}" alt="{{ awardItem.title }}"/>
+          </div>
+          <h4 class="award-item-title">{{ awardItem.title }}</h4>
+          <div class="award-item-text">{{ awardItem.content|raw }}</div>
+        </div>
+      {% endfor %}
+    </div>
+	</div>
+</div>

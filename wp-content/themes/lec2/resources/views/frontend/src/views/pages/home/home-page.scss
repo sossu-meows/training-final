@@ -1,0 +1,93 @@
+@import "~@/scss/base";
+
+.home-page {
+  .news-feed-block {
+    margin-top: 80px;
+    margin-bottom: 64px;
+  }
+  .journey-block {
+    background: url('~@/assets/images/bg-gray-top-radius.png') top no-repeat;
+    background-size: cover;
+    margin-top: -7.5vw;
+    padding-top: 100px;
+  }
+  .training-block {
+    margin-bottom: 100px;
+    padding-top: 60px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      top: 0;
+      width: 100%;
+      bottom: 180px;
+      background: $info;
+    }
+    h2 {
+      margin-bottom: 52px;
+      color: $color-black;
+    }
+  }
+
+  .get-opportunities-block {
+    padding-top: 44px;
+    padding-bottom: 43px;
+  }
+
+  @include desktop {
+    .top-banner-image img {
+      max-width: 480px;
+    }
+  }
+
+  @include tablet {
+    .top-banner {
+      padding-bottom: 10vw;
+    }
+  }
+
+  @include mobile {
+    .top-banner {
+      padding-top: 35px;
+      padding-bottom: 19.375vw;
+      .top-banner-image {
+        padding-top: 29px;
+        img {
+          max-width: 280px;
+        }
+      }
+    }
+    .journey-block {
+      background-image: url('~@/assets/images/bg-gray-top-radius-mb.png');
+      margin-top: -12vw;
+      padding-top: 5.8vw;
+      background-size: contain;
+    }
+
+    .news-feed-block {
+      margin-top: 17px;
+      margin-bottom: 36px;
+    }
+
+    .bg-gradient-gray--service {
+      background-image: none;
+    }
+
+    .get-opportunities-block {
+      padding-top: 28px;
+      padding-bottom: 37px;
+    }
+
+    .training-block {
+      padding-top: 24px;
+      margin-bottom: 24px;
+      h2 {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div class="room-reservation col-md-12">
+	<h4>Room reservation</h4>
+	<div class="row">
+		<div class="col-md-6 col-item">
+			<div class="form-group">
+				<div class="form-field">
+					{{ forms.input({id: 'arrivalDatepicker', name: 'arrivalDatepicker', requireOption: true, value:'', placeholder: arrivalLabel|raw, type: 'text', autocomplete: false, required: true})}}
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-item">
+			<div class="form-group">
+				<div class="form-field">
+					{{ forms.input({id: 'departureDatepicker', name: 'departureDatepicker', requireOption: true, value:'', placeholder: departureLabel|raw, type: 'text', autocomplete: false, required: true})}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

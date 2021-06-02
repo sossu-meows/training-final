@@ -1,0 +1,232 @@
+{
+  "metadata":{
+     "state":"guest"
+  },
+  "page_data":{
+     "post_title":"Intensive Workshop: VHDL for Simulation",
+     "post_content":"<p>VHDL is a strongly typed hardware description language which prohibits typical programming mistakes in the coding phase. Usually, VHDL is used on the register transfer level (RTL) to design digital circuits of any complexity. Apart from the language constructs for synthesis, VHDL offers a wide range of functionality to describe complex verification models.</p> <p>With recourse to already well-known VHDL language features, this LEC2 intensive workshop will deepen the knowledge in VHDL and enable the attendee to create simulations with the VHDL testbench concept.</p>",
+     "thumbnail":"~@/assets/images/training-detail/training-detail-banner.png",
+     "custom_data":{
+        "training_overview_list":[
+           {
+              "content":"<p>VHDL is a strongly typed hardware description language which prohibits typical programming mistakes in the coding phase. Usually, VHDL is used on the register transfer level (RTL) to design digital circuits of any complexity.</p><p>Apart from the language constructs for synthesis, VHDL offers a wide range of functionality to describe complex verification models. Thus, it is possible verify digital designs from simple gate up to complex System-on-Chip (SoC) </p>",
+              "image":"~@/assets/images/training-detail/training-detail01.png",
+              "title":"VHDL"
+           },
+           {
+              "content":"<p>This face-to-face training will teach the synthesis relevant aspects of the VHDL hardware description language based on the IEEE Std. 1076-2008 language revision including basic introduction to Test Benches. The theoretical knowledge will be deepened with selected examples and labs on PC.</p> <p>Experienced TRIAS engineers support our customers with technical details, and provide consulting and other services related to our solutions. </p> <p>A basic knowledge in digital circuit design (gates, multiplexers, flip-flops, memories), as well as the understanding of basic principles of scripting or programming languages are welcome.</p> <p> The theoretical content is supplemented by exercises presented by the trainer and carried out by the participant. </p>",
+              "image":"~@/assets/images/training-detail/training-detail02.png"
+           }
+        ],
+        "training_types":[
+           {
+              "ID":833,
+              "post_title":"Face2Face",
+              "format":"Conference Hotel or our Training Center",
+              "execution_of_training_select":[
+                 {
+                    "value":"live_video",
+                    "label":"Live Course",
+                    "cost":"Free",
+                    "url":"http://localhost:6325/trainings-overview-listing-detail.html#live_video"
+                 },
+                 {
+                    "value":"recorded_video",
+                    "label":"Recorded Video",
+                    "cost":"99 € per Shorty",
+                    "url":"http://localhost:6325/trainings-overview-listing-detail.html"
+                 }
+              ],
+              "time_select":[
+              ],
+              "no_time": {"label" : "No date provided yet"},
+              "duration":" 5 days",
+              "participant_documents_provided":"Work Book with all presentations, Lab Book to be used for exercises",
+              "course_objectives":"<ul>\n<li>Vision: Learn an all parallel computer language to describe digital circuits Vision: Learn an all parallel computer language to describe digital circuits Vision: Learn an all parallel computer language to describe digital circuits</li>\n<li>Learn VHDL-2008 language constructs mainly for synthesis Learn VHDL-2008 language constructs mainly for synthesis</li>\n<li>Understand parallel execution model</li>\n<li>Create digital circuit descriptions for FPGAs</li>\n<li>Run the synthesis and implementation tool flow in Lattice Radiant / Diamond Software</li>\n<li>Introduction to Test Benches</li>\n<li>Experience coding style, re-use and maintainability with VHDL extensive Demonstrations, Labs and Exercises</li>\n</ul>\n",
+              "agenda":{
+                 "title":"Agenda",
+                 "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+                 "agenda_left":"<h4>VHDL Concept and Design Units:</h4>\n<ul>\n<li>Design Paradigm Design Paradigm Design Paradigm Design Paradigm Design Paradigm Design Paradigm</li>\n<li>Libraries and compiled units</li>\n<li>Packages</li>\n<li>Entity</li>\n<li>Architecture</li>\n<li>Configuration</li>\n<li>Test Bench and Simulation</li>\n</ul>\n<h4>Data Types:</h4>\n<ul>\n<li>Scalar</li>\n<li>Complex Types</li>\n<li>Sub Types and Aliases</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Naming Conventions and Declarations</h4>\n<h4 class=\"mb\">Statements and Assignments</h4>\n<h4>Sequential Statements:</h4>\n<ul>\n<li>Statements</li>\n<li>Sub Programs</li>\n</ul>\n<h4>Signals:</h4>\n<ul>\n<li>Declaration</li>\n<li>Signal Assignments inside Processes</li>\n<li>Implicitly Signal Type Resolution and Bus Driver</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Concurrent Statements</h4>\n<h4>Structural Descriptions:</h4>\n<ul>\n<li>Hierarchical Descriptions</li>\n<li>Use of Packages</li>\n<li>Configurations</li>\n<li>Generics</li>\n<li>Structural Statements</li>\n</ul>\n",
+                 "agenda_right":"<h4>Libraries and Packages:</h4>\n<h5>Packages</h5>\n<ul>\n<li>STD_LOGIC_1164</li>\n<li>Unsigned</li>\n<li>Fixed Point Package</li>\n<li>Floating Point Package</li>\n</ul>\n<h5 class=\"mb\">Libraries</h5>\n<h4>Test Bench:</h4>\n<ul>\n<li>Introduction to Test Benches</li>\n<li>Types of Test Benches</li>\n<li>Example</li>\n</ul>\n<h4>Labs:</h4>\n<ul>\n<li>Simple Counter</li>\n<li>Finite State Machines</li>\n<li>UART</li>\n<li>Fixed Point / Floating Point Arithmetic</li>\n</ul>\n<h4>Applicable Technologies:</h4>\n<ul>\n<li>VHDL-2008, all Lattice Semiconductor FPGAs and CPLDs</li>\n</ul>\n<h4>Software / Hardware used:</h4>\n<ul>\n<li>Lattice Semiconductor Radiant Design Software</li>\n<li>Lattice Semiconductor CrossLink-NX Evaluation Board or<br />\nsimilar</li>\n</ul>\n<h4>Prerequisites:</h4>\n<ul>\n<li>Basic knowledge in digital circuit design</li>\n</ul>\n"
+              },
+              "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "pdf_file":"assets/images/dummy.pdf",
+              "thumbnail":"~@/assets/images/training-detail/training-type03.png"
+           },
+           {
+              "ID":836,
+              "post_title":"Shorties",
+              "format":"Conference Hotel or our Training Center",
+              "execution_of_training_select":[
+                 {
+                    "value":"live_video",
+                    "label":"Live Course",
+                    "cost":"Free",
+                    "url":"http://localhost:6325/trainings-overview-listing-detail.html#live_video"
+                 },
+                 {
+                    "value":"recorded_video",
+                    "label":"Recorded Video",
+                    "cost":"99€ per Shorty",
+                    "url":"http://localhost:6325/trainings-overview-listing-detail.html"
+                 }
+              ],
+              "time_select":[
+                 {
+                    "label":"17 June 2021 - 12:00",
+                    "value":"17 June 2021 - 12:00"
+                 },
+                 {
+                    "label":"18 June 2021 - 12:00",
+                    "value":"18 June 2021 - 12:00"
+                 },
+                 {
+                    "label":"19 June 2021 - 12:00",
+                    "value":"19 June 2021 - 12:00"
+                 }
+              ],
+              "no_time":false,
+              "duration":"5 days",
+              "participant_documents_provided":"Work Book with all presentations, Lab Book to be used for exercises",
+              "course_objectives":"<ul>\n<li>Vision: Learn an all parallel computer language to describe digital circuits</li>\n<li>Learn VHDL-2008 language constructs mainly for synthesis</li>\n<li>Understand parallel execution model</li>\n<li>Create digital circuit descriptions for FPGAs</li>\n<li>Run the synthesis and implementation tool flow in Lattice Radiant / Diamond Software</li>\n<li>Introduction to Test Benches</li>\n<li>Experience coding style, re-use and maintainability with VHDL extensive Demonstrations, Labs and Exercises</li>\n</ul>\n",
+              "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "agenda":{
+                 "title":"Agenda",
+                 "agenda_description":"Shorties",
+                 "agenda_left":"<h4>VHDL Concept and Design Units:</h4>\n<ul>\n<li>Design Paradigm</li>\n<li>Libraries and compiled units</li>\n<li>Packages</li>\n<li>Entity</li>\n<li>Architecture</li>\n<li>Configuration</li>\n<li>Test Bench and Simulation</li>\n</ul>\n<h4>Data Types:</h4>\n<ul>\n<li>Scalar</li>\n<li>Complex Types</li>\n<li>Sub Types and Aliases</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Naming Conventions and Declarations</h4>\n<h4 class=\"mb\">Statements and Assignments</h4>\n<h4>Sequential Statements:</h4>\n<ul>\n<li>Statements</li>\n<li>Sub Programs</li>\n</ul>\n<h4>Signals:</h4>\n<ul>\n<li>Declaration</li>\n<li>Signal Assignments inside Processes</li>\n<li>Implicitly Signal Type Resolution and Bus Driver</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Concurrent Statements</h4>\n<h4>Structural Descriptions:</h4>\n<ul>\n<li>Hierarchical Descriptions</li>\n<li>Use of Packages</li>\n<li>Configurations</li>\n<li>Generics</li>\n<li>Structural Statements</li>\n</ul>\n",
+                 "agenda_right":"<h4>Libraries and Packages:</h4>\n<h5>Packages</h5>\n<ul>\n<li>STD_LOGIC_1164</li>\n<li>Unsigned</li>\n<li>Fixed Point Package</li>\n<li>Floating Point Package</li>\n</ul>\n<h5 class=\"mb\">Libraries</h5>\n<h4>Test Bench:</h4>\n<ul>\n<li>Introduction to Test Benches</li>\n<li>Types of Test Benches</li>\n<li>Example</li>\n</ul>\n<h4>Labs:</h4>\n<ul>\n<li>Simple Counter</li>\n<li>Finite State Machines</li>\n<li>UART</li>\n<li>Fixed Point / Floating Point Arithmetic</li>\n</ul>\n<h4>Applicable Technologies:</h4>\n<ul>\n<li>VHDL-2008, all Lattice Semiconductor FPGAs and CPLDs</li>\n</ul>\n<h4>Software / Hardware used:</h4>\n<ul>\n<li>Lattice Semiconductor Radiant Design Software</li>\n<li>Lattice Semiconductor CrossLink-NX Evaluation Board or similar</li>\n</ul>\n<h4>Prerequisites:</h4>\n<ul>\n<li>Basic knowledge in digital circuit design</li>\n</ul>\n"
+              },
+              "pdf_file":"assets/images/dummy.pdf",
+              "thumbnail":"~@/assets/images/training-detail/training-type04.png"
+           },
+           {
+              "ID":837,
+              "post_title":"Online",
+              "format":"Video (link will be available after purchase)",
+              "execution_of_training_select":[
+              ],
+              "time_select":[
+                 {
+                    "label":"17 Oct 2021 - 12:00",
+                    "value":"17 Oct 2021 - 12:00"
+                 },
+                 {
+                    "label":"18 Oct 2021 - 12:00",
+                    "value":"18 Oct 2021 - 12:00"
+                 },
+                 {
+                    "label":"19 Oct 2021 - 12:00",
+                    "value":"19 Oct 2021 - 12:00"
+                 }
+              ],
+              "no_time":false,
+              "duration":"5 days",
+              "participant_documents_provided":"Work Book with all presentations, Lab Book to be used for exercises",
+              "course_objectives":"<ul>\n<li>Vision: Learn an all parallel computer language to describe digital circuits</li>\n<li>Learn VHDL-2008 language constructs mainly for synthesis</li>\n<li>Understand parallel execution model</li>\n<li>Create digital circuit descriptions for FPGAs</li>\n<li>Run the synthesis and implementation tool flow in Lattice Radiant / Diamond Software</li>\n<li>Introduction to Test Benches</li>\n<li>Experience coding style, re-use and maintainability with VHDL extensive Demonstrations, Labs and Exercises</li>\n</ul>\n",
+              "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "agenda":{
+                 "title":"Agenda",
+                 "agenda_description":"Videos",
+                 "agenda_left":"<h4>VHDL Concept and Design Units:</h4>\n<ul>\n<li>Design Paradigm</li>\n<li>Libraries and compiled units</li>\n<li>Packages</li>\n<li>Entity</li>\n<li>Architecture</li>\n<li>Configuration</li>\n<li>Test Bench and Simulation</li>\n</ul>\n<h4>Data Types:</h4>\n<ul>\n<li>Scalar</li>\n<li>Complex Types</li>\n<li>Sub Types and Aliases</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Naming Conventions and Declarations</h4>\n<h4 class=\"mb\">Statements and Assignments</h4>\n<h4>Sequential Statements:</h4>\n<ul>\n<li>Statements</li>\n<li>Sub Programs</li>\n</ul>\n<h4>Signals:</h4>\n<ul>\n<li>Declaration</li>\n<li>Signal Assignments inside Processes</li>\n<li>Implicitly Signal Type Resolution and Bus Driver</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Concurrent Statements</h4>\n<h4>Structural Descriptions:</h4>\n<ul>\n<li>Hierarchical Descriptions</li>\n<li>Use of Packages</li>\n<li>Configurations</li>\n<li>Generics</li>\n<li>Structural Statements</li>\n</ul>\n",
+                 "agenda_right":"<h4>Libraries and Packages:</h4>\n<h5>Packages</h5>\n<ul>\n<li>STD_LOGIC_1164</li>\n<li>Unsigned</li>\n<li>Fixed Point Package</li>\n<li>Floating Point Package</li>\n</ul>\n<h5 class=\"mb\">Libraries</h5>\n<h4>Test Bench:</h4>\n<ul>\n<li>Introduction to Test Benches</li>\n<li>Types of Test Benches</li>\n<li>Example</li>\n</ul>\n<h4>Labs:</h4>\n<ul>\n<li>Simple Counter</li>\n<li>Finite State Machines</li>\n<li>UART</li>\n<li>Fixed Point / Floating Point Arithmetic</li>\n</ul>\n<h4>Applicable Technologies:</h4>\n<ul>\n<li>VHDL-2008, all Lattice Semiconductor FPGAs and CPLDs</li>\n</ul>\n<h4>Software / Hardware used:</h4>\n<ul>\n<li>Lattice Semiconductor Radiant Design Software</li>\n<li>Lattice Semiconductor CrossLink-NX Evaluation Board or similar</li>\n</ul>\n<h4>Prerequisites:</h4>\n<ul>\n<li>Basic knowledge in digital circuit design</li>\n</ul>\n"
+              },
+              "pdf_file":"assets/images/dummy.pdf",
+              "thumbnail":"~@/assets/images/training-detail/training-type05.png"
+           },
+           {
+              "ID":834,
+              "post_title":"Inhouse",
+              "format":"",
+              "execution_of_training_select":[
+                 
+              ],
+              "time_select":[
+                 {
+                    "label":"17 April 2021 - 12:00",
+                    "value":"17 April 2021 - 12:00"
+                 },
+                 {
+                    "label":"18 April 2021 - 12:00",
+                    "value":"18 April 2021 - 12:00"
+                 },
+                 {
+                    "label":"19 April 2021 - 12:00",
+                    "value":"19 April 2021 - 12:00"
+                 }
+              ],
+              "no_time":false,
+              "duration":"5 days",
+              "participant_documents_provided":"Work Book with all presentations, Lab Book to be used for exercises",
+              "course_objectives":"<ul>\n<li>Vision: Learn an all parallel computer language to describe digital circuits</li>\n<li>Learn VHDL-2008 language constructs mainly for synthesis</li>\n<li>Understand parallel execution model</li>\n<li>Create digital circuit descriptions for FPGAs</li>\n<li>Run the synthesis and implementation tool flow in Lattice Radiant / Diamond Software</li>\n<li>Introduction to Test Benches</li>\n<li>Experience coding style, re-use and maintainability with VHDL extensive Demonstrations, Labs and Exercises</li>\n</ul>\n",
+              "agenda":{
+                 "title":"Agenda",
+                 "agenda_description":"InHouse",
+                 "agenda_left":"<h4>VHDL Concept and Design Units:</h4>\n<ul>\n<li>Design Paradigm</li>\n<li>Libraries and compiled units</li>\n<li>Packages</li>\n<li>Entity</li>\n<li>Architecture</li>\n<li>Configuration</li>\n<li>Test Bench and Simulation</li>\n</ul>\n<h4>Data Types:</h4>\n<ul>\n<li>Scalar</li>\n<li>Complex Types</li>\n<li>Sub Types and Aliases</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Naming Conventions and Declarations</h4>\n<h4 class=\"mb\">Statements and Assignments</h4>\n<h4>Sequential Statements:</h4>\n<ul>\n<li>Statements</li>\n<li>Sub Programs</li>\n</ul>\n<h4>Signals:</h4>\n<ul>\n<li>Declaration</li>\n<li>Signal Assignments inside Processes</li>\n<li>Implicitly Signal Type Resolution and Bus Driver</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Concurrent Statements</h4>\n<h4>Structural Descriptions:</h4>\n<ul>\n<li>Hierarchical Descriptions</li>\n<li>Use of Packages</li>\n<li>Configurations</li>\n<li>Generics</li>\n<li>Structural Statements</li>\n</ul>\n",
+                 "agenda_right":"<h4>Libraries and Packages:</h4>\n<h5>Packages</h5>\n<ul>\n<li>STD_LOGIC_1164</li>\n<li>Unsigned</li>\n<li>Fixed Point Package</li>\n<li>Floating Point Package</li>\n</ul>\n<h5 class=\"mb\">Libraries</h5>\n<h4>Test Bench:</h4>\n<ul>\n<li>Introduction to Test Benches</li>\n<li>Types of Test Benches</li>\n<li>Example</li>\n</ul>\n<h4>Labs:</h4>\n<ul>\n<li>Simple Counter</li>\n<li>Finite State Machines</li>\n<li>UART</li>\n<li>Fixed Point / Floating Point Arithmetic</li>\n</ul>\n<h4>Applicable Technologies:</h4>\n<ul>\n<li>VHDL-2008, all Lattice Semiconductor FPGAs and CPLDs</li>\n</ul>\n<h4>Software / Hardware used:</h4>\n<ul>\n<li>Lattice Semiconductor Radiant Design Software</li>\n<li>Lattice Semiconductor CrossLink-NX Evaluation Board or<br />\nsimilar</li>\n</ul>\n<h4>Prerequisites:</h4>\n<ul>\n<li>Basic knowledge in digital circuit design</li>\n</ul>\n"
+              },
+              "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "pdf_file":"assets/images/dummy.pdf",
+              "thumbnail":"~@/assets/images/training-detail/training-type06.png"
+           },
+           {
+              "ID":838,
+              "post_title":"Webinar",
+              "filter":"raw",
+              "format":"Conference Hotel or our Training Center",
+              "execution_of_training_select":[
+                 {
+                    "value":"recorded_video",
+                    "label":"Recorded Video",
+                    "cost":"80$",
+                    "url":"http://localhost:6325/trainings-overview-listing-detail.html"
+                 }
+              ],
+              "time_select":[
+                 
+              ],
+              "no_time": {"label" : "No date provided yet"},
+              "duration":"5 days",
+              "participant_documents_provided":"Work Book with all presentations, Lab Book to be used for exercises",
+              "course_objectives":"<ul>\n<li>Vision: Learn an all parallel computer language to describe digital circuits</li>\n<li>Learn VHDL-2008 language constructs mainly for synthesis</li>\n<li>Understand parallel execution model</li>\n<li>Create digital circuit descriptions for FPGAs</li>\n<li>Run the synthesis and implementation tool flow in Lattice Radiant / Diamond Software</li>\n<li>Introduction to Test Benches</li>\n<li>Experience coding style, re-use and maintainability with VHDL extensive Demonstrations, Labs and Exercises</li>\n</ul>\n",
+              "agenda":{
+                 "title":"Agenda",
+                 "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+                 "agenda_left":"<h4>VHDL Concept and Design Units:</h4>\n<ul>\n<li>Design Paradigm</li>\n<li>Libraries and compiled units</li>\n<li>Packages</li>\n<li>Entity</li>\n<li>Architecture</li>\n<li>Configuration</li>\n<li>Test Bench and Simulation</li>\n</ul>\n<h4>Data Types:</h4>\n<ul>\n<li>Scalar</li>\n<li>Complex Types</li>\n<li>Sub Types and Aliases</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Naming Conventions and Declarations</h4>\n<h4 class=\"mb\">Statements and Assignments</h4>\n<h4>Sequential Statements:</h4>\n<ul>\n<li>Statements</li>\n<li>Sub Programs</li>\n</ul>\n<h4>Signals:</h4>\n<ul>\n<li>Declaration</li>\n<li>Signal Assignments inside Processes</li>\n<li>Implicitly Signal Type Resolution and Bus Driver</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Concurrent Statements</h4>\n<h4>Structural Descriptions:</h4>\n<ul>\n<li>Hierarchical Descriptions</li>\n<li>Use of Packages</li>\n<li>Configurations</li>\n<li>Generics</li>\n<li>Structural Statements</li>\n</ul>\n",
+                 "agenda_right":"<h4>Libraries and Packages:</h4>\n<h5>Packages</h5>\n<ul>\n<li>STD_LOGIC_1164</li>\n<li>Unsigned</li>\n<li>Fixed Point Package</li>\n<li>Floating Point Package</li>\n</ul>\n<h5 class=\"mb\">Libraries</h5>\n<h4>Test Bench:</h4>\n<ul>\n<li>Introduction to Test Benches</li>\n<li>Types of Test Benches</li>\n<li>Example</li>\n</ul>\n<h4>Labs:</h4>\n<ul>\n<li>Simple Counter</li>\n<li>Finite State Machines</li>\n<li>UART</li>\n<li>Fixed Point / Floating Point Arithmetic</li>\n</ul>\n<h4>Applicable Technologies:</h4>\n<ul>\n<li>VHDL-2008, all Lattice Semiconductor FPGAs and CPLDs</li>\n</ul>\n<h4>Software / Hardware used:</h4>\n<ul>\n<li>Lattice Semiconductor Radiant Design Software</li>\n<li>Lattice Semiconductor CrossLink-NX Evaluation Board or<br />\nsimilar</li>\n</ul>\n<h4>Prerequisites:</h4>\n<ul>\n<li>Basic knowledge in digital circuit design</li>\n</ul>\n"
+              },
+              "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "pdf_file":"assets/images/dummy.pdf",
+              "thumbnail":"~@/assets/images/training-detail/training-type01.png"
+           },
+           {
+              "ID":835,
+              "post_title":"Seminar",
+              "format":"Conference Hotel or our Training Center",
+              "execution_of_training_select":[
+                 {
+                    "value":"live_video",
+                    "label":"Live Course",
+                    "cost":"Free",
+                    "url":"http://localhost:6325/trainings-overview-listing-detail.html#live_video"
+                 }
+              ],
+              "time_select":[
+              ],
+              "no_time": {"label" : "No date provided yet"},
+              "duration":"5 days",
+              "participant_documents_provided":"Work Book with all presentations, Lab Book to be used for exercises",
+              "course_objectives":"<ul>\n<li>Vision: Learn an all parallel computer language to describe digital circuits</li>\n<li>Learn VHDL-2008 language constructs mainly for synthesis</li>\n<li>Understand parallel execution model</li>\n<li>Create digital circuit descriptions for FPGAs</li>\n<li>Run the synthesis and implementation tool flow in Lattice Radiant / Diamond Software</li>\n<li>Introduction to Test Benches</li>\n<li>Experience coding style, re-use and maintainability with VHDL extensive Demonstrations, Labs and Exercises</li>\n</ul>\n",
+              "agenda_description":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "agenda":{
+                 "title":"Agenda",
+                 "agenda_description":"Seminar",
+                 "agenda_left":"<h4>VHDL Concept and Design Units:</h4>\n<ul>\n<li>Design Paradigm</li>\n<li>Libraries and compiled units</li>\n<li>Packages</li>\n<li>Entity</li>\n<li>Architecture</li>\n<li>Configuration</li>\n<li>Test Bench and Simulation</li>\n</ul>\n<h4>Data Types:</h4>\n<ul>\n<li>Scalar</li>\n<li>Complex Types</li>\n<li>Sub Types and Aliases</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Naming Conventions and Declarations</h4>\n<h4 class=\"mb\">Statements and Assignments</h4>\n<h4>Sequential Statements:</h4>\n<ul>\n<li>Statements</li>\n<li>Sub Programs</li>\n</ul>\n<h4>Signals:</h4>\n<ul>\n<li>Declaration</li>\n<li>Signal Assignments inside Processes</li>\n<li>Implicitly Signal Type Resolution and Bus Driver</li>\n<li>Attributes</li>\n</ul>\n<h4 class=\"mb\">Concurrent Statements</h4>\n<h4>Structural Descriptions:</h4>\n<ul>\n<li>Hierarchical Descriptions</li>\n<li>Use of Packages</li>\n<li>Configurations</li>\n<li>Generics</li>\n<li>Structural Statements</li>\n</ul>\n",
+                 "agenda_right":"<h4>Libraries and Packages:</h4>\n<h5>Packages</h5>\n<ul>\n<li>STD_LOGIC_1164</li>\n<li>Unsigned</li>\n<li>Fixed Point Package</li>\n<li>Floating Point Package</li>\n</ul>\n<h5 class=\"mb\">Libraries</h5>\n<h4>Test Bench:</h4>\n<ul>\n<li>Introduction to Test Benches</li>\n<li>Types of Test Benches</li>\n<li>Example</li>\n</ul>\n<h4>Labs:</h4>\n<ul>\n<li>Simple Counter</li>\n<li>Finite State Machines</li>\n<li>UART</li>\n<li>Fixed Point / Floating Point Arithmetic</li>\n</ul>\n<h4>Applicable Technologies:</h4>\n<ul>\n<li>VHDL-2008, all Lattice Semiconductor FPGAs and CPLDs</li>\n</ul>\n<h4>Software / Hardware used:</h4>\n<ul>\n<li>Lattice Semiconductor Radiant Design Software</li>\n<li>Lattice Semiconductor CrossLink-NX Evaluation Board or<br />\nsimilar</li>\n</ul>\n<h4>Prerequisites:</h4>\n<ul>\n<li>Basic knowledge in digital circuit design</li>\n</ul>\n"
+              },
+              "pdf_file":"assets/images/dummy.pdf",
+              "thumbnail":"~@/assets/images/training-detail/training-type02.png"
+           }
+        ]
+     }
+  }
+}

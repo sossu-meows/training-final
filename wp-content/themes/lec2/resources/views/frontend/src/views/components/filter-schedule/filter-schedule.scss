@@ -1,0 +1,51 @@
+@import '~@/scss/base';
+
+.filter-schedule-form {
+  &.filter-header {
+    .filter-header__content {
+      max-height: calc(100vh - 300px);
+    }
+  }
+  form {
+    display: flex;
+    .form-group--action {
+      margin-left: 14px;
+    }
+    .date-picker {
+      .gj-datepicker {
+        .form-control {
+          border-right: 0;
+          &:focus + .input-group-append .btn {
+            background-color: $input-focus-bg;
+            border-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    min-width: 108px;
+  }
+  .gj-datepicker-bootstrap [role=right-icon] button {
+    min-width: 38px;
+    border-color: $input-border-color;
+    &:active {
+      background-color: $input-focus-bg;
+      border-color: $color-primary;
+    }
+    .gj-icon {
+      font-family:'Lec2'!important;
+      font-size: 0;
+      color: $input-placeholder-color;
+      top: 12px;
+      right: 12px;
+      &:before {
+        content: "\E91A";
+        font-size: 14px;
+      }
+    }
+  }
+  .form-group-filter {
+    flex-grow: 1;
+  }
+}

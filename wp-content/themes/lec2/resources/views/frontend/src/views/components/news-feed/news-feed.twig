@@ -1,0 +1,36 @@
+<div class="news-feed-block hide js-news-feed-block">
+	<div class="container">
+		<h2 class="text-center">{{ data.news_feed_title }}</h2>
+		<div class="news-feed-list" >
+			<div class="news-feed-col" rv-each-post="postList.items">
+				<div class="news-feed-item">
+					<div rv-if="post.thumbnail | isEmpty" class="news-feed-video">
+						<video class="rounded-8" rv-poster="post.custom_data.video.thumbnail" controls>
+							<source rv-src="post.custom_data.video.custom_data.video_file.url" type="video/mp4">
+						</video>
+            <video class="rounded-8" rv-if="post.custom_data.video.custom_data.video_file | isEmpty" rv-poster="post.custom_data.video.thumbnail" controls>
+							<source rv-src="post.custom_data.video.custom_data.video_url" type="video/mp4">
+						</video>
+					</div>
+					<div rv-if="post.thumbnail | isNotEmpty" class="news-feed-image">
+						<img class="rounded-8" rv-src="post.thumbnail" rv-alt="post.post_title"/>
+					</div>
+					<div class="news-feed-content">
+						<h4 class="news-feed-title" rv-text="post.post_title"></h4>
+						<p class="news-feed-description" rv-text="post.custom_data.short_description"></p>
+					</div>
+					<div class="news-feed-link">
+						<a rv-href="post.url">{{ global.theme_options.text_translation.default_global_settings_text.more }}
+							<i class="icon-chevron-right-solid"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news-feed-btn text-center">
+			<a href="{{data.news_feed_link}}" class="btn btn-primary">
+				{{global.theme_options.text_translation.default_global_settings_buttons.read_all_news}}
+      </a>
+		</div>
+	</div>
+</div>

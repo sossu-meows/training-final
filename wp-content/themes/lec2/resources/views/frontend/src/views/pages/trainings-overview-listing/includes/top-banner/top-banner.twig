@@ -1,0 +1,23 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+
+<div class="top-banner top-banner--{{ theme|default('default') }} top-banner--{{classPage}}">
+  <div class="container">
+    <div class="row">
+      <div class="{{colContent|default('col-md-6')}}">
+        <div class="top-banner-content">
+          <h1 rv-text="trainings.category.name"></h1>
+          <p class="lead" rv-text="trainings.category.description"></p>
+        </div>
+      </div>
+      <div class="{{colImage|default('col-md-6')}}">
+        {% if topBannerData.top_banner_background %}
+          <div class="top-banner-image">
+            <img class="rounded-8" src="{{ topBannerData.top_banner_background }}" alt="{{topBannerData.top_banner_title}}"/>
+          </div>
+         {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+

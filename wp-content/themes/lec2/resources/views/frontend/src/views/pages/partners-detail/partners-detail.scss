@@ -1,0 +1,96 @@
+@import "~@/scss/base";
+
+.partners-detail-page {
+  .top-banner {
+    padding-top: 100px;
+    padding-bottom: 10vw;
+    :after {
+      display: none;
+    }
+  }
+
+  .partners-detail-bg {
+    position: relative;
+    z-index: 2;
+    margin-top: -9.2vw;
+    padding-top: 85px;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: url("~@/assets/images/bg-top-radius-partner-detail-page.png") center top no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  .banner-loop-block {
+    position: relative;
+    z-index: 2;    
+
+    .banner-loop-logo {
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+@include desktop() {
+  .partners-detail-page {
+    .top-banner {
+      &-image {
+        img {
+          max-width: 376px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .partners-detail-page {
+    .top-banner {
+      padding-top: 60px;
+    }
+    .partners-detail-bg {
+      margin-top: -8vw;
+      padding-top: 8vw;
+    }
+    .banner-loop-block {
+      .banner-loop {
+        padding-top: 0;
+      }
+    }
+    .join-block {
+      padding-top: 25px;
+    }
+  }
+}
+
+@include mobile() {
+  .partners-detail-page {
+    .top-banner {
+      padding-top: 60px;
+      padding-bottom: 20vw;
+      &-image {
+        img {
+          max-width: 271px;
+        }
+      }
+    }
+
+    .banner-loop-block {
+      padding: 0;
+    }
+
+    .partners-detail-bg {
+      margin-top: -12vw;
+      padding-top: 50px;
+    }
+  }
+}
+
+
+

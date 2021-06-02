@@ -1,0 +1,19 @@
+<div class="top-banner top-banner--training-overview-listing-detail">
+  <div class="container training-detail-container">
+    {% set breadcrumb_items = global.theme_options.breadcrumb_items|merge([{
+      title: page_data.post_title
+    }]) %}
+    {% include "@views/components/breadcrumb/breadcrumb.twig" with {
+      'items':breadcrumb_items
+    }%}
+    <h1>{{ topBannerData.top_banner_title}}</h1>
+    <div class="top-banner-text">
+      <div class="top-banner-image">
+          <img class="rounded-8" src="{{ topBannerData.top_banner_background }}" alt="{{topBannerData.top_banner_title}}"/>
+      </div>
+      <div class="lead">{{ topBannerData.top_banner_description|content|raw}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+

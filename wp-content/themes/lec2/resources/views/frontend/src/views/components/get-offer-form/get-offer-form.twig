@@ -1,0 +1,24 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+<div class="form offer-form js-offer-form {{ btnTheme ? 'offer-form--' ~ btnTheme : '' }}">
+	{% if global.is_adapter %}
+		<form>
+      {% set agreeText = global.theme_options.form_offer.agreement %}
+      <div class="form-group form-group--checkbox">
+          {{ forms.input({id: 'agree',name: 'agree', value:'', label: agreeText, type: 'checkbox'})}}
+      </div>
+      {% set emailPlaceholder = global.theme_options.text_translation.default_global_settings_text.default_global_settings_email %}
+      <div class="form-group form-group--email">
+        {{ forms.input({id: 'email',name: 'email', value:'', placeholder: emailPlaceholder, type: 'email', autocomplete: false})}}
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-{{btnTheme|default('info')}}" type="submit">{{global.theme_options.text_translation.default_global_settings_buttons.default_global_settings_subscribe}}</button>
+      </div>
+    </form>
+	{% else %}
+		{% if global.languages.current == 'de' %}
+			{{ global.newsletter.newsletter_de|raw }}
+		{% else %}
+			{{ global.newsletter.newsletter_en|raw }}
+		{% endif %}
+	{% endif %}
+</div>

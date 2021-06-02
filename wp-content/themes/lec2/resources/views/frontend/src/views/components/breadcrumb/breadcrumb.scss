@@ -1,0 +1,28 @@
+@import '~@/scss/base';
+
+.breadcrumb {
+  list-style: none;
+  font-size: 1.8rem;
+  padding-left: 0;
+  li {
+    display: inline;
+  }
+  a,
+  span {
+    color: #7F8B8C;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    font-family: 'Lec2';
+    content: '\e905';
+    color: #7F8B8C;
+    vertical-align: middle;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+@include mobile {
+  .breadcrumb {
+    font-size: 1.2rem;
+  }
+}

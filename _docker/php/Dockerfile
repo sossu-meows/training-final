@@ -1,0 +1,1 @@
+FROM minhtrius/php-7.2-fpm:7.3

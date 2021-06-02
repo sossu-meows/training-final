@@ -1,0 +1,56 @@
+{# Used for adapter only #}
+{% from "@views/macros/navigation/nav.twig" import nav %}
+
+{% set itemsMenu = [
+  {
+    title: 'Trainings Modules',
+    href: '#',
+    customClass: 'menu-item--arrow menu-item--training-modules trainingActive'
+  },
+  {
+    title: 'Schedule',
+    href: '',
+    customClass: 'menu-item--arrow menu-item--schedule'
+  },
+  {
+    title: 'Partners',
+    href: 'partners.html',
+    customClass: 'partnerActive'
+  },
+  {
+    title: 'News',
+    href: 'news.html',
+    customClass: 'newsActive'
+  },
+  {
+    title: 'About Us',
+    href: 'about.html'
+  },
+  {
+    title: 'Contact',
+    href: 'contact.html'
+  },
+  {
+    title: 'Legal Notice',
+    href: 'legal-notice.html',
+    customClass: 'd-block d-lg-none'
+  },
+  {
+    title: 'TAC',
+    href: 'tac.html',
+    customClass: 'd-block d-lg-none'
+	},
+	{
+    title: 'Privacy Policy',
+    href: 'privacy-policy.html',
+    customClass: 'd-block d-lg-none'
+  }
+] %}
+
+<nav class="nav" id="nav">
+  {% if global.is_adapter %}
+	  {{ nav(itemsMenu, {classes: 'nav-menu'}) }}
+  {% else %}
+    {{ wp_nav_menu('primary_navigation','nav-menu') }}
+  {% endif %}
+</nav>

@@ -1,0 +1,349 @@
+{
+  "global": {
+    "home_url": "home.html",
+    "page_title": "LEC2",
+    "site_description": "Site description",
+    "ajax_url": "{site_url}/wp-admin/admin-ajax.php",
+    "admin_url": "{site_url}/wp-admin/",
+    "wp_include": "{site_url}/wp-includes/",
+    "asset_uri": "{site_url}/wp-content/themes/arbeitswelt/resources/assets/website",
+    "languages": {
+      "current": "DE",
+      "list": {
+        "en": {
+          "title": "EN",
+          "url": "/en"
+        },
+        "de": {
+          "title": "DE",
+          "url": "/de"
+        }
+      }
+    },
+    "filter_shorties": [
+        { "label": "All", "value": 28 },
+        { "label": "Application", "value": 28 },
+        { "label": "Architecture", "value": 29 },
+        { "label": "Methodology", "value": 30 },
+        { "label": "Optimization", "value": 31 },
+        { "label": "Tools", "value": 32 }
+    ],
+    "filter_schedule": {
+      "types": [
+        { "label": "All", "value": "all" },
+        { "label": "Location", "value": "location" },
+        { "label": "Date", "value": "date" },
+        { "label": "Type", "value": "type" }
+      ],
+      "location": [
+        {
+          "label": "Berlin",
+          "value": 1
+        },
+        {
+          "label": "Paris",
+          "value": 2
+        },
+        {
+          "label": "New York",
+          "value": 3
+        },
+        {
+          "label": "Rome",
+          "value": 4
+        }
+      ]
+    },
+    "filter_modules": {
+      "typeText": "Training type",
+      "formatText": "Format",
+      "training_cat": [
+        { "label": "All", "value": 28 },
+        { "label": "Application", "value": 28 },
+        { "label": "Architecture", "value": 29 },
+        { "label": "Methodology", "value": 30 },
+        { "label": "Optimization", "value": 31 },
+        { "label": "Tools", "value": 32 }
+      ],
+      "training_type": [
+        { "label": "All", "value": 39 },
+        { "label": "Webinar", "value": 40 },
+        { "label": "Seminar", "value": 41 },
+        { "label": "Face2Face", "value": 42 },
+        { "label": "Shorties", "value": 43 },
+        { "label": "Video", "value": 44 },
+        { "label": "Inhouse", "value": 45 }
+      ]
+    },
+    "theme_options": {
+      "website": {
+        "favicon": false,
+        "header_logo": "~@/assets/images/logo-desktop.png",
+        "white_header_logo": "~@/assets/images/logo-desktop-w.png",
+        "copy_right_text": "Krassin Consulting © 2020. All rights reserved. The Lattice Education Competence Center is the brand new platform for comprehensive training and design services in cooperation with Lattice Semiconductor.",
+        "cookie": "//  Message\r\nvar COOKIE_MESSAGE = \"Nous utilisons des cookies pour nous permettre de mieux comprendre comment le site est utilisé. En continuant à utiliser ce site, vous acceptez cette politique.\";\r\n\r\n// Accept button text\r\nvar COOKIE_BUTTON_TEXT = \"OK\";\r\n\r\n// Policy link\r\n// example: <a href=\"policy.html\" target=\"_blank\">Cookie Policy</a>\r\nvar COOKIE_POLICY_LINK = \"\";"
+      },
+      "footer_menu_website": {
+        "footer_menu_items": [
+          {
+            "footer_menu_item_title": "About",
+            "footer_menu_item_url": "about.html"
+          },
+          {
+            "footer_menu_item_title": "Trainings",
+            "footer_menu_item_url": "trainings-overview.html"
+          },
+          {
+            "footer_menu_item_title": "Contact",
+            "footer_menu_item_url": "contact.html"
+          },
+          {
+            "footer_menu_item_title": "Legal Notice",
+            "footer_menu_item_url": "legal-notice.html"
+          },
+          {
+            "footer_menu_item_title": "TAC",
+            "footer_menu_item_url": "tac.html"
+          },
+          {
+            "footer_menu_item_title": "Privacy Policy",
+            "footer_menu_item_url": "privacy-policy.html"
+          }
+        ],
+        "footer_social_networks": [
+          {
+            "footer_socical_network_title": "Linkedin",
+            "footer_socical_network_icon_font": "icon-linkedin",
+            "footer_social_network_url": "https://linkedin.com"
+          }
+
+        ]
+      },
+      "default_global_settings": {
+        "default_global_settings_buttons": {
+          "request_a_call_text": "Request a call"
+        },
+        "default_global_settings_text": {
+          "default_global_settings_text_explore": "Explore"
+        }
+      },
+      "form_contact_top": {
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "phone": "Phone",
+        "email": "Email",
+        "message": "Message",
+        "privacy_policy": "Privacy Policy",
+        "agreement": "You agree that your information will be used to process your request. Information and notice of cancellation can be found in the privacy policy.",
+        "write_us_a_call_label": "Request a call",
+        "contact_popup_label": "Contact",
+        "hiring_popup_label": "Join us - we are hiring!",
+        "hiring_popup_description": "Always wanted to be a writer. Join us as freelancer.",
+        "request_form_label": "Send Request",
+        "request_form_description": "Write your request and we will send you an exclusive offer",
+        "submit_button": "Send Application",
+        "download_pdf": "Download PDF",
+        "request_text": "Send Request"
+      },
+      "default_global_settings_contact_form": {
+        "default_global_settings_form_title": "Title",
+        "default_global_settings_form_firstname": "First Name",
+        "default_global_settings_form_lastname": "Last name",
+        "default_global_settings_form_company": "Company",
+        "default_global_settings_form_division": "Division",
+        "default_global_settings_form_address": "Address",
+        "default_global_settings_form_zip": "ZIP",
+        "default_global_settings_form_place": "Place",
+        "default_global_settings_form_email": "Email",
+        "default_global_settings_form_phone": "Phone",
+        "default_global_settings_form_message": "Message",
+        "default_global_settings_form_button_text": "Send",
+        "default_global_settings_form_privacy_policy": "Privacy Policy",
+        "default_global_settings_form_agreement_text": "You agree that your information will be used to process your request. Information and notice of cancellation can be found in the privacy policy.",
+        "default_global_settings_form_sex": [
+          {
+            "default_global_settings_form_sex_t": "Male"
+          },
+          {
+            "default_global_settings_form_sex_t": "Female"
+          },
+          {
+            "default_global_settings_form_sex_t": "Other"
+          }
+        ]
+      },
+      "default_global_settings_payment_form": {
+        "salutation_group": {
+          "salutation": "Salutation",
+          "mr": "Mr",
+          "mrs": "Mrs",
+          "mx": "Mx"
+        },
+        "default_global_settings_form_title": "Title",
+        "default_global_settings_form_firstname": "First Name",
+        "default_global_settings_form_lastname": "Last Name",
+        "default_global_settings_form_company": "Company",
+        "default_global_settings_form_division": "Division",
+        "default_global_settings_form_street": "Street",
+        "default_global_settings_form_postcode": "Postal Code",
+        "default_global_settings_form_city": "City",
+        "default_global_settings_form_country": "Country",
+        "default_global_settings_form_email": "Email",
+        "default_global_settings_form_phone": "Phone",
+        "default_global_settings_form_fax": "FAX",
+        "default_global_settings_form_vatnumber": "VAT number",
+        "default_global_settings_form_ordernumber": "Order number",
+        "default_global_settings_form_couponcode": "Coupon code",
+        "default_global_settings_form_message": "Message",
+        "default_global_settings_form_arrival": "Arrival date",
+        "default_global_settings_form_departure": "Departure date",
+        "default_global_settings_form_button_text": "Buy Training",
+        "default_global_settings_form_billing": "The billing address is different from the address given above.",
+        "default_global_settings_form_ask_offer": "I ask for an offer for in-house training.",
+        "default_global_settings_form_room_reservation": "Room reservations in the conference hotel are desirable.",
+        "default_global_settings_form_terms_and_conditions": "I have read the terms and conditions and accept them.",
+        "default_global_settings_form_agreement": "You agree that your data will be used to process your request. You can find information and revocation instructions in the data <a href='#'> <strong> protection declaration </strong> </a>.",
+        "default_global_settings_form_sex": [
+          {
+            "default_global_settings_form_sex_t": "Male"
+          },
+          {
+            "default_global_settings_form_sex_t": "Female"
+          },
+          {
+            "default_global_settings_form_sex_t": "Other"
+          }
+        ]
+      },
+      "form_offer": {
+        "title": "Invest in the future and start your FPGA journey with us!",
+        "description": "We give you the knowledge and are committed to innovate. We have the key solutions and are providing you with all the tools necessary in this constantly evolving and future oriented industry.",
+        "agreement": "I agree with <a href='privacy-policy.html'>Privacy Policy</a>",
+        "email": "E - Email",
+        "newsletter_success_message": "Your subscription was successful! <br> Kindly check your mailbox and confirm your subscription. If you don't <br> see the email within a few minutes, check the spam/junk folder."
+      },
+      "text_translation": {
+        "default_global_settings_buttons": {
+          "default_global_settings_gao": "Get an Offer",
+          "default_global_settings_subscribe": "Subscribe for Newsletter",
+          "filter": "Filter",
+          "request_a_call": "Request a call",
+          "buy_training": "Buy Training",
+          "trainings_overview": "Trainings Overview",
+          "see_trainings_options": "See Trainings Options",
+          "buy": "Buy",
+          "show_trainings": "Show Trainings",
+          "read_all_news": "Read All News",
+          "download_pdf": "Download PDF",
+          "buttonText": "Show Trainings",
+          "go_home": "Go Home"
+        },
+        "default_global_settings_text": {
+          "default_global_settings_write_us": "Write Us",
+          "default_global_settings_email": "Email",
+          "cost": "Cost",
+          "format": "Format",
+          "date": "Date",
+          "more": "More",
+          "explore": "Explore",
+          "search": "Search",
+          "next": "Next",
+          "previous": "Previous",
+          "request_failed": "Request Failed",
+          "duration": "Duration",
+          "default_global_settings_shorties": "Shorties",
+          "default_global_settings_we_are_hiring": "We are hiring",
+          "more_information": "More Information",
+          "choose_type": "Choose your training now and get full information",
+          "type_training": "Type of Training",
+          "execution_of_training": "Execution of Training",
+          "participant_documents_provided": "Participant Documents provided",
+          "course_objectives": "Course Objectives",
+          "thank": "Thank!",
+          "thankDescription": "Thanks for your purchase,<br> we will get in touch with you within the next x days",
+          "live_course": "Live Course",
+          "recorded_video": "Recorded Video",
+          "from_text": "From",
+          "to_text": "To",
+          "keyword_text": "Keyword",
+          "typeText": "Training type",
+          "formatText": "Format",
+          "page_not_found":"Page not found"
+        }
+      },
+      "links": {
+        "buy_training_link": "payment.html",
+        "trainings_overview_link": "trainings-overview.html",
+        "trainings_overview_listing_link": "trainings-overview-listing.html"
+      },
+      "journey": {
+        "journey_title": "Start your journey<br class='d-block d-sm-none'/> right now with us!",
+        "journey_desc": "You can click on one of the sections and start your journey",
+        "journey_link": "trainings-overview-listing.html",
+        "journey_categories": [
+          {
+            "icon": "icon-setting",
+            "category": {
+              "description": "Learn the latest Lattice FPGA / CPLD Architectures.",
+              "name": "Architecture",
+              "term_id": 32
+            }
+          },
+          {
+            "icon": "icon-tool",
+            "category": {
+              "description": "Learn the latest Lattice Design Tools available to effectively design Lattice FPGAs / CPLDs",
+              "name": "Tools",
+              "term_id": 31
+            }
+          },
+          {
+            "icon": "icon-technology",
+            "category": {
+              "description": "Learn the latest design methodologies to get the most out of the Technology selected",
+              "name": "Methodology",
+              "term_id": 30
+            }
+          },
+          {
+            "icon": "icon-car",
+            "category": {
+              "description": "Learn how to optimize your FPGA / CPLD Design",
+              "name": "Optimization",
+              "term_id": 29
+            }
+          },
+          {
+            "icon": "icon-app",
+            "category": {
+              "description": "Learn and explore how to effectively implement your specific application",
+              "name": "Application",
+              "term_id": 28
+            }
+          }
+        ]
+      },
+      "error_page": {
+        "page_title": "Oops!",
+        "error_404": "Error 404",
+        "error_image": "~@/assets/images/error-page.png"
+      },
+      "breadcrumb_items": [
+        { "title": "Trainings Modules", "url": "trainings-overview.html" },
+        {
+          "title": "Training Listing",
+          "url": "trainings-overview-listing.html"
+        }
+      ],
+      "join_with_us": {
+        "title": "Join our partner network!",
+        "description": "<p>We cooperate with many partners from various industries and offer a worldwide partner network of experts. So don't wait, become a part of this network and benefit from synergies!</p>",
+        "button_title": "Become a Partner",
+        "link": "#"
+      },
+      "news_feed": {
+        "news_feed_title": "Get the latest news from LEC2!"
+      }
+    }
+  }
+}

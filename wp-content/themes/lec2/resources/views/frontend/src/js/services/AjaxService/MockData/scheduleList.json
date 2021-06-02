@@ -1,0 +1,68 @@
+{
+  "items": {
+    "data": [
+      {
+        "post_title": "Adder Tree Module",
+        "time": "10 April 2021 - 12:00",
+        "type": "Live",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "DDR3 SDRAM Controller IP Core",
+        "time": "18 April 2021 - 16:00",
+        "type": "Conference Hotel or our Training Center",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Color Space Converter IP Core",
+        "type": "Online",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Tri-Speed Ethernet MAC IP Core",
+        "type": "Recorded",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Adder Tree Module",
+        "time": "10 April 2021 - 12:00",
+        "type": "Live",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "DDR3 SDRAM Controller IP Core",
+        "time": "18 April 2021 - 16:00",
+        "type": "Conference Hotel or our Training Center",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Color Space Converter IP Core",
+        "type": "Online",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Tri-Speed Ethernet MAC IP Core",
+        "type": "Recorded",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Color Space Converter IP Core",
+        "type": "Online",
+        "infor_url": "#"
+      },
+      {
+        "post_title": "Tri-Speed Ethernet MAC IP Core",
+        "type": "Recorded",
+        "infor_url": "#"
+      }
+
+    ],
+    "posts_per_page": "4",
+    "current_page": 2,
+    "next_page": 2,
+    "total_pages": 12,
+    "total_posts": 8,
+    "show_load_more": true,
+    "message": "No results match your search criteria."
+  }
+}

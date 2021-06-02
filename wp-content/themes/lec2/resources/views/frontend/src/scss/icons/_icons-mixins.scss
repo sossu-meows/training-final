@@ -1,0 +1,63 @@
+$icons: (
+  'globe': '\e900',
+  'facebook': '\e901',
+  'twitter': '\e902',
+  'tools': '\e903',
+  'chevron-left-solid': '\e904',
+  'chevron-right-solid': '\e905',
+  'chevron-down': '\e906',
+  'chevron-up': '\e907',
+  'arrow-left': '\e908',
+  'arrow-right': '\e909',
+  'app': '\e90a',
+  'car': '\e90b',
+  'setting': '\e90c',
+  'technology': '\e90d',
+  'tool': '\e90e',
+  'line-left': '\e90f',
+  'line-right': '\e910',
+  'line-bottom': '\e911',
+  'line-45deg': '\e912',
+  'close': '\e913',
+  'verified': '\e914',
+  'hourglass-empty': '\e915',
+  'search': '\e916',
+  'linkedin': '\e917',
+  'caret-up': '\e919',
+  'caret-down': '\e918',
+  'calendar': '\e91a',
+);
+
+@mixin font-icon() {
+  font-family: 'Lec2' !important;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+}
+
+@mixin make-font-face-ready() {
+  @font-face {
+    font-family: 'Lec2';
+    src:  url('~@/assets/fonts/lec2.eot?bxkgib');
+    src:  url('~@/assets/fonts/lec2.eot?bxkgib#iefix') format('embedded-opentype'),
+      url('~@/assets/fonts/lec2.ttf?bxkgib') format('truetype'),
+      url('~@/assets/fonts/lec2.woff?bxkgib') format('woff'),
+      url('~@/assets/fonts/lec2.svg?bxkgib#lec2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+}
+
+// Make extendables
+@each $name, $icon in $icons {
+  %icon-#{$name} {
+    @include font-icon();
+    content: $icon;
+  }
+}

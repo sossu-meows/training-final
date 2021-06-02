@@ -1,0 +1,218 @@
+@import '~@/scss/base';
+@import "./node_modules/bootstrap/scss/mixins";
+
+.offer-form {
+  position: relative;
+  width: fit-content;
+  form {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .form-group--checkbox {
+    flex-basis: 100%;
+    label {
+      font-weight: 600;
+    }
+    .form-control {
+      top: -2px;
+    }
+  }
+  .form-actions {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .form-group {
+    margin-bottom: 12px;
+    input[type="email"] {
+      width: 210px;
+    }
+    &--checkbox {
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 24px;
+      label {
+        color: $color-dark;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-left: 35px;
+        a {
+          font-weight: 600;
+          color: $color-primary;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .btn {
+    width: 210px;
+  }
+  // newsletter plugin
+  .is-submiting {
+    pointer-events: none;
+  }
+  .emaillist {
+    min-height: 40px;
+    .es-field-wrap {
+      margin-bottom: 0;
+      order: 2;
+      .es_required_field {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.362;
+        color: #495057;
+        background-clip: padding-box;
+        border-radius: .4rem;
+        height: 40px;
+        padding: 10px 16px;
+        background-color: $color-white;
+        border: 1px solid $border-color;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        outline: none;
+        width: 210px;
+        &:focus,
+        &:active {
+          color: #333;
+          border-color: $color-primary;
+        }
+        @include placeholder {
+          color: $input-placeholder-color;
+        }
+      }
+    }
+    .es_subscription_form_submit {
+      order: 3;
+      margin-left: 20px;
+      width: 210px;
+      display: inline-block;
+      padding: 9.5px 16px;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border: 1px solid transparent;
+      line-height: 1.362;
+      border-radius: .4rem;
+      height: 40px;
+      outline: none;
+      color: $color-primary;
+      background-color: $color-light-green;
+      &:not(:disabled):not(.disabled).active,
+      &:not(:disabled):not(.disabled):active {
+        background-color:#5ac7be;
+      }
+    }
+    p {
+      flex-basis: 100%;
+      font-size: 1.8rem;
+      order: 1;
+      display: flex;
+      align-items: center;
+      color: $color-dark;
+      margin-bottom: 24px;
+      input {
+        width: 24px;
+        height: 24px;
+      }
+
+      label {
+        margin-bottom: 0;
+        padding-left: 7px;
+      }
+
+      a {
+        color: $color-primary;
+      }
+    }
+  }
+  .es_spinner_image {
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgba( #1c86ee, 0.1);
+    border-top: 5px solid #1c86ee;
+    margin-top: -20px;
+    margin-left: -20px;
+    animation: rotating 1.2s infinite linear;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    img {
+      display: none;
+    }
+  }
+  &--info {
+    .emaillist .es_subscription_form_submit {
+      background: $color-light-green;
+      color: #1C3054;
+    }
+
+    .emaillist {
+      label {
+        color: $color-white;
+        a {
+          color: $info;
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
+  &--primary {
+    .emaillist {
+      label {
+        color: $color-dark;
+        a {
+          color: $primary;
+          font-weight: 600;
+        }
+      }
+
+      .es_subscription_form_submit {
+        background: $color-primary;
+        color: $color-white;
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active {
+          background-color:#1b315c;
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .offer-form {
+    width: 100%;
+    form {
+      flex-direction: column;
+      .form-group--email,
+      .form-actions {
+        margin-left: 38px;
+      }
+      .form-group {
+        &--checkbox {
+          align-self: flex-start;
+        }
+      }
+    }
+    .newsletter-message-success {
+      text-align: center;
+    }
+    .emaillist {
+      .es_subscription_form_submit {
+        margin-left: 35px;
+        margin-top: 7px;
+      }
+
+      p {
+        align-self: flex-start;
+      }
+      .es-field-wrap {
+        padding-left: 35px;
+      }
+    }
+    .es_subscription_message.error {
+      display: block;
+      margin-top: 12px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "~@/scss/base";
+
+
+.news-detail-page {
+  .banner-loop-block {
+    padding-top: 24px;
+    .banner-loop {
+      padding-top: 0;
+      padding-bottom: 100px;
+    }
+  }
+
+  .news-feed-block {
+    margin-bottom: 58px;
+  }
+}
+
+@include tablet-up() {
+  .news-detail-page .news-feed-block {
+    .slick-prev,
+    .slick-next {
+      display: none;
+    }
+  }
+}
+
+@include mobile() {
+  .news-detail-page {
+    .slider-image-block {
+      padding-top: 30px;
+    }
+    .banner-loop-block {
+      padding-top: 0;
+      padding-bottom: 0;
+      .banner-loop {
+        padding-bottom: 30px;
+      }
+    }
+    .news-feed-block {
+      margin-top: 0;
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

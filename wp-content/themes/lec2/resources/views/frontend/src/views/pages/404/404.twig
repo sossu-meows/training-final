@@ -1,0 +1,29 @@
+{% extends "@views/layouts/layout-default.twig" %}
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'error-page',
+    jsController: '',
+    headerTheme: 'dark',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set pageData = global.theme_options.error_page %}
+  {% include "@views/components/top-banner-title/top-banner-title.twig" with {
+    'data': {
+      'title': pageData.page_title
+    },
+    theme: "default"
+  } %}
+  <div class="container">
+    <div class="error-content">
+      <p class="title">{{pageData.error_404}}</p>
+      <p class="text">{{global.theme_options.text_translation.default_global_settings_text.page_not_found}}</p>
+      <img class="rounded-8" src="{{pageData.error_image}}" alt={{global.theme_options.text_translation.default_global_settings_text.page_not_found}} />
+      <a class="btn btn-info" href="{{ pageData.home_page }}"> {{global.theme_options.text_translation.default_global_settings_buttons.go_home}} </a>
+    </div>
+  </div>
+{% endblock %}

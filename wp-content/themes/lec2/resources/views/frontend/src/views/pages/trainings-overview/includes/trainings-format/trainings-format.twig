@@ -1,0 +1,22 @@
+{% if data %}
+	<div class="trainings-format">
+		<div class="container">
+			<h2 class="trainings-format__title">{{ data.title }}</h2>
+			{% for item in data.content_listing %}
+				<div class="row">
+					<div class="col-md-6">
+						<div class="trainings-format__content">
+							{{ item.content|content|raw}}
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="trainings-format__image">
+							<img src={{item.image}} alt="" class="d-none d-md-block"/>
+							<img src={{item.image_mb}} alt="" class="d-block d-md-none"/>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endif %}

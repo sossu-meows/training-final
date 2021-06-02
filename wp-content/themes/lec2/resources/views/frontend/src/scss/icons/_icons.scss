@@ -1,0 +1,15 @@
+@import './icons-mixins';
+
+@include make-font-face-ready();
+
+[class^="icon-"], [class*=" icon-"] {
+  @include font-icon();
+}
+
+// Make classes
+@each $name, $icon in $icons {
+  .icon-#{$name}:before {
+    @include font-icon();
+    content: $icon;
+  }
+}

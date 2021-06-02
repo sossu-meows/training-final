@@ -1,0 +1,59 @@
+@import "~@/scss/base";
+
+.get-opportunities-block {
+  background-color: $info;
+  color: $color-white;
+  padding-top: 55px;
+  padding-bottom: 54px;
+  h2 {
+    color: $color-dark;
+  }
+  &.primary {
+    background-color: $color-primary;
+    h2,
+    .get-opportunities-description {
+      color: $color-white;
+    }
+
+    .form-group--checkbox {
+      label {
+        color: $color-white;
+        a {
+          color: $info;
+        }
+      }
+    }
+  }
+  &.info {
+    background-color: $color-light-green;
+    color: $color-primary;
+  }
+  &.transparent {
+    background-color: transparent;
+    color: $color-primary;
+  }
+}
+
+.get-opportunities {
+  &-description {
+    color: $color-dark;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+  }
+}
+
+@include mobile() {
+  .get-opportunities {
+    &-block {
+      padding: 33px 0;
+      h2 {
+        font-size: 2.4rem;
+        line-height: 33px;
+      }
+    }
+    &-description {
+      margin-bottom: 28px;
+    }
+  }
+}

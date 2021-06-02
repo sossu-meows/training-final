@@ -1,0 +1,136 @@
+@import '~@/scss/base';
+
+.site-footer {
+  padding: 40px 0;
+
+  .footer {
+    &-bottom {
+      display: flex;
+      align-items: center;
+    }
+
+    &-copy-right {
+      margin-bottom: 26px;
+      font-size: 1.8rem;
+      color: $color-white;
+      line-height: 24.5px;
+    }
+
+    &-menu {
+      ul {
+        margin: 0 -23px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0;
+        li {
+          padding: 5px 21px;
+        }
+        a {
+          @include roboto();
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &-social-col {
+      margin-right: 42px;
+    }
+
+    &-languages {
+      margin-left: 15px;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+  }
+
+  &--info {
+    background-color: $info;
+    .footer {
+      &-copy-right {
+        color: $color-white;
+      }
+      &-menu {
+        ul a {
+          color: $color-primary;
+        }
+      }
+      &-social-col {
+        .socials {
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    .footer {
+      &-copy-right {
+        color: #81A3BE;
+      }
+      &-menu {
+        ul a {
+          color: $color-primary;
+        }
+      }
+      &-social-col {
+        .socials {
+          a .icon {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .site-footer {
+    padding: 24px 0 20px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer {
+      &-bottom {
+        align-items: flex-start;
+        padding-top: 22px;
+      }
+
+      &-copy-right {
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        line-height: 19.07px;
+      }
+
+      &-social-col {
+        flex-basis: 33%;
+        margin-right: 0;
+      }
+
+      &-menu {
+        flex: 1;
+        ul {
+          margin: 0;
+          display: block;
+          column-count: 2;
+          li {
+            padding: 0;
+            margin-bottom: 4px;
+            a {
+              font-size: 1.4rem;
+              line-height: 19.07px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

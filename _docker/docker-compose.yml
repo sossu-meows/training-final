@@ -1,0 +1,48 @@
+version: '2'
+
+services:
+  lec2_php:
+    container_name: lec2_php
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    working_dir: /var/www/lec2
+    volumes:
+      - './php/php:/usr/local/etc/php'
+      - '${PROJECTS_PATH}:/var/www/lec2:delegated'
+    links:
+      - lec2_mariadb
+    tty: true
+    restart: always
+
+  lec2_nginx:
+    container_name: lec2_nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    restart: always
+    working_dir: /var/www/lec2
+    volumes:
+      - './nginx/logs:/var/log/nginx'
+      - './nginx/conf.d:/etc/nginx/conf.d'
+      - './nginx/nginx.conf:/etc/nginx/nginx.conf'
+      - '${PROJECTS_PATH}:/var/www/lec2:delegated'
+    ports:
+      - ${PORT}:80
+    depends_on:
+      - lec2_php
+
+  lec2_mariadb:
+    container_name: lec2_mariadb
+    build:
+      context: ./mariadb
+      dockerfile: Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+    volumes:
+      - './mariadb/config/my.cnf:/etc/mysql/my.cnf'
+      - './mariadb/datadir:/var/lib/mysql:cached'
+    ports:
+      - '${MYSQL_PORT}:3306'
+    restart: always
+

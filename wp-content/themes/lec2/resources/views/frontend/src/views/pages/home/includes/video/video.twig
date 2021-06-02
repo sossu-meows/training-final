@@ -1,0 +1,19 @@
+<div class="video-block">
+	<div class="container">
+		<div class="videoWrapper">
+			{% for videoItem in page_data.custom_data.video %}
+				{% if videoItem.thumbnail %}
+					<video poster="{{videoItem.thumbnail}}" controls>
+						<source src="{{videoItem.custom_data.video_file.url}}" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				{% else %}
+					<video poster="{{global.theme_options.website.video_poster_default}}" controls>
+						<source src="{{videoItem.custom_data.video_file.url}}" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

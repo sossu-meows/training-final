@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "post_title": "News",
+    "custom_data": {
+      "top_banner": {
+        "top_banner_title": "How to simplify your next system design",
+        "top_banner_description": "<p>Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership because “Eugen Krassin and his team bring decades of combined FPGA expertise to the LEC2.” </p> <p>He invites you to explore and learn more about how Lattice and LEC2 can help simplify your next system design.</p>"
+      },
+      "video": [
+        {
+          "ID": 999,
+          "custom_data": {
+            "video_url": "",
+            "video_file": {
+              "subtype": "mp4",
+              "type": "video",
+              "url": "~@/assets/images/mov_bbb.mp4"
+            }
+          },
+          "thumbnail": "~@/assets/images/news-detail/poster-video-detail.png"
+        }
+      ],
+      "news_detail_list": [
+        {
+          "title": "How to simplify your next system design",
+          "content": "<p>Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership because “Eugen Krassin and his team bring decades of combined FPGA expertise to the LEC2.” </p><p>He invites you to explore and learn more about how Lattice and LEC2 can help simplify your next system design.</p>"
+        },
+        {
+          "content": "<p>Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership because “Eugen Krassin and his team bring decades of combined FPGA expertise to the LEC2.”</p><p>He invites you to explore and learn more about how Lattice and LEC2 can help simplify your next system design.Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership</p><p>He invites you to explore and learn more about how Lattice and LEC2 can help simplify your next system design. </p>",
+          "image": "~@/assets/images/news-detail/news-detail01.png"
+        }
+      ],
+      "news_feed": {
+        "news_feed_title": "Get the latest news from LEC2!",
+        "news_feed_link": "news.html"
+      },
+      "slider_image_list": [
+        {
+          "image": "~@/assets/images/news-detail/image-slider01.png",
+          "title": "image 1"
+        },
+        {
+          "image": "~@/assets/images/news-detail/image-slider02.png",
+          "title": "image 2"
+        },
+        {
+          "image": "~@/assets/images/news-detail/image-slider03.png",
+          "title": "image 3"
+        }
+      ]
+    }
+  }
+}

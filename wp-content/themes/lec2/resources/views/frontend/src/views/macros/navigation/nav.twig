@@ -1,0 +1,21 @@
+{% macro nav(items, params = null, i = 0, level = 0 ) %}
+  <ul class="{{ params.classes|default('') }}" {% if params.id %} id="{{ params.id }}" {% endif %}>
+    {% for key, item in items %}
+      {% set menuItemChiren = item.itemsMenu|length ? ' menu-item-has-children' : null %}
+      {% set i = i + 1 %}
+      <li class="menu-item-{{i}} menu-item{{ i == params.index ? ' current-menu-item' : null }} {{item.customClass ? item.customClass : ''}} {{menuItemChiren}}">
+        <a href="{{ item.href }}" title="{{item.title}}">{{item.title}}</a>
+        {% if item.description %}
+          <span class="menu-item-description">{{ item.description }}</span>
+        {% endif %}
+        
+        {% if item.itemsMenu|length %}
+          {{ _self.nav(item.itemsMenu, item.itemParams, i, level + 1) }}
+        {% endif %}
+      </li>
+      {% if ( item.itemsMenu|length) %}
+        {% set i = i + item.itemsMenu|length %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endmacro %}

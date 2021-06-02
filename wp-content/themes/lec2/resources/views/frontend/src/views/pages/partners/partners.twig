@@ -1,0 +1,83 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'partners-page',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set partnersBanner = page_data.custom_data.partners_banner %}
+
+  {% set partnersBannerData = {
+      top_banner_title : partnersBanner.title,
+      top_banner_background : partnersBanner.partner_image,
+      top_banner_description : partnersBanner.partner_description,
+      top_banner_buttonText: partnersBanner.buttonText,
+      top_banner_buttonUrl: partnersBanner.button_url,
+      isButton: true
+    }
+  %}
+  {% include "@views/components/top-banner/top-banner.twig" with {
+    'topBannerData': partnersBannerData,
+    classPage: 'partner',
+    btnTheme: 'info',
+    colContent: 'col-md-7',
+    colImage: 'col-md-5',
+    theme: 'white',
+  }%}
+
+  {% include "@views/pages/partners/includes/partner-card/partner-card.twig" with {
+    'data': page_data.custom_data.partners_section,
+  }%}
+
+  {% include "@views/pages/partners/includes/banner-block/banner-block.twig" with {
+    data: page_data.custom_data.benefit_section,
+    theme: 'primary'
+  }%}
+
+   {% include "@views/pages/partners/includes/achive-block/achive-block.twig" with {
+    'data': page_data.custom_data.achive_results,
+  }%}
+
+  {% include "@views/pages/partners/includes/banner-block/banner-block.twig" with {
+    data: page_data.custom_data.service_section,
+    theme: 'info',
+    position_image: 'right',
+    center_content: 'center',
+  }%}
+
+  {% set testimonials = page_data.custom_data.testimonials %}
+  {% set testimonialList = [] %}
+    {% for testimonial in testimonials.testimonials %}
+      {% set testimonialList = testimonialList|merge([{
+        name: testimonial.post_title,
+        image: testimonial.thumbnail,
+        description: testimonial.custom_data.testimonial_client_description,
+        position: testimonial.custom_data.testimonial_client_position,
+      }]) %}
+    {% endfor %}
+  {% set testimonialsData = {
+    title: testimonials.title,
+    testimonial_list: testimonialList,
+  } %}
+  {% include "@views/components/testimonials-block/testimonials-block.twig" with {
+    'data': testimonialsData
+  }%}
+
+
+  {% include "@views/components/join-block/join-block.twig" with {
+    data: global.theme_options.join_with_us,
+  }%}
+
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+
+
+{% endblock %}

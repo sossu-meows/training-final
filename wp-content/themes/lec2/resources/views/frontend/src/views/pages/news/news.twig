@@ -1,0 +1,41 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'news-page',
+    jsController: 'news',
+    headerTheme: 'white',
+    btnRequestClass: 'btn-primary',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set news_banner = page_data.custom_data.news_banner %}
+  {% set bannerData = {
+    top_banner_title: news_banner.title,
+    top_banner_background: news_banner.image,
+    top_banner_description: news_banner.description,
+  } %}
+  {% include "@views/components/top-banner/top-banner.twig" with {
+    topBannerData: bannerData,
+    theme: 'info',
+    classPage: 'news',
+    colContent: 'col-md-7',
+    colImage: 'col-md-5'
+  }%}
+
+  {% include "@views/pages/news/includes/news-item/news-item.twig" with {
+    'data': page_data.custom_data.news_item
+  }%}
+
+  {% include "@views/pages/home/includes/highlight/highlight.twig" with {
+    'data': page_data.custom_data.highlight_list,
+  }%}
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

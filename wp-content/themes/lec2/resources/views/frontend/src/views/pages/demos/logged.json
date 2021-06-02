@@ -1,0 +1,10 @@
+{
+  "global": {
+    "user": {
+      "name": "John",
+      "surname": "Doe",
+      "email": "john.doe@gmail.com"
+    }
+  },
+  "page_data": {}
+}

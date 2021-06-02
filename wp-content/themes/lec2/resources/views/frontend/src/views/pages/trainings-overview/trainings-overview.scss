@@ -1,0 +1,57 @@
+@import "~@/scss/base";
+
+.trainings-overview-page {
+  .top-banner {
+    padding-top: 35px;
+    padding-bottom: 7.7vw;
+    &-image {
+      text-align: center;
+      img {
+        max-width: 365px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .trainings-overview-page {
+    .top-banner-image {
+      padding-left: 41px;
+    }
+    .journey-block {
+      .primary-title {
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .trainings-overview-page {
+    .top-banner {
+      &-image {
+        img {
+          max-width: 250px;
+        }
+      }
+    }
+
+  }
+}
+
+@include mobile {
+  .trainings-overview-page {
+    .top-banner {
+      padding-top: 43px;
+      padding-bottom: 21vw;
+      &-image {
+        img {
+          max-width: 217px;
+        }
+      }
+    }
+    .journey-block {
+      margin-top: 0;
+    }
+  }
+}

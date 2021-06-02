@@ -1,0 +1,22 @@
+{% if data %}
+	<div class="location-block">
+		<div class="container">
+			<div class="location-box">
+				<div class="location-box__left">
+          {{ data.location_map|raw }}
+				</div>
+				<div class="location-box__right">
+					<h2 class="primary-title">{{ data.title }}</h2>
+					<div class="location-list">
+						{% for locationItem in data.location_list %}
+							<dl class="location-item">
+								<dt class="location-item-title">{{ locationItem.title }}</dt>
+								<dd class="location-item-address">{{ locationItem.address }}</dd>
+							</dl>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}

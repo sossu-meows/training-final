@@ -1,0 +1,21 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+<div class="filter-block">
+  <div class="container inner">
+    <div class="filter-form js-filter-form">
+      <form>
+        <div class="form-group form-group--type">
+          {{ forms.select({name:'training_cat_id', id:'trainingCat', classes: 'selectpicker', options: trainingCat, search: false} ) }}
+        </div>
+        <div class="form-group form-group--type">
+          {{ forms.select({name:'training_type_id', id:'trainingType', classes: 'selectpicker', options: trainingType, search: false} ) }}
+        </div>
+        <div class="form-group form-group--query">
+          {{ forms.input({id: 'search', name: 'search', placeholder: searchLabel|raw, type: 'text', autocomplete: false})}}
+        </div>
+        <div class="form-group  form-group--action">
+          <button type="submit" class="btn btn-info">{{buttonSearchText|raw}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@import "~@/scss/base";
+
+.payment-form  {
+  .form-group-actions {
+    margin-top: 28px;
+  }
+
+ .billing,
+  .room-reservation {
+    display: none;
+  }
+
+  .billing .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .gj-datepicker {
+    .btn {
+      min-width: auto;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{%
+  set options = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+		autoplay: false,
+		infinite: false,
+		responsive: [{
+      breakpoint: 1024,
+      settings: {
+				slidesToShow: 2,
+        arrows: true,
+      }
+    },
+		{
+      breakpoint: 767,
+      settings: {
+				slidesToShow: 1
+      }
+    }]
+  }
+%}
+
+{% if data.highlight_list %}
+  <div class="highlight-block">
+    <div class="container">
+      <h2>{{ data.highlight_title }}</h2>
+      <div class="highlight-list" data-slick='{{ options|json_encode }}'>
+        {% for highlightItem in data.highlight_list %}
+          <div class="highlight-col">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="icon-tools"></i>
+              </div>
+              <h4 class="highlight-title">
+                {{ highlightItem.post_title }}
+              </h4>
+              <p class="highlight-description">
+                {{ highlightItem.post_excerpt }}
+              </p>
+              <a class="highlight-link" href="{{ highlightItem.url }}">{{ global.theme_options.text_translation.default_global_settings_text.explore }}
+                <i class="icon-chevron-right-solid"></i>
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

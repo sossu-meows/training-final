@@ -1,0 +1,43 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'trainings-overview-listing',
+    jsController: 'trainings-overview-listing',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set bannerData = {
+    top_banner_title: page_data.custom_data.banner.title,
+    top_banner_description: page_data.custom_data.banner.description,
+    top_banner_background: page_data.custom_data.banner.image,
+  } %}
+  {% include "@views/pages/trainings-overview-listing/includes/top-banner/top-banner.twig" with {
+    topBannerData: bannerData,
+    classPage: 'trainings-listing',
+    theme: 'white'
+  }%}
+  <div class="trainings-overview-content">
+    {% include "@views/components/filter-form/filter-form.twig" with {
+      action: page_data.url,
+      trainingType: page_data.custom_data.training_types,
+      trainingCat: page_data.custom_data.cats,
+      searchLabel: global.theme_options.text_translation.default_global_settings_text.search,
+      buttonSearchText: global.theme_options.text_translation.default_global_settings_buttons.filter
+    }%}
+    {% include "@views/pages/trainings-overview-listing/includes/course-listing/course-listing.twig" with {
+      list: page_data.custom_data.trainings.data,
+      current_page: page_data.custom_data.trainings.current_page,
+      total: page_data.custom_data.trainings.total_pages,
+      path: page_data.custom_data.trainings.path,
+    }%}
+  </div>
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

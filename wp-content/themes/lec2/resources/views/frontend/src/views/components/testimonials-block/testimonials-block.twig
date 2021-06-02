@@ -1,0 +1,21 @@
+<section class="testimonial-block">
+	<div class="container">
+		<h2 class="primary-title">{{ data.title }}</h2>
+		<div class="testimonial-list">
+			{% for testimonial in data.testimonial_list %}
+				<div class="testimonial-item">
+					<div class="client">
+						<div class="client__avatar">
+							<img src="{{ testimonial.image }}" alt="{{ testimonial.name }}"/>
+						</div>
+						<div class="client__content">
+							<h4 class="client__name">{{ testimonial.name }}</h4>
+							<p class="client__postion">{{ testimonial.position }}</p>
+							<div class="client__description">{{ testimonial.description|raw }}</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

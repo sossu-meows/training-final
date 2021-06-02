@@ -1,0 +1,18 @@
+@import 'base';
+
+// Basic styles
+@import "./inc/fonts.scss";
+@import "./inc/global.scss";
+@import "./inc/links.scss";
+@import "./inc/buttons.scss";
+@import "./inc/forms.scss";
+@import "./inc/colors.scss";
+@import "./inc/modal.scss";
+@import "./inc/text.scss";
+@import "./icons/icons.scss";
+
+// Common sections
+@import "./inc/sections/content-section.scss";
+
+// @Todo: For static demo, should be removed when integrated
+@import "./demo.scss";

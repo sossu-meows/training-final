@@ -1,0 +1,49 @@
+@import "@/scss/base";
+
+.cookie-message {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $color-dark;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    justify-content: center;
+  }
+
+  button {
+    margin-left: 15px;
+    background-color: #ffffff;
+    min-width: 100px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($color: #ffffff, $amount: 10);
+    }
+  }
+
+  a {
+    display: inline;
+    color: inherit !important;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+
+    button {
+      font-size: 13px;
+      min-width: 80px;
+    }
+  }
+}

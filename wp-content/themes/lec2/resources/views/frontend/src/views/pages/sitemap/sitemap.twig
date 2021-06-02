@@ -1,0 +1,38 @@
+{% extends "@views/layouts/layout-blank.twig" %}
+{# block declare #}
+{%
+  set viewData = {
+    bodyClass: 'sitemap-page',
+    jsController: 'sitemap',
+  }
+%}
+
+{% block pageContent %}
+	<div class="container">
+		<h1>Sitemap</h1>
+
+		<div class="responsive-controls d-flex justify-content-center">
+			<div class="btn-group">
+				<button rv-each-device="screen.list" class="btn btn-sm btn-outline-brand" rv-on-click="onDeviceClick" rv-class-active="device.width | == screen.current.width">
+					{device.title}
+				</button>
+			</div>
+		</div>
+
+		<div class="row list-page-cards">
+			<div class="col-lg-4 col-6" rv-each-item="mainPages">
+				<div class="page-card">
+					<div class="page-card__preview">
+						<iframe rv-src="item.href" frameborder="0"></iframe>
+					</div>
+					<a class="page-card__content" rv-href="item.href" target="_blank">
+						{index | + 1}. {item.name}
+						<span rv-if="item.isInProgress" class="text-warning">
+							(in-progress)
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

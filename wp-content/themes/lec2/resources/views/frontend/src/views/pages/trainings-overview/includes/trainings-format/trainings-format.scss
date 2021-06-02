@@ -1,0 +1,44 @@
+@import "~@/scss/base";
+
+.trainings-format {
+  margin-bottom: 30px;
+  &__title {
+    margin-bottom: 31px;
+  }
+  &__image {
+    img {
+      margin: auto;
+    }
+  }
+  &__content {
+    p {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+@include desktop {
+  .trainings-format {
+    margin-top: 50px;
+    margin-bottom: 53px;
+    &__content {
+      p {
+        font-size: 1.8rem;
+        line-height: 24.51px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .trainings-format {
+    padding-top: 15px;
+    &__content {
+      h4 {
+        margin-bottom: 8px;
+        font-size: 1.6rem;
+        line-height: 22px;;
+      }
+    }
+  }
+}

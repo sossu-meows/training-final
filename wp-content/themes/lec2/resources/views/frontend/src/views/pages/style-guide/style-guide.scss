@@ -1,0 +1,83 @@
+@import "~@/scss/base";
+
+.style-guide-page {
+  position: relative;
+
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    .section-top {
+      margin-bottom: 50px;
+    }
+  }
+
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .l-body section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #section-typography {
+    .row {
+      flex-direction: row-reverse;
+    }
+
+    .col {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .box-icon-font {
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+
+    .unit {
+      font-size: 1.6rem;
+      font-family: monospace;
+
+      i {
+        vertical-align: middle;
+        font-size: 2.4rem;
+      }
+    }
+    .content-code {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    input {
+      margin-left: 10px;
+    }
+  }
+
+  .list-images {
+    .col {
+      margin-bottom: 30px;
+    }
+  }
+
+  fieldset {
+    .legend {
+      font-size: 2.4rem;
+    }
+  }
+
+  .typography-section {
+    .row {
+      align-items: flex-start;
+    }
+  }
+
+  .location-map {
+    background: #f5f5f5;
+  }
+}

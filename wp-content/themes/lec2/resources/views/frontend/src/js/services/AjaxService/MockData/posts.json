@@ -1,0 +1,178 @@
+{
+  "data": [
+    {
+      "post_title": "How to simplify your next system design",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+          "custom_data": {
+            "video_file": {
+              "url": "./assets/images/mov_bbb.mp4"
+            }
+          }
+        },
+        "short_description": "Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership because “Eugen Krassin and his team bring decades of combined FPGA..."
+      }
+    },
+    {
+      "post_title": "Welcome to LEC2 Shorties!",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-2.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+          "custom_data": {
+            "video_file": {
+              "url": "./assets/images/mov_bbb.mp4"
+            }
+          }
+        },
+        "short_description": "Welcome to LEC2 – the Lattice Education Competence Center! Have a short glimpse how you can get started with our trainings and the steps on our education path."
+      }
+    },
+    {
+      "post_title": "Shorties - Radiant Design Flow (available on demand)",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/test-image02.jpg",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+
+        },
+        "short_description": "This Shorties demonstrates how to create a new Radiant software project, customize IP using IP Catalog, verify functionality with simulation, set timing and location"
+      }
+    },
+    {
+      "post_title": "Get your MachXO3LF Dev Board for free!",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/test-image01.jpg",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+
+        },
+        "short_description": "First 100 subscribers of our newsletters gets a MachXO3LF Development board for free. Be part of it!"
+      }
+    },
+    {
+      "post_title": "How to simplify your next system design",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-2.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+          "custom_data": {
+            "video_file": {
+              "url": "./assets/images/mov_bbb.mp4"
+            }
+          }
+        },
+        "short_description": "Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership because “Eugen Krassin and his team bring decades of combined FPGA..."
+      }
+    },
+    {
+      "post_title": "Welcome to LEC2 Shorties!",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-2.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+          "custom_data": {
+            "video_file": {
+              "url": "./assets/images/mov_bbb.mp4"
+            }
+          }
+        },
+        "short_description": "Welcome to LEC2 – the Lattice Education Competence Center! Have a short glimpse how you can get started with our trainings and the steps on our education path."
+      }
+    },
+    {
+      "post_title": "Shorties - Radiant Design Flow (available on demand)",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-3.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+
+        },
+        "short_description": "This Shorties demonstrates how to create a new Radiant software project, customize IP using IP Catalog, verify functionality with simulation, set timing and location"
+      }
+    },
+    {
+      "post_title": "Get your MachXO3LF Dev Board for free!",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-4.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+
+        },
+        "short_description": "First 100 subscribers of our newsletters gets a MachXO3LF Development board for free. Be part of it!"
+      }
+    },
+    {
+      "post_title": "How to simplify your next system design",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-2.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+          "custom_data": {
+            "video_file": {
+              "url": "./assets/images/mov_bbb.mp4"
+            }
+          }
+        },
+        "short_description": "Esam Elashmawi, Chief Strategy and Marketing Officer at Lattice, is looking forward to a successful partnership because “Eugen Krassin and his team bring decades of combined FPGA..."
+      }
+    },
+    {
+      "post_title": "Welcome to LEC2 Shorties!",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-2.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+          "custom_data": {
+            "video_file": {
+              "url": "./assets/images/mov_bbb.mp4"
+            }
+          }
+        },
+        "short_description": "Welcome to LEC2 – the Lattice Education Competence Center! Have a short glimpse how you can get started with our trainings and the steps on our education path."
+      }
+    },
+    {
+      "post_title": "Shorties - Radiant Design Flow (available on demand)",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-3.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+
+        },
+        "short_description": "This Shorties demonstrates how to create a new Radiant software project, customize IP using IP Catalog, verify functionality with simulation, set timing and location"
+      }
+    },
+    {
+      "post_title": "Get your MachXO3LF Dev Board for free!",
+      "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+      "thumbnail": "./assets/images/news-feed/news-feed-image-4.png",
+      "url": "news-detail.html",
+      "custom_data": {
+        "video": {
+
+        },
+        "short_description": "First 100 subscribers of our newsletters gets a MachXO3LF Development board for free. Be part of it!"
+      }
+    }
+  ],
+  "posts_per_page": "12",
+  "current_page": 1,
+  "next_page": 2,
+  "total_pages": 2,
+  "total_posts": 16,
+  "show_load_more": true
+}

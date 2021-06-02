@@ -1,0 +1,82 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+{# Get list services #}
+{% set listSex = [
+  {
+    label: 'Male',
+    value: 1
+  },
+  {
+    label: 'Female',
+    value: 2
+  }
+]
+%}
+
+{% set listCoutry = [
+  {
+    label: 'Country 1',
+    value: 1
+  },
+  {
+    label: 'Country 2',
+    value: 2
+  }
+]
+%}
+
+<div class="form payment-form js-payment-form">
+	<div class="form-body">
+		<form>
+			<div class="row row--group">
+
+        {% include "@views/components/payment-form/inc/shipping-form.twig" with {
+          'prefixName': 'shipping_'
+        }  %}
+
+				<div class="col-md-12 col-item">
+					<div class="form-group form-group--checkbox check-billing ">
+						{{ forms.input({id: 'billing', name: 'billing', value: 1, label: dataBillingLabel|raw, type: 'checkbox'})}}
+					</div>
+				</div>
+
+        <div class="billing">
+          <div class="row">
+            {% include "@views/components/payment-form/inc/billing-form.twig" with {
+              'prefixName': 'billing_'
+            }%}
+          </div>
+        </div>
+
+				<div class="col-md-12 col-item">
+					<div class="form-group form-group--checkbox">
+						{{ forms.input({id: 'ask_offer', name: 'ask_offer', value:1, label: dataAskOfferLabel|raw, type: 'checkbox'})}}
+					</div>
+				</div>
+
+				<div class="col-md-12 col-item">
+					<div class="form-group form-group--checkbox check-room">
+						{{ forms.input({id: 'roomReservation', name: 'roomReservation', value:1, label: dataRoomReservationLabel|raw, type: 'checkbox'})}}
+					</div>
+				</div>
+
+        {% include "@views/components/payment-form/inc/datepicker.twig" with {
+        }%}
+
+				<div class="col-md-12 col-item">
+					<div class="form-group form-group--checkbox">
+						{{ forms.input({id: 'terms_and_conditions', name: 'terms_and_conditions', value:1, label: dataTermsandConditionsLabel|raw, type: 'checkbox'})}}
+					</div>
+				</div>
+				<div class="col-md-12 col-item">
+					<div class="form-group form-group--checkbox long-text">
+						{{ forms.input({id: 'agreement', name: 'agreement', value:1, label: dataAgreementLabel|raw, type: 'checkbox'})}}
+					</div>
+				</div>
+			</div>
+			<div class="form-group-actions">
+				<button type="submit" class="btn btn-info">{{buttonText|raw}}</button>
+			</div>
+		</form>
+	</div>
+</div>

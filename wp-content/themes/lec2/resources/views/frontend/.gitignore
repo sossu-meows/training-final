@@ -1,0 +1,31 @@
+# Modules #
+###########
+node_modules
+npm_modules
+bower_components
+_webdata
+
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.idea
+
+src/draggy/yarn\.lock
+
+/index.php
+/.htaccess'
+/config/*.*
+!/config/default.json
+!/config/*-example.json
+!/config/index.js
+/.htaccess
+build

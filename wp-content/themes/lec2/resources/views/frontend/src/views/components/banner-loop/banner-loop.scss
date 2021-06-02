@@ -1,0 +1,101 @@
+@import "~@/scss/base";
+
+.banner-loop-block{
+  .banner-loop {
+    padding-top: 32px;
+    padding-bottom: 35px;
+    &-image {
+      padding-bottom: 32px;
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+    }
+    &-logo {
+      margin-bottom: 16px
+    }
+    .banner-loop-text {
+      @extend %lead;
+    }
+    &-title {
+      margin-bottom: 32px;
+    }
+  }
+  .banner-loop-content-text {
+    padding-left: 27px;
+    padding-right: 27px;
+    .banner-loop-title {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@include desktop() {
+  .banner-loop-block{
+    .banner-loop {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -12px;
+      margin-right: -12px;
+
+      &-image,
+      &-content {
+        padding: 0 12px;
+        flex-basis: 50%;
+        width: 50%;
+      }
+      &-logo {
+        margin-bottom: 32px;
+      }
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+@include breakpoint($min: $breakpoint-xl) {
+  .banner-loop-block{
+    .banner-loop {
+      margin-left: -27px;
+      margin-right: -27px;
+      &-image,
+      &-content {
+        padding: 0 27px;
+      }
+    }
+  }
+}
+
+@include tablet-down {
+  .banner-loop-block  {
+    .banner-loop-image img {
+      max-height: 300px;
+    }
+  }
+}
+
+@include mobile {
+  .banner-loop-block{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .banner-loop {
+      padding-top: 0px;
+      padding-bottom: 35px;
+      &-image {
+        padding-bottom: 30px;
+      }
+      &-content {
+        img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .banner-loop-content-text {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

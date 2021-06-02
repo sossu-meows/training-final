@@ -1,0 +1,18 @@
+<div class="about-block">
+  <div class="container">
+    {% for aboutItem in data %}
+      <div class="about-item">
+        <div class="about-item-image">
+          <img class="rounded-8" src="{{ aboutItem.image }}" alt="{{ aboutItem.title }}"/>
+        </div>
+        <div class="about-item-content">
+          {% if aboutItem.title %}
+            <h2 class="about-item-title">{{ aboutItem.title }}</h2>
+          {% endif %}
+          <div class="about-item-text">{{ aboutItem.content|content|raw }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="bg-center"></div>
+</div>

@@ -1,0 +1,33 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'tac-page',
+    headerTheme: 'gray',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set tac_banner = page_data.custom_data.banner %}
+  {% set bannerData = {
+    top_banner_title: tac_banner.title,
+    top_banner_background: tac_banner.image,
+    top_banner_description: tac_banner.description,
+  } %}
+  {% include "@views/components/top-banner/top-banner.twig" with {
+    'topBannerData': bannerData,
+    classPage: 'tac',
+    colContent: 'col-md-7',
+    colImage: 'col-md-5',
+    theme: 'linear'
+  }%}
+
+  {% include "@views/pages/tac/includes/tac-content/tac-content.twig" %}
+
+  {% include "@views/components/get-opportunities/get-opportunities.twig" with {
+    btnTheme: 'primary',
+  }%}
+{% endblock %}

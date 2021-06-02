@@ -1,0 +1,13 @@
+{% macro list(items, class = null) %}
+	<ul	class="{{class}}">
+		{% for item in items %}
+			<li>
+				<a href="{{item.href}}">{{item.title}}</a>
+				{% if item.children %}
+					{% import _self as recursive %}
+					{{ recursive.list(item.children) }}
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+{% endmacro %}

@@ -1,0 +1,69 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+{% set colClass = 'col-lg-3' %}
+{% set formContent = global.theme_options.form_contact_top %}
+{% set firstnameLabel = formContent.firstname %}
+{% set lastnameLabel = formContent.lastname %}
+{% set phoneLabel = formContent.phone %}
+{% set messageLabel = formContent.message %}
+{% set dataProtectionLabel = formContent.privacy_policy %}
+{% set agreementText = formContent.agreement %}
+{% set buttonText = formContent.submit_button %}
+{% set sendText = formContent.request_text %}
+{% set downloadText = formContent.download_pdf %}
+{% set emailLabel = formContent.email %}
+{% if modalType == 'contact' %}
+	{% set colClass = 'col-lg-3 col-md-6' %}
+{% endif %}
+<div class="form modal-form js-modal-form">
+	<div class="form-body">
+		<form>
+			<div class="row row--group">
+				<div class="{{colClass}} col-item">
+					<div class="form-group">
+						<div class="form-field">
+							{{ forms.input({id: 'firstname' ~ modalType, name: 'firstname', value:'', placeholder: firstnameLabel|raw, type: 'text', autocomplete: false, required: true, requireOption: true})}}
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-item">
+					<div class="form-group">
+						<div class="form-field">
+							{{ forms.input({id: 'lastname' ~ modalType, name: 'lastname', value:'', placeholder: lastnameLabel|raw, type: 'text', autocomplete: false, required: true, requireOption: true})}}
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-item">
+					<div class="form-group">
+						{{ forms.input({id: 'email' ~ modalType, name: 'email', value:'', placeholder: emailLabel|raw, type: 'text', autocomplete: false, required: true, requireOption: true})}}
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-item">
+					<div class="form-group">
+						{{ forms.input({id: 'phone' ~ modalType, name: 'phone', value:'', placeholder: phoneLabel|raw, type: 'text', autocomplete: false, required: true})}}
+					</div>
+				</div>
+				<div class="col-md-12 col-item">
+					<div class="form-group form-group--message">
+						{{ forms.textarea({id: 'message' ~ modalType, name: 'message', value:'', placeholder: messageLabel|raw, type: 'text', requireOption: true})}}
+					</div>
+				</div>
+        <div class="col-md-12 col-item">
+          <div class="form-group form-group--checkbox">
+              {{ forms.input({id: 'dataProtection' ~ modalType, name: 'data_protection', value:1, label: dataProtectionLabel|raw, type: 'checkbox'})}}
+          </div>
+        </div>
+        <div class="col-md-12 col-item">
+          <div class="form-agreement">{{agreementText|raw}}</div>
+        </div>
+			</div>
+      <div class="form-group-actions">
+        {% if modalType == 'contact' %}
+          <button type="submit" class="btn btn-info">{{ buttonText }}</button>
+          <a class="btn btn-outline-info" href="{{ global.theme_options.form_contact_top.pdf_file_download.url }}"  target="_blank" rel="noopener" download>{{ downloadText }}</a>
+        {% else %}
+          <button type="submit" class="btn btn-info">{{ sendText }}</button>
+        {% endif %}
+      </div>
+		</form>
+	</div>
+</div>

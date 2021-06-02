@@ -1,0 +1,39 @@
+<div class="partner-card-block">
+	<div class="container">
+		<h2 class="text-center">
+			{{data.title}}
+		</h2>
+		<div class="row">
+			{% for item in data.partner_list %}
+				<div class="col-md-3 col-sm-6 col-6 mb-24">
+					{% set itemClass = '' %}
+					{% if item.custom_data.banner.partners_short_description %}
+						{% set itemClass = ' partner-item--has-desc' %}
+					{% endif %}
+
+					<div class="partner-item text-center{{itemClass}}">
+						<div class="partner-item-image">
+							<a href="{{item.url}}">
+								<img src="{{item.thumbnail}}" alt="{{item.post_title}}"/>
+							</a>
+						</div>
+						<div class="partner-item-content">
+							<p class="partner-item-title">{{item.post_title}}</p>
+							<div class="partner-item-hover">
+								{% if item.custom_data.banner.partners_short_description %}
+									<p class="partner-item-description">{{item.custom_data.banner.partners_short_description}}</p>
+								{% endif %}
+								<a href="{{item.url}}" class="partner-item-link">{{ global.theme_options.text_translation.default_global_settings_text.explore }}
+									<i class="icon-chevron-right-solid"></i>
+								</a>
+							</div>
+						</div>
+						<a href="{{item.url}}" class="partner-item-link d-block d-lg-none">{{ global.theme_options.text_translation.default_global_settings_text.explore }}
+							<i class="icon-chevron-right-solid"></i>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

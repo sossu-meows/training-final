@@ -1,0 +1,26 @@
+{% if global.languages %}
+  {% set otherLanguage = [] %}
+  {% for key,language in global.languages.list %}
+    {% if key != global.languages.current %}
+      {% set otherLanguage = {
+        title: key,
+        url: language.url            
+      } %}
+    {% endif %}
+  {% endfor %}
+  <div class="language-box">
+    <a href="{{ otherLanguage.url }}" class="btn-language">
+      <i class="icon-globe"></i> {{otherLanguage.title}}
+    </a>
+    {# <div class="language-dropdown is-active-{{global.languages.current}}">
+      <ul>
+        {% for key,language in global.languages.list %}
+          {% if key == global.languages.current %}{% endif %}
+          <li class="{{ key == global.languages.current ? 'active': '' }}">
+            <a class="dropdown-item" href="{{language.url}}">{{ language.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div> #}
+  </div>
+{% endif %}

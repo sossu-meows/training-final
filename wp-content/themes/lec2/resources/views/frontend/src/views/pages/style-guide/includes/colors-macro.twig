@@ -1,0 +1,15 @@
+{% macro colorBox(listName) %}
+	<div class="row">
+		<div class="col-sm-2 col-lg-1 col-3" rv-each-item="{{listName}}">
+
+			<div class="color-box">
+				<div class="color-box__square" rv-background-color="item.hex"></div>
+				<p>
+					{item.hex}
+					<br>
+					{item.colorName}
+				</p>
+			</div>
+		</div>
+	</div>
+{% endmacro %}

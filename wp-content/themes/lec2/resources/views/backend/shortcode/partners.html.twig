@@ -1,0 +1,9 @@
+<ul>
+    {% for item in page_data %}
+        <li>
+            <img src="{{ item.logo }}">
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+{% if page_data.users is not empty %}
+    <ol>
+    {% for user in page_data.users %}
+       <li>
+          {{ user | edit_user_url | raw }}
+       </li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>{{ "This office doesn't have any moderator" | trans }}</p>
+{% endif %}

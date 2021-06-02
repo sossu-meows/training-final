@@ -1,0 +1,27 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+{% from "@views/macros/pagination/pagination.twig" import pagination %}
+
+<div class="course-listing-block">
+	<div class="container">
+		<div class="row course-listing">
+			<div class="col-md-6 course-card-col" rv-each-item="trainings.courseList">
+				<div class="course-card">
+					<div class="course-card-image">
+						<img class="rounded-8" rv-src="item.thumbnail" rv-alt="item.post_title"/>
+					</div>
+					<div class="course-card-content">
+						<h3 class="course-card-title">
+							<a rv-href="{{item.url}}" rv-text="item.post_title"></a>
+						</h3>
+						<div class="course-card-description" rv-text="item.post_excerpt"></div>
+						<div class="course-card-link">
+							<a class="btn btn-primary" rv-href="item.url">{{ global.theme_options.text_translation.default_global_settings_buttons.see_trainings_options }}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pagination-container"></div>
+		{# {{ pagination(total,current_page, path) }} #}
+	</div>
+</div>

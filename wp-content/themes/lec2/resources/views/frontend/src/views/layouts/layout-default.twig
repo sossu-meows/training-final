@@ -1,0 +1,25 @@
+{% extends "@views/layouts/layout-basic.twig" %}
+
+{% block bodyContent %}
+
+  {% include "@views/components/header/header.twig" %}
+
+  <main class="site-main">
+    {% block pageContent %}{% endblock %}
+  </main>
+
+  {% include "@views/components/footer/footer.twig" %}
+  {% include "@views/components/modals/modal-contact.twig" with {
+    modalTitle: global.theme_options.form_contact_top.hiring_popup_label,
+    modalDescription: global.theme_options.form_contact_top.hiring_popup_description,
+    modalType: 'contact',
+    modalID: 'contactForm',
+  } %}
+
+  {% include "@views/components/modals/modal-contact.twig" with {
+    modalTitle: global.theme_options.form_contact_top.request_text,
+    modalDescription: global.theme_options.form_contact_top.request_form_description,
+    modalType: 'request',
+    modalID: 'requestForm',
+  } %}
+{% endblock %}

@@ -1,0 +1,74 @@
+@import "~@/scss/base";
+
+
+.partners-page {
+  .top-banner {
+    padding-top: 30px;
+    padding-bottom: 9vw;
+  }
+  .bg-gradient-gray {
+    padding-top: 50px;
+    >.banner-block {
+      padding-top: 51px;
+    }
+  }
+
+  .join-block {
+    background-color: #eeecec;
+  }
+}
+
+@include desktop {
+  .partners-page {
+    .top-banner {
+      &-image {
+        img {
+          max-width: 384px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .partners-page {
+    .top-banner {
+      padding-bottom: 15vw;
+      &-button {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .partners-page {
+    .top-banner {
+      padding-bottom: 19.6875vw;
+      &-image {
+        padding-top: 24px;
+        padding-left: 0px;
+        text-align: center;
+        img {
+          max-width: 217px;
+        }
+      }
+      .top-banner-content {
+        a {
+          display: block;
+          margin: 16px auto 0;
+          max-width: 210px;
+        }
+      }
+    }
+
+    .bg-gradient-gray {
+      >.join-block {
+        padding-top: 0;
+      }
+      >.banner-block {
+        padding-top: 26px;
+      }
+    }
+  }
+}

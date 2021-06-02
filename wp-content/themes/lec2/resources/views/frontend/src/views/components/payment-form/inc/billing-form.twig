@@ -1,0 +1,125 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+{# Get list salutation #}
+{% set listSalutation = [
+  {
+    label: salutationGroup.mr,
+    value: 'Mr'
+  },
+  {
+    label: salutationGroup.mrs,
+    value: 'Mrs'
+  },
+  {
+    label: salutationGroup.mx,
+    value: 'Mx'
+  }
+]
+%}
+
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		{{ forms.select({name: prefixName ~ 'salutation', id: prefixName ~ 'salutation', requireOption: true, classes: 'selectpicker', options: listSalutation, includeBlank: true, includeText: salutationGroup.salutation, required: false} ) }}
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~ 'title', name: prefixName ~ 'title', value:'', placeholder: titleLabel|raw, type: 'text', autocomplete: false})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~  'firstname', requireOption: true, name: prefixName ~ 'firstname', value:'', placeholder: firstnameLabel|raw, type: 'text', autocomplete: false, required: true})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~  'lastname', requireOption: true, name: prefixName ~ 'lastname', value:'', placeholder: lastnameLabel|raw, type: 'text', autocomplete: false, required: true})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-6 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~  'company', name: prefixName ~ 'company', value:'', placeholder: companyLabel|raw, type: 'text', autocomplete: false, required: true})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-6 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~ 'division', name: prefixName ~ 'division', value:'', placeholder: divisionLabel|raw, type: 'text', autocomplete: false})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~ 'street', name: prefixName ~ 'street', requireOption: true, value:'', placeholder: streetLabel|raw, type: 'text', autocomplete: false, required: true})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~ 'postcode', name: prefixName ~ 'postcode', requireOption: true, value:'', placeholder: postcodeLabel|raw, type: 'text', autocomplete: false, required: true})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-field">
+			{{ forms.input({id: prefixName ~ 'city', name: prefixName ~ 'city',requireOption: true,  value:'', placeholder: cityLabel|raw, type: 'text', autocomplete: false, required: true})}}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		<div class="form-group form-group--country">
+			{% include "@views/components/country-form/countries.twig" with {
+        selectCountryLabel: countryLabel,
+        'prefixName': 'billing_'
+			} %}
+		</div>
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		{{ forms.input({id: prefixName ~  'phone', name: prefixName ~ 'phone', value:'', placeholder: phoneLabel|raw, type: 'text', autocomplete: false, required: true})}}
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		{{ forms.input({id: prefixName ~  'fax', name: prefixName ~ 'fax', value:'', placeholder: faxLabel|raw, type: 'text', autocomplete: false})}}
+	</div>
+</div>
+<div class="col-md-6 col-item">
+	<div class="form-group">
+		{{ forms.input({id: prefixName ~  'email', name: prefixName ~ 'email', value:'', placeholder: emailLabel|raw, type: 'text', autocomplete: false, required: true})}}
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		{{ forms.input({id: prefixName ~  'vatnumber', name: prefixName ~ 'vatnumber', value:'', placeholder: vatnumberLabel|raw, type: 'text', autocomplete: false})}}
+	</div>
+</div>
+<div class="col-md-3 col-item">
+	<div class="form-group">
+		{{ forms.input({id: prefixName ~  'ordernumber', name: prefixName ~ 'ordernumber', value:'', placeholder: ordernumberLabel|raw, type: 'text', autocomplete: false})}}
+	</div>
+</div>
+<div class="col-md-6 col-item">
+	<div class="form-group">
+		{{ forms.input({id: prefixName ~  'couponcode', name: prefixName ~ 'couponcode', value:'', placeholder: couponcodeLabel|raw, type: 'text', autocomplete: false, required: true})}}
+	</div>
+</div>
+<div class="col-md-12 col-item">
+	<div class="form-group form-group--message">
+		{{ forms.textarea({id: prefixName ~ 'message', name: prefixName ~ 'message', value:'', placeholder: messageLabel|raw, type: 'text'})}}
+	</div>
+</div>

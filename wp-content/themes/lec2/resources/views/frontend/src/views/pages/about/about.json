@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "about_banner": {
+        "title": "Learn more about us",
+        "about_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "image": "~@/assets/images/about/about-banner.png"
+      },
+      "about_list": [
+        {
+          "title": "Lattice Education Competence Center",
+          "content": "<p><b>LEC2 helps you to use the available FPGA technology </b> from Lattice Semiconductor effectively. We turn engineers and technicians into FPGA experts. </p><p>Our structured and extensive training program imparts the know-how for the entire development process – from conception to physical implementation, and helps you face these challenges. Securing the future through qualification with leading experts.</p><p>Competently imparted first-hand knowledge is becoming more and more essential for the successful use of new technologies. Only well-trained employees can cope with the demands placed on them in the time allotted.</p>",
+          "image": "~@/assets/images/about/about04.png"
+        },
+        {
+          "title": "Krassin Consulting GmbH",
+          "content": "<p>Some FPGA manufacturers established on the market have undertaken a massive realignment of their business models and thus also of their technology offerings, especially in recent years. Already available FPGA technologies, but also new FPGA architectures planned, are aimed at complex, computationally intensive and power-hungry applications of the highest performance.</p><p>These areas of application are especially designed for High-End applications in data centers. However, the need for e.g. data center applications on the European and worldwide market is rather low compared to industrial applications with demand for lower complexities.</p><p>The discrepancy between the supply of High-End FPGAs and low complexity FPGAs with low power consumption -which are still required to a large extent in the industry- is growing ever greater. </p><p>To close the aforementioned gap, Krassin Consulting GmbH has designed a training program together with Lattice Semiconductor Inc. to train and support industrial users specifically in this area. Lattice Semiconductor is the low power programmable leader. </p><p>They solve customer problems across the network, from the edge to the cloud, in the growing communications, computing, industrial, automotive, and consumer markets.</p>",
+          "image": "~@/assets/images/about/about03.png"
+        }
+      ],
+      "testimonials": {
+        "title": "Testimonials",
+        "testimonials": [
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/about/client01.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/about/client02.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/about/client03.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          },
+          {
+            "post_title": "Cameron Williamson",
+            "thumbnail": "~@/assets/images/about/client04.png",
+            "custom_data": {
+              "testimonial_client_position": "Johnson & Johnson",
+              "testimonial_client_description": "“The study was repeated with three brands of hand sanitizers containing 55%, 85%, and 95% ethanol. Their blood alcohol level was measured by gas chromatography 30 minutes after the last application.”"
+            }
+          }
+        ]
+      },
+      "awards": {
+        "title": "Awards",
+        "awards": [
+          {
+            "title": "Award Title",
+            "image": "~@/assets/images/about/award01.png",
+            "content": "Best study platform 2020"
+          },
+          {
+            "title": "Award Title",
+            "image": "~@/assets/images/about/award01.png",
+            "content": "Best study platform 2020"
+          },
+          {
+            "title": "Award Title",
+            "image": "~@/assets/images/about/award01.png",
+            "content": "Best study platform 2020"
+          }
+        ]
+      },
+      "mission": {
+        "title": "Our global reach",
+        "mission_list": [
+          {
+            "number": "2360",
+            "image": "~@/assets/images/about/protect-icon.png",
+            "title": "customers"
+          },
+          {
+            "number": "54",
+            "image": "~@/assets/images/about/protect-icon.png",
+            "title": "teachers"
+          },
+          {
+            "number": "9",
+            "image": "~@/assets/images/about/protect-icon.png",
+            "title": "trainings"
+          },
+          {
+            "number": "2012",
+            "image": "~@/assets/images/about/hourglass-icon.png",
+            "title": "reviews"
+          }
+        ]
+      },
+      "location": {
+        "title": "Locations",
+        "location_map":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.59372196946!2d13.28465008095959!3d52.50697037933168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2s!4v1620710839350!5m2!1sen!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "location_list": [
+          {
+            "address": "2715 Ash Dr. San Jose, South Dakota 83475",
+            "title": "Berlin"
+          },
+          {
+            "address": "4140 Parker Rd. Allentown, New Mexico 31134",
+            "title": "Hanover"
+          },
+          {
+            "address": "6391 Elgin St. Celina, Delaware 10299",
+            "title": "USA"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'email-template-page',
+    jsController: 'trainings-overview',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+
+  {% include "@views/pages/email-template/includes/email-content/email-content.twig" %}
+
+{% endblock %}

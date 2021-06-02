@@ -1,0 +1,30 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+
+<div id="{{id}}" class="filter-shorties-form js-filter-shorties-form filter-header">
+	{# <button class="filter-header__close" type="button" data-close-trigger=".header-write">
+		<em class="icon-close"></em>
+	</button> #}
+	<form>
+		<div class="form-group form-group--type">
+			{{ forms.select({name:'training_cat_id', id:'training_cat_id', classes: 'selectpicker', options: trainingCat, search: false} ) }}
+		</div>
+		<div class="form-group  form-group--action">
+			<button type="submit" class="btn btn-info">{{buttonFilterText|raw}}</button>
+		</div>
+	</form>
+	<div class="filter-header__content">
+		<div class="course-item-listing">
+			<div class="course-item" rv-each-item="courseList.items">
+				<h5 rv-text="item.post_title"></h5>
+				<div class="course-item-content">
+					<div class="course-item-left">
+						<a class="course-item-infor-link" rv-href="item.infor_url">{{global.theme_options.text_translation.default_global_settings_text.more_information}}
+							<i class="icon-chevron-right-solid"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pagination-filter-shorties" class="pagination-header"></div>
+	</div>
+</div>

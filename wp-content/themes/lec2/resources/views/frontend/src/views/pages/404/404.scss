@@ -1,0 +1,30 @@
+@import "~@/scss/base";
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 84px;
+  .title {
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: $color-primary;
+  }
+  .text {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  img {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+@include mobile {
+  .error-content {
+    margin-bottom: 40px;
+    .title {
+      font-size: 2.2rem;
+    }
+  }
+}

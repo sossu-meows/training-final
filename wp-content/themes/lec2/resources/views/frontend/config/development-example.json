@@ -1,0 +1,12 @@
+{
+  "build": {
+    "mode": "development",
+    "outputDir": "build",
+    "publicPath": "",
+    "optimizeImages": false,
+    "watch": true
+  },
+  "devServer": {
+    "port": 6325
+  }
+}

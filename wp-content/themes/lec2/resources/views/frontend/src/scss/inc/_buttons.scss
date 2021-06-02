@@ -1,0 +1,20 @@
+.btn {
+  font-family: $font-family-open-sans;
+  min-width: 210px;
+  font-size: 1.4rem;
+  padding: 9.5px 16px;
+  font-weight: 600;
+  &:focus {
+    box-shadow: none !important;
+  }
+  &-light-green {
+    background: $info;
+    color: $primary;
+  }
+  &-info {
+    color: $color-primary;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

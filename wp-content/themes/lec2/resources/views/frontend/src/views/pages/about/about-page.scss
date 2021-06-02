@@ -1,0 +1,51 @@
+@import "~@/scss/base";
+
+.site-main {
+  overflow: hidden;
+}
+
+.about-page {
+  .top-banner--about {
+    padding-bottom: 10.5vw;
+    &:after {
+      display: none;
+    }
+    .top-banner-image {
+      text-align: right;
+      padding-right: 5px;
+      img {
+        max-width: 323px;
+      }
+    }
+  }
+
+  @include tablet() {
+    .top-banner--about {
+      h1 {
+        margin-bottom: 20px;
+      }
+      .top-banner-image {
+        text-align: center;
+        img {
+          max-width: 206px;
+        }
+      }
+    }
+  }
+
+  @include mobile() {
+    .top-banner--about {
+      padding-bottom: 17.5vw;
+      p.lead:fist-child {
+        margin-top: 0;
+      }
+      .top-banner-image {
+        text-align: center;
+        padding: 24px 0 0;
+        img {
+          max-width: 206px;
+        }
+      }
+    }
+  }
+}

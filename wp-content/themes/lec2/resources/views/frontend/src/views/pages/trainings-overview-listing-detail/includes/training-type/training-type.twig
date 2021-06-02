@@ -1,0 +1,219 @@
+{% import "@views/macros/forms/forms.twig" as forms %}
+{%
+  set options = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+		autoplay: false,
+		infinite: false,
+		focusOnSelect: false,
+		responsive: [
+			{
+        breakpoint: 1399,
+        settings: {
+					slidesToShow: 5,
+					focusOnSelect: true
+        }
+      },
+			{
+        breakpoint: 1199,
+        settings: {
+					slidesToShow: 4
+        }
+      },
+			{
+        breakpoint: 1025,
+        settings: {
+					arrows: true,
+					slidesToShow: 3,
+          variableWidth: false,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+					arrows: true,
+					slidesToShow: 2,
+          variableWidth: false,
+          centerMode: false,
+        }
+      }
+    ]
+  }
+%}
+<div class="training-type-block">
+<div class="container">
+  <h2 class="training-type-block-title">{{ global.theme_options.text_translation.default_global_settings_text.choose_type }}</h2>
+  <div class="training-type-list" data-slick='{{ options|json_encode }}'>
+    {% for trainingItem in data %}
+      <div class="training-type-column">
+        <div class="training-type" data-index="training-type-{{loop.index}}" data-target="#training-type-{{loop.index}}">
+          <h3 class="training-type-title">{{ trainingItem.post_title }}</h3>
+          <img class="rounded-8" src="{{ trainingItem.thumbnail }}" alt="{{ trainingItem.post_title }}"/>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="training-body">
+	<div class="container">
+		{% for trainingItem in data %}
+
+			<div class="training-container" id="training-type-{{loop.index}}">
+				<dl class="training-body-row training-body-row--oneline">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.type_training }}:
+					</dt>
+					<dd class="training-body-content right">{{trainingItem.post_title|raw}}</dd>
+				</dl>
+				{% if trainingItem.execution_of_training_select and trainingItem.execution_of_training_select|length > 0 %}
+        		<dl class="training-body-row training-body-row--oneline" id="execution">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.execution_of_training }}:
+					</dt>
+					{% set executionOfTrainingValue = '' %}
+					<dd class="training-body-content right">
+						{% if trainingItem.execution_of_training_select|length > 1 %}
+							{{ forms.selectCost({name:'executionOfTrainingSelect',classes: 'selectpicker selectprimary', options: trainingItem.execution_of_training_select} ) }}
+						{% else %}
+              {{ trainingItem.execution_of_training_select[0].label }}
+              {% set executionOfTrainingValue = trainingItem.execution_of_training_select[0].value %}
+						{% endif %}
+					</dd>
+				</dl>
+				{% endif %}
+				{% set cost = trainingItem.cost %}
+				{% if trainingItem.execution_of_training_select|length > 0 %}
+					{% set cost = trainingItem.execution_of_training_select[0].cost %}
+				{% endif %}
+				{% if cost %}
+				<dl class="training-body-row training-body-row--cost">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.cost }}:
+					</dt>
+					<dd class="training-body-content right"><span class="cost-value">{{cost|raw}}</span></dd>
+				</dl>
+				{% endif %}
+				{% set defaultHiddenClass = ' hidden' %}
+				{% if trainingItem.execution_of_training_select|length > 0 and trainingItem.execution_of_training_select[0].value == 'live_video' %}
+					{% set defaultHiddenClass = '' %}
+				{% endif %}
+
+				{% if trainingItem.format %}
+        <dl class="training-body-row training-body-row--format{{defaultHiddenClass}}">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.format }}:
+					</dt>
+					<dd class="training-body-content right">{{trainingItem.format}}</dd>
+				</dl>
+				{% endif %}
+				{% if trainingItem.time_select or trainingItem.no_time %}
+        <dl class="training-body-row training-body-row--date{{defaultHiddenClass}}">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.date }}:
+					</dt>
+          {% if trainingItem.time_select and trainingItem.time_select|length > 0 %}
+					  <dd class="training-body-content right">{{ forms.select({name:'time_select', classes: 'selectpicker selectprimary', options: trainingItem.time_select} ) }}</dd>
+          {% else %}
+            <dd class="training-body-content right no_time_select"> {{ trainingItem.no_time.label }}</dd>
+          {% endif %}
+        </dl>
+				{% endif %}
+        {% if trainingItem.execution_of_training.has_live_course %}
+        <dl class="training-body-row training-body-row--duration{{defaultHiddenClass}}">
+          <dt class="training-body-content left">
+            {{ global.theme_options.text_translation.default_global_settings_text.duration }}:
+          </dt>
+          <dd class="training-body-content right">{{trainingItem.execution_of_training.duration|raw}}</dd>
+        </dl>
+        {% endif %}
+				<dl class="training-body-row">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.participant_documents_provided }}:
+					</dt>
+					<dd class="training-body-content right">{{trainingItem.participant_documents_provided|raw}}</dd>
+				</dl>
+				<dl class="training-body-row">
+					<dt class="training-body-content left">
+						{{ global.theme_options.text_translation.default_global_settings_text.course_objectives }}:
+					</dt>
+					<dd class="training-body-content training-body-content--richtext right">{{trainingItem.course_objectives|raw}}</dd>
+				</dl>
+				<div class="buy-link text-center">
+					{% if trainingItem.post_title|raw == 'Inhouse' %}
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#requestForm">
+								{{global.theme_options.form_contact_top.request_text}}
+							</button>
+					{% else %}
+							{% set trainingUrlValue = '' %}
+							{% if trainingItem.execution_of_training_select|length > 0 %}
+								{% set trainingUrlValue = trainingItem.execution_of_training_select[0].url %}
+						{% endif %}
+						{% set defaultTime = '' %}
+						{% if trainingItem.execution_of_training_select|length > 0 and trainingItem.execution_of_training_select[0].value == 'live_video' and trainingItem.time_select|length > 0 %}
+							{% set defaultTime = trainingItem.time_select[0].value %}
+						{% endif %}
+						<input type="hidden" name="time_default" value=""/>
+						{# Show buy form when execution_of_training_select has value #}
+						{% if trainingItem.execution_of_training_select|length > 0 %}
+							<form method="post" action="{{page_data.custom_data.checkout_url}}">
+								<div>
+									<input type="hidden" name="training_id" value="{{page_data.ID}}"/>
+									<input type="hidden" name="training_type_id" id="training_type_id" value="{{trainingItem.ID}}"/>
+									<input type="hidden" name="execution_of_training" value="{{executionOfTrainingValue}}"/>
+									<input type="hidden" name="training_url" value="{{trainingUrlValue}}"/>
+									<input type="hidden" name="time" value="{{defaultTime}}"/>
+										{% set btnHiddenClass = '' %}
+										{% if trainingItem.execution_of_training_select|length == 1 and trainingItem.execution_of_training_select[0].value == 'live_video' and trainingItem.no_time %}
+											{% set btnHiddenClass = ' hidden' %}
+										{% endif %}
+
+										<input type="submit" name="buyTraining" class="btn btn-info btn-buy-training{{btnHiddenClass}}" value="{{global.theme_options.text_translation.default_global_settings_buttons.buy_training}}"/>
+								</div>
+							</form>
+						{% endif %}
+					{% endif %}
+					{% if trainingItem.pdf_file %}
+						<a href="{{trainingItem.pdf_file}}" download class="btn btn-outline-info">
+							{{global.theme_options.text_translation.default_global_settings_buttons.download_pdf}}
+						</a>
+					{% endif %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+<div class="agenda-block">
+	{% for trainingItem in data %}
+		{% if trainingItem.agenda.title %}
+			<div class="container" id="training-type-{{loop.index}}">
+				<div class="accordion" id="accordionAgenda-{{loop.index}}">
+					<div class="card">
+						<div class="card-header" id="headingOne-{{loop.index}}">
+							<h3 class="collapsed" data-toggle="collapse" data-target="#collapseOne-{{loop.index}}" aria-expanded="false" aria-controls="collapseOne-{{loop.index}}">
+								{{trainingItem.agenda.title}}
+							</h3>
+							<p class="agenda-description">{{trainingItem.agenda.agenda_description}}</p>
+						</div>
+
+						<div id="collapseOne-{{loop.index}}" class="collapse" aria-labelledby="headingOne-{{loop.index}}" data-parent="#accordionAgenda-{{loop.index}}">
+							<dl class="card-body row">
+								<dt class="col-md-6">
+									{{trainingItem.agenda.agenda_left|raw}}
+								</dt>
+								<dd class="col-md-6">
+									{{trainingItem.agenda.agenda_right|raw}}
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>
+</div>

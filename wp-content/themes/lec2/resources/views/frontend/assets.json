@@ -1,0 +1,11 @@
+{
+  "scripts": [
+    "js/vendors.js",
+    "js/app.js"
+  ],
+  "styles": [
+    "styles/app.css",
+    "styles/style.css",
+    "styles/vendors.css"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "custom_data": {
+      "overview_banner": {
+        "image": "~@/assets/images/training-banner.png",
+        "title": "Trainings for your goals",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      },
+      "training_format": {
+        "title": "LEC2 Training Formats",
+        "content_listing": [
+          {
+            "content": "<h4>Webinars</h4><p>Our free webinars are dedicated to specific topics and provide you with important information that you can use immediately for your FPGA development.</p><h4>Seminars</h4><p>Our free face-to-face seminars address selected topics related to Lattice FPGAs. Discuss your specific project requirements with the trainer. Our seminars provide you with all the information you need to successfully start your FPGA design.</p>",
+            "image": "~@/assets/images/training/webseminiar-seminar.png",
+            "image_mb": "~@/assets/images/training/webseminiar-seminar-mb.png"
+          },
+          {
+            "content": "<h4>Face2Face</h4><p>Experienced trainers conduct our face-to-face trainings either in selected hotels or directly at your location. Intensive exercises facilitate the introduction to the latest FPGA technology.</p><h4>Shorties</h4><p>Our Shorties series focuses on the analysis, definition and implementation of special, selected tasks. Save time and use the solutions presented for your projects.</p>",
+            "image": "~@/assets/images/training/face2face-shorties.png",
+            "image_mb": "~@/assets/images/training/face2face-shorties-mb.png"
+          },
+          {
+            "content": "<h4>Online</h4><p>Browse through our extensive video library and find suitable solutions to make it easier for you to implement your special task.</p><h4>Inhouses</h4><p>Use our experts not only to get to know the FPGA development process on site but also to work on your project-specific tasks.</p>",
+            "image": "~@/assets/images/training/online-inhouse.png",
+            "image_mb": "~@/assets/images/training/online-inhouse-mb.png"
+          }
+        ]
+      }
+    }
+  }
+}

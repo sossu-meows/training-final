@@ -1,0 +1,36 @@
+@import "~@/scss/base";
+
+.slider-image-block {
+  padding-top: 60px;
+
+  .slider-col {
+    padding-left: 10px;
+    padding-right: 10px;
+    img {
+      width: 100%;
+      max-height: 274px;
+      border-radius: 8px;
+    }
+  }
+
+  .slick-arrow {
+    color: #999;
+  }
+
+  .slick-prev {
+    display: none !important;
+  }
+
+}
+
+@include tablet-down {
+  .slider-image-block {
+    .slick-next {
+      right: -10px;
+    }
+
+    .slick-prev {
+      left: -10px;
+    }
+  }
+}

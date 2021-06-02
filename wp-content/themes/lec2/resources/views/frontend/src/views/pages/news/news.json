@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "state": "guest"
+  },
+  "page_data": {
+    "post_title": "News",
+    "custom_data": {
+      "news_banner": {
+        "image": "~@/assets/images/news-banner.png",
+        "title": "Have a good experience with LEC2",
+        "description": "<p>We listened to the market and the customers needs so that you can have a good experience with the Lattice Education Competence Center. We want to make that sure!</p><p>Listen to other voices and let’s establish the trust in LEC2 together so that we can look into the bright future.</p>"
+      },
+      "news_item": {
+        "title": "Get the latest news from LEC2!",
+        "button_title": "Read All News",
+        "new_item_posts":[
+          {
+            "post_title": "News title",
+            "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+            "thumbnail": "~@/assets/images/news-item/news-item-image-1.png",
+            "url": "#"
+          },
+          {
+            "post_title": "News title",
+            "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+            "thumbnail": "~@/assets/images/news-item/news-item-image-2.png",
+            "url": "#"
+          },
+          {
+            "post_title": "News title",
+            "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+            "thumbnail": "~@/assets/images/news-item/news-item-image-3.png",
+            "url": "#"
+          },
+          {
+            "post_title": "News title",
+            "post_excerpt": "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+            "thumbnail": "~@/assets/images/news-item/news-item-image-4.png",
+            "url": "#"
+          }
+        ]
+      },
+      "highlight_list": {
+        "highlight_title": "Latest Training Modules Available",
+        "highlight_list":[
+          {
+            "post_title": "Shorties: Radiant Design Flow",
+            "post_excerpt": "This Shortie demonstrates how to create a new Radiant software project, customize IP using IP Catalog, verify functionality with simulation, set timing and...",
+            "url": "#"
+          },
+          {
+            "post_title": "Intensive Workshop: Crosslink NX",
+            "post_excerpt": "CrossLink™-NX family of low-power FPGAs can be used in a wide range of applications, and are optimized for bridging and processing needs in Embedded...",
+            "url": "#"
+          },
+          {
+            "post_title": "Intensive Workshop: VHDL for Synthesis",
+            "post_excerpt": "The design of digital circuits in this scale needs a powerful hardware description language which offers different levels of abstraction, so an engineer can...",
+            "url": "#"
+          },
+          {
+            "post_title": "Intensive Workshop: VHDL for Synthesis",
+            "post_excerpt": "The design of digital circuits in this scale needs a powerful hardware description language which offers different levels of abstraction, so an engineer can...",
+            "url": "#"
+          }
+        ]
+      }
+    }
+  }
+}

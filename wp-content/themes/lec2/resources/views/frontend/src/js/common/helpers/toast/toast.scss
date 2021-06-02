@@ -1,0 +1,86 @@
+@import '~@/scss/base';
+
+@mixin deep() {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#toast-container {
+  position: fixed;
+  z-index: $z-index-toast;
+  font-family: inherit;
+
+  .toast {
+    position: relative;
+    width: 340px;
+    margin: 0 10px 25px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 0.95;
+    cursor: pointer;
+    @include deep();
+    transition: transform 0.3s;
+    &:hover {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.15), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    .toast-title {
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .toast-message {
+      color: $color-text;
+      font-size: 14px;
+    }
+    .toast-close-button {
+      position: absolute;
+      color: #000;
+      z-index: 1;
+      right: 10px;
+      top: 5px;
+    }
+  }
+  @include breakpoint($min: 768px) {
+    .toast {
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+  @include breakpoint($max: 767px) {
+    right: 50% !important;
+    transform: translateX(50%);
+    top: 25px !important;
+  }
+
+  @include breakpoint($min: 0, $max: 340px) {
+    .toast {
+      width: 300px;
+    }
+  }
+
+  .toast {
+    padding-left: 65px;
+    background-size: 35px;
+    &.toast-info {
+      // color: #22b6e1;
+      background-image: url('~@/js/common/helpers/toast/info.svg') !important;
+    }
+    &.toast-warning  {
+      // color: #e1da22;
+      background-image: url('~@/js/common/helpers/toast/warning.svg') !important;
+    }
+    &.toast-error  {
+      // color: #df3f3f;
+      background-image: url('~@/js/common/helpers/toast/error.svg') !important;
+    }
+    &.toast-success  {
+      // color: #30d353;
+      background-image: url('~@/js/common/helpers/toast/success.svg') !important;
+    }
+  }
+}

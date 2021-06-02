@@ -1,0 +1,50 @@
+@import "~@/scss/base";
+
+.top-banner {
+  &--homepage {
+    padding-top: 38px;
+    padding-bottom: 12vw;
+    background-color: $color-primary;
+    color: $color-white;
+    h1 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: $color-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .top-banner--homepage {
+    padding-top: 31px;
+    padding-bottom: 15.625vw;
+    h1 {
+      text-align: left;
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+<div class="acf-file-uploader has-value">
+    <div class="">
+        <div class="file-icon">
+            <img data-name="icon" src="{{ global.wp_include }}/images/media/default.png" alt="">
+        </div>
+        <div class="file-info">
+            <p>
+                <strong data-name="title">{{ page_data.data.custom_value.title  }}</strong>
+            </p>
+            <p>
+                <strong>{{ "File name" | trans }}:</strong>
+                <a data-name="filename" href="{{ page_data.data.custom_value.download_url  }}" target="_blank">{{ page_data.data.custom_value.title  }}</a>
+            </p>
+            <p>
+                <strong>{{ "File size" | trans }}:</strong>
+                <span data-name="filesize">{{ page_data.data.custom_value.size }}</span>
+            </p>
+        </div>
+    </div>
+</div>

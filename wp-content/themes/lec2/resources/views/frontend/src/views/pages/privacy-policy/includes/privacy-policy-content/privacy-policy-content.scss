@@ -1,0 +1,37 @@
+@import "~@/scss/base";
+
+.text-content {
+  margin-bottom: 50px;
+  p {
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  h5 {
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+  }
+}
+
+@include tablet-down {
+  .text-content {
+    margin-top: 30px;
+  }
+}
+
+@include mobile {
+  .text-content {
+    margin-bottom: 35px;
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      line-height: 19.07px;
+      word-break: break-word;
+    }
+    h5 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      line-height: 19px;
+    }
+  }
+}

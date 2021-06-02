@@ -1,0 +1,20 @@
+{# Modal contact #}
+<div class="modal fade modal-base modal-no-header modal-contact" id="{{modalID}}" role="dialog" tabindex="-1" aria-labelledby="{{modalID}}Label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="{{modalID}}Label">{{ modalTitle }}</h4>
+				{% if modalDescription %}				
+        <p class="modal-description">{{modalDescription}} </p>
+				{% endif %}
+				{# <button class="close" data-dismiss="modal" type="button"></button> #}
+			</div>
+			<div class="modal-body">
+				{% set formContent = global.theme_options.default_global_settings_contact_form %}
+				{% include "@views/components/modal-form/modal-form.twig" with {
+					modalType: modalType
+        } %}
+			</div>
+		</div>
+	</div>
+</div>

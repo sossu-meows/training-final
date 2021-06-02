@@ -1,0 +1,41 @@
+html {
+  font-size: 10px;
+}
+
+h1, .h1 {
+  margin-bottom: 1.5rem;
+  @extend %h1;
+  color: $color-heading;
+}
+
+h2, .h2 {
+  margin-bottom: 1.5rem;
+  @extend %h2;
+}
+
+h3, .h3 {
+  margin-bottom: 1.5rem;
+  @extend %h3;
+}
+
+h4, .h4 {
+  margin-bottom: 1.5rem;
+  @extend %h4;
+}
+
+h5, .h5 {
+  margin-bottom: 1.5rem;
+  @extend %h5;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.semibold {
+  font-weight: $font-semibold;
+}
+
+.lead {
+  @extend %lead;
+}

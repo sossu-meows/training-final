@@ -1,0 +1,34 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'checkout-page',
+    jsController: 'checkout',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+  {% set checkoutBanner = page_data.custom_data.detault_banner %}
+
+  {% set checkoutData = {
+      top_banner_title : checkoutBanner.title,
+      top_banner_background : checkoutBanner.image,
+      top_banner_description : checkoutBanner.description
+    }
+  %}
+
+  {% include "@views/components/top-banner/top-banner.twig" with {
+    'topBannerData': checkoutData,
+      classPage: 'payment'
+  } %}
+
+  <div class="container">
+    <div class="checkout-page-content">
+      {{ do_shortcode(page_data.post_content) }}
+    </div>
+  </div>
+{% endblock %}

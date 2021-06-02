@@ -1,0 +1,22 @@
+@import "~@/scss/base";
+
+.advantage-block {
+  padding-top: 52px;
+  padding-bottom: 75px;
+  background: url('~@/assets/images/bg-gray-top-radius.png') center top no-repeat;
+  background-size: cover;
+  .container {
+    max-width: 993px;
+  }
+  h2 {
+    margin-bottom: 43px;
+  }
+}
+
+@include mobile() {
+  .advantage-block {
+    background-image: none;
+    padding-top: 51px;
+    padding-bottom: 13px;
+  }
+}

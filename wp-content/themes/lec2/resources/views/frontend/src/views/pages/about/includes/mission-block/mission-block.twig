@@ -1,0 +1,18 @@
+{% if data %}
+	<div class="mission-block">
+		<div class="container">
+			<h2 class="primary-title">{{ data.title }}</h2>
+			<div class="mission-list row">
+				{% for missionItem in data.mission_list %}
+					<div class="col-md-3 mission-item">
+						<div class="mission-item-image">
+							<img src="{{ missionItem.image }}" alt="{{ missionItem.title }}"/>
+						</div>
+						<div class="mission-item-number">{{ missionItem.number }}</div>
+						<div class="mission-item-title">{{ missionItem.title }}</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endif %}

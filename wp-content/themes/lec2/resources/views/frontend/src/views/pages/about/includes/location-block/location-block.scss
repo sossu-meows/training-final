@@ -1,0 +1,80 @@
+@import "~@/scss/base";
+
+.location-block {
+  position: relative;
+  margin-top: 19px;
+  margin-bottom: 22px;
+  .primary-title {
+    margin-bottom: 24px;
+  }
+
+  .location-item {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    dt {
+      margin-bottom: 8px;
+    }
+    dt,
+    dd {
+      font-size: 1.8rem;
+      line-height: 25px;
+    }
+  }
+
+  .wpgmza_map {
+    border-radius: 8px;
+  }
+  .location-box {
+    &__left {
+      iframe {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@include desktop() {
+  .location-block {
+    margin-top: 54px;
+    margin-bottom: 82px;
+    .primary-title {
+      margin-top: 12px;
+      margin-bottom: 42px;
+    }
+    .location-image {
+      margin-bottom: 0;
+    }
+    .location-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -20px;
+      margin-left: -20px;
+      &__left,
+      &__right {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      &__left {
+        width: 60%;
+        flex-basis: 60%;
+      }
+      &__right {
+        width: 40%;
+        flex-basis: 40%;
+      }
+    }
+    .location-item {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+
+@include tablet-down {
+  .location-block .location-box__left {
+    margin-bottom: 30px;
+  }
+}

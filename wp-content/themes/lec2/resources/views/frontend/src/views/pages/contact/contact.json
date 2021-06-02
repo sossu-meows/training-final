@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "state": "Contact"
+  },
+  "page_data": {
+    "post_title": "Contact",
+    "custom_data": {
+      "salutation_group": {
+        "salutation": "Salutation",
+        "mr": "Mr",
+        "mrs": "Mrs",
+        "mx": "Mx"
+      },
+      "title": "Title",
+      "firstname": " First Name",
+      "lastname": "Last Name",
+      "company": "Company",
+      "division": "Division",
+      "street": "Street",
+      "postcode": "Post Code",
+      "city": "City",
+      "country": "Country",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "privacy": "Privacy Policy",
+      "agreement": "You agree that your information will be used to process your request. Information and notice of cancellation can be found in the privacy policy.",
+      "captcha": "~@/assets/images/captcha.png",
+      "submit_button": "Send"
+    }
+  }
+}

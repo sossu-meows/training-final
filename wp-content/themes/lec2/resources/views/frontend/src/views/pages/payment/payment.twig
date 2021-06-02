@@ -1,0 +1,95 @@
+{% extends "@views/layouts/layout-default.twig" %}
+
+{# block declare #}
+
+{%
+  set viewData = {
+    bodyClass: 'payment-page',
+    jsController: 'payment',
+    headerTheme: 'white',
+    footerType: 'primary'
+  }
+%}
+
+{% block pageContent %}
+	{% include "@views/components/top-banner/top-banner.twig" with {
+    'topBannerData': page_data.custom_data.top_banner,
+    classPage: 'payment'
+  }%}
+
+	{% set paymentContent = page_data.custom_data.payment_content %}
+  {% set formContent = global.theme_options.default_global_settings_payment_form %}
+
+
+	<div class="payment-form-block">
+		<div class="container">
+			<div class="payment-content row">
+				<div class="col-md-6 col-6">
+					<strong>
+						{{paymentContent.training}}:
+					</strong>
+				</div>
+				<div class="col-md-6 col-6">
+					{{paymentContent.training_content}}
+				</div>
+				{% if paymentContent.date_content %}				
+				<div class="col-md-6 col-6">
+					<strong>
+						{{paymentContent.date}}:
+					</strong>
+				</div>
+				<div class="col-md-6 col-6">
+					{{paymentContent.date_content}}
+				</div>
+				{% endif %}
+				<div class="col-md-6 col-6">
+					<strong>
+						{{paymentContent.price}}:
+					</strong>
+				</div>
+				<div class="col-md-6 col-6">
+					{{paymentContent.price_content}}
+				</div>
+				<div class="col-md-6 col-6">
+					<strong>
+						{{paymentContent.type}}:
+					</strong>
+				</div>
+				<div class="col-md-6 col-6">
+					{{paymentContent.type_content}}
+				</div>
+			</div>
+      <h3> {{paymentContent.student}}</h3>
+			{% include "@views/components/payment-form/payment-form.twig" with {
+        'salutationGroup': formContent.salutation_group,
+        'titleLabel': formContent.default_global_settings_form_title,
+        'firstnameLabel':formContent.default_global_settings_form_firstname,
+        'lastnameLabel': formContent.default_global_settings_form_lastname,
+        'companyLabel': formContent.default_global_settings_form_company,
+        'divisionLabel': formContent.default_global_settings_form_division,
+        'streetLabel': formContent.default_global_settings_form_street,
+        'postcodeLabel': formContent.default_global_settings_form_postcode,
+        'cityLabel': formContent.default_global_settings_form_city,
+        "countryLabel": formContent.default_global_settings_form_country,
+        'emailLabel': formContent.default_global_settings_form_email,
+        'phoneLabel': formContent.default_global_settings_form_phone,
+        'faxLabel': formContent.default_global_settings_form_fax,
+        'messageLabel': formContent.default_global_settings_form_message,
+        'vatnumberLabel': formContent.default_global_settings_form_vatnumber,
+        'ordernumberLabel': formContent.default_global_settings_form_ordernumber,
+        'couponcodeLabel': formContent.default_global_settings_form_couponcode,
+        'arrivalLabel': formContent.default_global_settings_form_arrival,
+        'departureLabel': formContent.default_global_settings_form_departure,
+        'dataBillingLabel': formContent.default_global_settings_form_billing,
+        'dataAskOfferLabel': formContent.default_global_settings_form_ask_offer,
+        'dataRoomReservationLabel': formContent.default_global_settings_form_room_reservation,
+        'dataTermsandConditionsLabel': formContent.default_global_settings_form_terms_and_conditions,
+        'dataAgreementLabel': formContent.default_global_settings_form_agreement,
+        'buttonText': formContent.default_global_settings_form_button_text
+      } %}
+		</div>
+	</div>
+
+
+
+{% endblock %}
