@@ -49,13 +49,13 @@ function debug($var, $isDie = false)
 /**
  * Create a coupon programatically
  */
-$coupon_code = 'UNIQUECODE'; // Code
-$amount = '10'; // Amount discount  value
+$coupon_code = 'TCP'; // Code
+$amount = '3'; // Amount discount  value
 $discount_type = 'fixed_cart'; // Type: fixed_cart, percent, fixed_product, percent_product
 
 $coupon = array(
     'post_title' => $coupon_code,
-    'post_content' => '',
+    'post_content' => 'Your Coupon is ' . $coupon_code,
     'post_status' => 'publish',
     'post_author' => 1,
     'post_type' => 'shop_coupon'
@@ -73,3 +73,9 @@ update_post_meta($new_coupon_id, 'usage_limit', '');
 update_post_meta($new_coupon_id, 'expiry_date', '');
 update_post_meta($new_coupon_id, 'apply_before_tax', 'yes');
 update_post_meta($new_coupon_id, 'free_shipping', 'no');
+
+// add_action('woocommerce_email_header', 'mm_email_header', 10, 2);
+// function mm_email_header($email_heading, $email)
+// {
+//     echo "<p> khoa check!</p>";
+// }
