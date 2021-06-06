@@ -23,6 +23,7 @@ use App\Components\Hooks\Ajax\Classes\GetPartnerListing;
 use App\Components\Hooks\Ajax\Classes\GetNewsFeedListing;
 use App\Components\Hooks\Ajax\Classes\GetTrainingListing;
 use App\Components\Hooks\Ajax\Classes\AddToCart;
+use App\Components\Hooks\Ajax\Classes\AjaxTest;
 use App\Components\Hooks\Ajax\Classes\GetProducts;
 use App\Components\Hooks\Website\Actions;
 use App\Components\Hooks\Website\Filters;
@@ -100,6 +101,7 @@ class RegisterHooks implements ComponentInterface
             new GetTrainingForSchedule(),
             new AddToCart(),
             new GetProducts(),
+            new AjaxTest(),
         ];
     }
 }

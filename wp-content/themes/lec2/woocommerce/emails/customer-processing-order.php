@@ -460,9 +460,12 @@ if (!defined('ABSPATH')) {
 
                                                                         function code_to_create_coupon($order_id)
                                                                         {
+
                                                                             $coupon_code = 'CP' . $order_id; // Code - perhaps generate this from the user ID + the order ID
                                                                             $amount = '100'; // Amount
                                                                             $discount_type = 'percent'; // Type: fixed_cart, percent, fixed_product, percent_product
+                                                                            $coupon_start_date = new DateTime();
+                                                                            $coupon_end_date = date_add($coupon_start_date, date_interval_create_from_date_string('3 months'));
 
                                                                             $coupon = array(
                                                                                 'post_title' => $coupon_code,
@@ -481,9 +484,10 @@ if (!defined('ABSPATH')) {
                                                                             update_post_meta($new_coupon_id, 'product_ids', '');
                                                                             update_post_meta($new_coupon_id, 'exclude_product_ids', '');
                                                                             update_post_meta($new_coupon_id, 'usage_limit', '1');
-                                                                            update_post_meta($new_coupon_id, 'expiry_date', '');
+                                                                            update_post_meta($new_coupon_id, 'expiry_date', strtotime($coupon_end_date->format("Y-m-d h:i:s")));
                                                                             update_post_meta($new_coupon_id, 'apply_before_tax', 'yes');
                                                                             update_post_meta($new_coupon_id, 'free_shipping', 'no');
+
                                                                             return $coupon_code;
                                                                         }
                                                                         $product = $order->get_items();
@@ -501,7 +505,7 @@ if (!defined('ABSPATH')) {
 
 
                                                                         ?>
-                                                                        <pre><?= $post_id; ?></pre>
+
                                                                         <p><strong> I've confirmed the terms and conditions.</strong></p>
                                                                         <p><strong>I've confirmed the privacy policy.</strong></p>
 
