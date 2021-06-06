@@ -73,6 +73,7 @@ if (!defined('ABSPATH')) {
 
                                                                         <?php
                                                                         $order_id = THWCFD_Utils::get_order_id($order);
+                                                                        //debug($order, true);
                                                                         $room_reservation = get_post_meta($order_id);
                                                                         $before = '';
                                                                         $after  = '';
@@ -456,10 +457,11 @@ if (!defined('ABSPATH')) {
                                                                         }
                                                                         echo '<br>';
 
+
                                                                         function code_to_create_coupon($order_id)
                                                                         {
                                                                             $coupon_code = 'CP' . $order_id; // Code - perhaps generate this from the user ID + the order ID
-                                                                            $amount = '7'; // Amount
+                                                                            $amount = '100'; // Amount
                                                                             $discount_type = 'percent'; // Type: fixed_cart, percent, fixed_product, percent_product
 
                                                                             $coupon = array(
@@ -484,11 +486,23 @@ if (!defined('ABSPATH')) {
                                                                             update_post_meta($new_coupon_id, 'free_shipping', 'no');
                                                                             return $coupon_code;
                                                                         }
-                                                                        $k_get_coupon = code_to_create_coupon($order_id);
-                                                                        echo "<p><strong>You recive a coupon  " . $k_get_coupon . "</strong></p>";
-                                                                        ?>
+                                                                        $product = $order->get_items();
+                                                                        foreach ($product as $item) {
+                                                                            $post_id = $item->get_product_id();
+                                                                        }
+                                                                        $buy_as_gift = get_post_meta($post_id, 'buy-as-gift', true);
 
-                                                                        <p><strong>I've confirmed the terms and conditions.</strong></p>
+
+                                                                        if ($buy_as_gift == 1) {
+                                                                            $k_get_coupon = code_to_create_coupon($order_id);
+                                                                            echo "<p><strong>You recive a coupon  " . $k_get_coupon . "</strong></p>";
+                                                                        }
+
+
+
+                                                                        ?>
+                                                                        <pre><?= $post_id; ?></pre>
+                                                                        <p><strong> I've confirmed the terms and conditions.</strong></p>
                                                                         <p><strong>I've confirmed the privacy policy.</strong></p>
 
                                                                         <div>
