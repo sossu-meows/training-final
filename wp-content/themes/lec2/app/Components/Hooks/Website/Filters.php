@@ -282,6 +282,13 @@ class Filters extends AbstractFilter
             'label'   => __('Room reservations in the conference hotel are desirable.'),
         ), $checkout->get_value('room_reservation'));
 
+        // buy as gift lable
+        woocommerce_form_field('buy_as_gift_client', array(
+            'type'          => 'checkbox',
+            'class'         => array('buy_as_gift_client form-row-wide'),
+            'label'   => __('Buy as gift !'),
+        ), $checkout->get_value('buy_as_gift_client'));
+
         echo '<div class="room-reservation"><h4>Room reservation</h4>';
         echo '<div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group">';
         woocommerce_form_field('arrival_date', array(

@@ -495,11 +495,13 @@ if (!defined('ABSPATH')) {
                                                                             $post_id = $item->get_product_id();
                                                                         }
                                                                         $buy_as_gift = get_post_meta($post_id, 'buy-as-gift', true);
+                                                                        $buy_as_gift_client = get_post_meta($order_id, 'buy_as_gift_client', true);
 
 
-                                                                        if ($buy_as_gift == 1) {
+                                                                        if ($buy_as_gift == 1 || $buy_as_gift_client == 1) {
                                                                             $k_get_coupon = code_to_create_coupon($order_id);
                                                                             echo "<p><strong>You recive a coupon  " . $k_get_coupon . "</strong></p>";
+                                                                            echo "<p><string> $buy_as_gift_client </strong></p>";
                                                                         }
 
 
