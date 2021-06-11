@@ -47,7 +47,7 @@ class ListProductsByTime extends AbstractService
             AND 
             ( mt2.meta_key LIKE 'training_types_%_execution_of_training_has_live_course' AND mt2.meta_value = '1' )
                AND
-              (SUBSTR(REPLACE(mt1.meta_key, '_execution_of_training_live_course_dates_', ''),1,16) = REPLACE(mt2.meta_key, '_execution_of_training_has_live_course', ''))
+              (SUBSTRING_INDEX(mt1.meta_key, '_execution_of_training_live_course_dates_',1) = REPLACE(mt2.meta_key, '_execution_of_training_has_live_course', ''))
              ) 
              AND p.post_type = 'product' AND (p.post_status = 'publish' OR p.post_status = 'acf-disabled' OR p.post_status = 'future' OR p.post_status = 'draft' OR p.post_status = 'pending' OR p.post_status = 'private') GROUP BY p.ID ORDER BY p.post_date DESC LIMIT 0, 10
 
