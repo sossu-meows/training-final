@@ -327,6 +327,10 @@ class Filters extends AbstractFilter
         //            'label'   => __('LEC2 may pass on my personal data (name; email address; company name; company address) to Lattice Semiconductor Corp., 5555 NE Moore Ct., Hilsboro, OR 97127 for contact purposes by Lattice Corp.'),
         //        ), $checkout->get_value( 'pass_personal_data' ));
     }
+    public function enabling_time_format()
+    {
+        wp_enqueue_script('jquery-time-format', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', array(), '1.0', true);
+    }
 
     public function enabling_date_picker()
     {
